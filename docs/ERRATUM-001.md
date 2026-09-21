@@ -1,6 +1,6 @@
 # Erratum 001: evaluator launch failures and blob comparison
 
-**Status: fixes implemented; full sequential terminal regrade running (results pending).** September 21, 2026. Tracks [issue #1](https://github.com/ericxtang/sqlite-single-agent-study/issues/1). The original [v1.0.0 release](https://github.com/ericxtang/sqlite-single-agent-study/releases/tag/v1.0.0), `evaluator/`, source archives, original grades and incomplete attempts remain unchanged. Corrected evaluation uses `evaluator_v2/` and separate output directories. No implementation agent is resumed and no generated source is repaired.
+**Status: fixes implemented; first regrade withheld after host sleep; guarded full replay prepared (results pending).** September 21, 2026. Tracks [issue #1](https://github.com/ericxtang/sqlite-single-agent-study/issues/1). The original [v1.0.0 release](https://github.com/ericxtang/sqlite-single-agent-study/releases/tag/v1.0.0), `evaluator/`, source archives, original grades and incomplete attempts remain unchanged. Corrected evaluation uses `evaluator_v2/` and separate output directories. No implementation agent is resumed and no generated source is repaired.
 
 ## What was wrong
 
@@ -36,7 +36,7 @@ The v2 evaluator:
 
 No-inference regression tests cover equivalent/malformed/unequal blobs, all twelve reference probes, infrastructure exceptions bypassing the scorer, incomplete summaries, an actual Docker name collision, an actual generated-process exit 125, a request timeout, raw capture and cleanup. The frozen 25 tests are retained as well.
 
-The full terminal regrade launched at **2026-09-21 18:34 UTC** and runs **one worker**, using unchanged 001/002/004 four-hour archives, the interrupted 003 terminal artifact, and the original immutable arm64 image `sha256:c379c6128e193682c40015eb8b126e2916b18c3985f0fb72cf1c642a1a3039f5`. The four primary and four secondary results will be published beside v1. Every retry, if required, needs a recorded new attempt; incomplete evidence is never overwritten. Primary results are not corrected until their entire corpus and cleanup complete.
+The first full terminal regrade launched at **2026-09-21 18:34 UTC** with **one worker**, using unchanged 001/002/004 four-hour archives, the interrupted 003 terminal artifact, and the original immutable arm64 image `sha256:c379c6128e193682c40015eb8b126e2916b18c3985f0fb72cf1c642a1a3039f5`. The four primary and four secondary results will be published beside v1. Every retry, if required, needs a recorded new attempt; incomplete evidence is never overwritten. Primary results are not corrected until their entire corpus and cleanup complete.
 
 **Progress regrading:** the screen affects 16 evaluations, not just endpoints. To publish corrected progress curves, regressions or threshold intervals, regrade all earlier saved checkpoints under v2 rather than selecting only suspicious records. Until that follow-up is complete, the 55-point v1 curves remain explicitly historical and uncorrected. Terminal regrading alone cannot validate them.
 
@@ -47,3 +47,12 @@ See [v2 grading instructions](grading.md). Source archives and all v1 result che
 ## Controller review follow-up
 
 [PR review 4065296060](https://github.com/ericxtang/sqlite-single-agent-study/pull/2#discussion_r4065296060) identified that atomic queue-state replacement did not explicitly sync the file and directory. The corrected controller syncs both and closes the directory descriptor even on error. Four targeted tests cover ordering, failure behavior and a real filesystem write. This affects recovery metadata after abrupt host failure, not scoring semantics. The active terminal queue remains on its original sealed controller at commit `a4386b4`; its live source files are unchanged. The patch was developed in a separate checkout for subsequent invocations. Existing output, timestamps and evidence are preserved; this finding does not require rerunning the current evaluation.
+
+
+## Host-sleep interruption and explicit replay
+
+The first v2 queue was stopped at **2026-09-21 23:56 UTC**, with 98 files recorded and **no accepted endpoint score**. macOS power records show lid-close sleep followed by thermal-emergency/maintenance sleep and intermittent background wakes. A request timeout overlapped that suspension, so it cannot safely be attributed to the implementation. All partial responses, scores, launch evidence and power records are preserved; no passing partial results are spliced into a new evaluation.
+
+A fresh, sequential eight-job replay uses the same archives, image and scoring limits, with the reviewed controller durability fix and an external **host-awake guard**. The guard compares wall-clock and monotonic elapsed time once per second. A difference above two seconds (host suspension or a substantial clock adjustment) stops the controller and makes the whole attempt ineligible until review, even if the child wrote a complete summary. It neither prevents lid-close sleep nor extends evaluator deadlines. Keep the machine awake with the lid open. Both guard and queue must finish successfully before accepting results.
+
+This is a recorded infrastructure recovery, not an implementation retry. No model calls or implementation changes are involved. The old queue remains preserved under `regrade-v2-001`; the replacement uses the distinct `regrade-v2-002` output. A later interruption requires another explicit review and new output path, not an automatic retry.
