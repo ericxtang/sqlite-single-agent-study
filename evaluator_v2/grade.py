@@ -58,9 +58,18 @@ def main():
     proc=None
     stopped=False
     def save():
+        """Sync state contents and its directory entry before reporting progress."""
         tmp=output/'state.json.tmp'
-        tmp.write_text(json.dumps(state,indent=2)+'\n')
+        with tmp.open('w') as handle:
+            handle.write(json.dumps(state, indent=2)+'\n')
+            handle.flush()
+            os.fsync(handle.fileno())
         tmp.replace(output/'state.json')
+        directory_fd = os.open(output, os.O_RDONLY | os.O_DIRECTORY)
+        try:
+            os.fsync(directory_fd)
+        finally:
+            os.close(directory_fd)
     def stop(*_):
         nonlocal stopped
         stopped=True

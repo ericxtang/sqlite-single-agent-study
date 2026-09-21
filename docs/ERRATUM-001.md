@@ -43,3 +43,7 @@ The full terminal regrade launched at **2026-09-21 18:34 UTC** and runs **one wo
 ## Reproduce the correction
 
 See [v2 grading instructions](grading.md). Source archives and all v1 result checksums still validate using `python3 replication/validate_publication.py`. New local output paths, sealed plans and raw logs are kept separate from published original results. Raw protocol logs contain the benchmark SQL and must never be made visible to an implementing agent.
+
+## Controller review follow-up
+
+[PR review 4065296060](https://github.com/ericxtang/sqlite-single-agent-study/pull/2#discussion_r4065296060) identified that atomic queue-state replacement did not explicitly sync the file and directory. The corrected controller syncs both and closes the directory descriptor even on error. Four targeted tests cover ordering, failure behavior and a real filesystem write. This affects recovery metadata after abrupt host failure, not scoring semantics. The active terminal queue remains on its original sealed controller at commit `a4386b4`; its live source files are unchanged. The patch was developed in a separate checkout for subsequent invocations. Existing output, timestamps and evidence are preserved; this finding does not require rerunning the current evaluation.
