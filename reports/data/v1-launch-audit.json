@@ -1,0 +1,781 @@
+{
+  "method": "Screen only: closed input/stdout, zero queries/statements passed, <0.05 seconds. Not proof of individual failure causes; not a score correction.",
+  "flagged_file_records": 86,
+  "affected_evaluations": 16,
+  "rows": [
+    {
+      "run_id": "measured-001",
+      "kind": "four_hour_endpoint",
+      "output": "results/measured-001/evaluation/final-primary/files.jsonl",
+      "path": "index/commute/10/slt_good_22.test",
+      "queries": 10000,
+      "elapsed_seconds": 0.015424082999970778,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "four_hour_endpoint",
+      "output": "results/measured-001/evaluation/final-primary/files.jsonl",
+      "path": "index/commute/1000/slt_good_1.test",
+      "queries": 9562,
+      "elapsed_seconds": 0.0034721670000408267,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "four_hour_endpoint",
+      "output": "results/measured-001/evaluation/final-primary/files.jsonl",
+      "path": "index/delete/1/slt_good_0.test",
+      "queries": 3761,
+      "elapsed_seconds": 0.010373583000045983,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "four_hour_endpoint",
+      "output": "results/measured-001/evaluation/final-primary/files.jsonl",
+      "path": "index/orderby/1000/slt_good_0.test",
+      "queries": 10020,
+      "elapsed_seconds": 0.0014588750000257278,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "four_hour_endpoint",
+      "output": "results/measured-001/evaluation/final-primary/files.jsonl",
+      "path": "index/orderby_nosort/1000/slt_good_1.test",
+      "queries": 10020,
+      "elapsed_seconds": 0.0020732500001940934,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "four_hour_endpoint",
+      "output": "results/measured-001/evaluation/final-primary/files.jsonl",
+      "path": "index/view/10000/slt_good_0.test",
+      "queries": 332,
+      "elapsed_seconds": 0.005176500000288797,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "four_hour_endpoint",
+      "output": "results/measured-001/evaluation/final-primary/files.jsonl",
+      "path": "random/aggregates/slt_good_105.test",
+      "queries": 10000,
+      "elapsed_seconds": 4.18750000790169e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-002",
+      "kind": "four_hour_endpoint",
+      "output": "results/measured-002/evaluation/final-primary/files.jsonl",
+      "path": "index/between/100/slt_good_3.test",
+      "queries": 10000,
+      "elapsed_seconds": 0.0003924580000216338,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-002",
+      "kind": "four_hour_endpoint",
+      "output": "results/measured-002/evaluation/final-primary/files.jsonl",
+      "path": "index/orderby_nosort/10/slt_good_0.test",
+      "queries": 10020,
+      "elapsed_seconds": 0.0015181660000962438,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-002",
+      "kind": "four_hour_endpoint",
+      "output": "results/measured-002/evaluation/final-primary/files.jsonl",
+      "path": "index/orderby_nosort/1000/slt_good_1.test",
+      "queries": 10020,
+      "elapsed_seconds": 0.0021378749997893465,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-002",
+      "kind": "four_hour_endpoint",
+      "output": "results/measured-002/evaluation/final-primary/files.jsonl",
+      "path": "index/view/10000/slt_good_0.test",
+      "queries": 332,
+      "elapsed_seconds": 0.015887499999735155,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-002",
+      "kind": "four_hour_endpoint",
+      "output": "results/measured-002/evaluation/final-primary/files.jsonl",
+      "path": "random/expr/slt_good_3.test",
+      "queries": 10000,
+      "elapsed_seconds": 5.770799998572329e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-004",
+      "kind": "four_hour_endpoint",
+      "output": "results/measured-004/evaluation/final-primary/files.jsonl",
+      "path": "index/commute/10/slt_good_28.test",
+      "queries": 10000,
+      "elapsed_seconds": 0.004969874999972035,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-004",
+      "kind": "four_hour_endpoint",
+      "output": "results/measured-004/evaluation/final-primary/files.jsonl",
+      "path": "index/commute/1000/slt_good_1.test",
+      "queries": 9562,
+      "elapsed_seconds": 0.028165500000000065,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-004",
+      "kind": "four_hour_endpoint",
+      "output": "results/measured-004/evaluation/final-primary/files.jsonl",
+      "path": "index/delete/1/slt_good_0.test",
+      "queries": 3761,
+      "elapsed_seconds": 0.006844499999942855,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-004",
+      "kind": "four_hour_endpoint",
+      "output": "results/measured-004/evaluation/final-primary/files.jsonl",
+      "path": "index/orderby_nosort/1000/slt_good_1.test",
+      "queries": 10020,
+      "elapsed_seconds": 0.006565749999936088,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-004",
+      "kind": "four_hour_endpoint",
+      "output": "results/measured-004/evaluation/final-primary/files.jsonl",
+      "path": "random/aggregates/slt_good_108.test",
+      "queries": 10000,
+      "elapsed_seconds": 4.612499969880446e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-004",
+      "kind": "four_hour_endpoint",
+      "output": "results/measured-004/evaluation/final-primary/files.jsonl",
+      "path": "random/expr/slt_good_83.test",
+      "queries": 10000,
+      "elapsed_seconds": 8.024999988265336e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-004",
+      "kind": "four_hour_endpoint",
+      "output": "results/measured-004/evaluation/final-primary/files.jsonl",
+      "path": "random/select/slt_good_101.test",
+      "queries": 10000,
+      "elapsed_seconds": 4.491600020628539e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/01800-primary/files.jsonl",
+      "path": "index/orderby/10/slt_good_16.test",
+      "queries": 10020,
+      "elapsed_seconds": 0.01610108400018362,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/01800-primary/files.jsonl",
+      "path": "index/orderby/1000/slt_good_0.test",
+      "queries": 10020,
+      "elapsed_seconds": 0.021851957999388105,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/01800-primary/files.jsonl",
+      "path": "random/aggregates/slt_good_118.test",
+      "queries": 10000,
+      "elapsed_seconds": 4.2333000237704255e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/01800-primary/files.jsonl",
+      "path": "random/select/slt_good_123.test",
+      "queries": 10000,
+      "elapsed_seconds": 5.154200061951997e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/02700-primary/files.jsonl",
+      "path": "index/commute/100/slt_good_5.test",
+      "queries": 10000,
+      "elapsed_seconds": 4.5209000063550775e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/02700-primary/files.jsonl",
+      "path": "index/orderby/10/slt_good_1.test",
+      "queries": 10020,
+      "elapsed_seconds": 0.009165999999822816,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/02700-primary/files.jsonl",
+      "path": "random/aggregates/slt_good_36.test",
+      "queries": 10000,
+      "elapsed_seconds": 0.00012079099997208687,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/03600-primary/files.jsonl",
+      "path": "index/commute/100/slt_good_9.test",
+      "queries": 10000,
+      "elapsed_seconds": 0.0014885000000504078,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/03600-primary/files.jsonl",
+      "path": "random/select/slt_good_18.test",
+      "queries": 10000,
+      "elapsed_seconds": 4.6499999371008016e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/04500-primary/files.jsonl",
+      "path": "index/commute/100/slt_good_11.test",
+      "queries": 10000,
+      "elapsed_seconds": 0.023409000000015112,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/04500-primary/files.jsonl",
+      "path": "index/commute/100/slt_good_4.test",
+      "queries": 10000,
+      "elapsed_seconds": 0.01337712500003363,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/04500-primary/files.jsonl",
+      "path": "index/commute/100/slt_good_7.test",
+      "queries": 10000,
+      "elapsed_seconds": 0.005375791999995272,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/04500-primary/files.jsonl",
+      "path": "index/in/100/slt_good_2.test",
+      "queries": 10005,
+      "elapsed_seconds": 0.005173250000098051,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/04500-primary/files.jsonl",
+      "path": "random/expr/slt_good_79.test",
+      "queries": 10000,
+      "elapsed_seconds": 6.424999992304947e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/05400-primary/files.jsonl",
+      "path": "index/commute/1000/slt_good_1.test",
+      "queries": 9562,
+      "elapsed_seconds": 0.007023916999969515,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/05400-primary/files.jsonl",
+      "path": "index/view/10000/slt_good_0.test",
+      "queries": 332,
+      "elapsed_seconds": 0.011372250000022177,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/05400-primary/files.jsonl",
+      "path": "random/aggregates/slt_good_66.test",
+      "queries": 10000,
+      "elapsed_seconds": 5.375000000640284e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/06300-primary/files.jsonl",
+      "path": "index/delete/1/slt_good_0.test",
+      "queries": 3761,
+      "elapsed_seconds": 0.015436250000220753,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/06300-primary/files.jsonl",
+      "path": "index/in/100/slt_good_2.test",
+      "queries": 10005,
+      "elapsed_seconds": 0.00034929100002045743,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/06300-primary/files.jsonl",
+      "path": "index/orderby_nosort/1000/slt_good_0.test",
+      "queries": 10020,
+      "elapsed_seconds": 0.0027820420000352897,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/06300-primary/files.jsonl",
+      "path": "random/aggregates/slt_good_44.test",
+      "queries": 10000,
+      "elapsed_seconds": 4.774999979417771e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/06300-primary/files.jsonl",
+      "path": "random/aggregates/slt_good_84.test",
+      "queries": 10000,
+      "elapsed_seconds": 4.495800021686591e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/06300-primary/files.jsonl",
+      "path": "random/aggregates/slt_good_91.test",
+      "queries": 10000,
+      "elapsed_seconds": 4.1125000279862434e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/06300-primary/files.jsonl",
+      "path": "random/select/slt_good_103.test",
+      "queries": 9999,
+      "elapsed_seconds": 5.666699962603161e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/07200-primary/files.jsonl",
+      "path": "index/commute/10/slt_good_15.test",
+      "queries": 10000,
+      "elapsed_seconds": 0.00757375000000593,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/07200-primary/files.jsonl",
+      "path": "index/orderby_nosort/100/slt_good_3.test",
+      "queries": 10020,
+      "elapsed_seconds": 0.01876462500058551,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/07200-primary/files.jsonl",
+      "path": "index/view/10/slt_good_4.test",
+      "queries": 4127,
+      "elapsed_seconds": 0.003348542000821908,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/07200-primary/files.jsonl",
+      "path": "random/aggregates/slt_good_59.test",
+      "queries": 10000,
+      "elapsed_seconds": 6.174999998620478e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/07200-primary/files.jsonl",
+      "path": "random/expr/slt_good_33.test",
+      "queries": 10000,
+      "elapsed_seconds": 6.441700043069432e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/07200-primary/files.jsonl",
+      "path": "random/select/slt_good_83.test",
+      "queries": 10000,
+      "elapsed_seconds": 4.8457999582751654e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/08100-primary/files.jsonl",
+      "path": "index/in/100/slt_good_2.test",
+      "queries": 10005,
+      "elapsed_seconds": 0.017307166999671608,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/08100-primary/files.jsonl",
+      "path": "index/orderby_nosort/100/slt_good_4.test",
+      "queries": 10020,
+      "elapsed_seconds": 0.029754457999842998,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/08100-primary/files.jsonl",
+      "path": "random/expr/slt_good_15.test",
+      "queries": 10000,
+      "elapsed_seconds": 5.5750000683474354e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/09000-primary/files.jsonl",
+      "path": "index/commute/100/slt_good_7.test",
+      "queries": 10000,
+      "elapsed_seconds": 0.01179370799991375,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/09900-primary/files.jsonl",
+      "path": "index/commute/10/slt_good_29.test",
+      "queries": 10000,
+      "elapsed_seconds": 0.01368062500000633,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/09900-primary/files.jsonl",
+      "path": "index/commute/100/slt_good_10.test",
+      "queries": 10000,
+      "elapsed_seconds": 0.006968499999970845,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/09900-primary/files.jsonl",
+      "path": "index/commute/100/slt_good_12.test",
+      "queries": 10000,
+      "elapsed_seconds": 0.005649457999993501,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/09900-primary/files.jsonl",
+      "path": "index/in/100/slt_good_2.test",
+      "queries": 10005,
+      "elapsed_seconds": 0.008727333000024373,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/09900-primary/files.jsonl",
+      "path": "random/expr/slt_good_27.test",
+      "queries": 10000,
+      "elapsed_seconds": 0.00115620900032809,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/09900-primary/files.jsonl",
+      "path": "random/expr/slt_good_46.test",
+      "queries": 10000,
+      "elapsed_seconds": 5.07909999214462e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/09900-primary/files.jsonl",
+      "path": "random/select/slt_good_107.test",
+      "queries": 10000,
+      "elapsed_seconds": 0.005643542000143498,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/10800-primary/files.jsonl",
+      "path": "index/commute/100/slt_good_4.test",
+      "queries": 10000,
+      "elapsed_seconds": 0.0011134999999740103,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/10800-primary/files.jsonl",
+      "path": "index/commute/100/slt_good_9.test",
+      "queries": 10000,
+      "elapsed_seconds": 0.004658000000063112,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/10800-primary/files.jsonl",
+      "path": "random/select/slt_good_108.test",
+      "queries": 9999,
+      "elapsed_seconds": 0.0009895000002870802,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/10800-primary/files.jsonl",
+      "path": "random/select/slt_good_3.test",
+      "queries": 9999,
+      "elapsed_seconds": 0.04946474999997008,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/10800-primary/files.jsonl",
+      "path": "random/select/slt_good_75.test",
+      "queries": 10000,
+      "elapsed_seconds": 5.920799958403222e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/10800-primary/files.jsonl",
+      "path": "random/select/slt_good_99.test",
+      "queries": 10000,
+      "elapsed_seconds": 0.021690915999897697,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/11700-primary/files.jsonl",
+      "path": "index/between/100/slt_good_1.test",
+      "queries": 10000,
+      "elapsed_seconds": 0.0024710420000104705,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/11700-primary/files.jsonl",
+      "path": "index/commute/1000/slt_good_2.test",
+      "queries": 10000,
+      "elapsed_seconds": 0.0009384580000642018,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/11700-primary/files.jsonl",
+      "path": "index/delete/1/slt_good_0.test",
+      "queries": 3761,
+      "elapsed_seconds": 0.012088082999980543,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/11700-primary/files.jsonl",
+      "path": "index/delete/1000/slt_good_1.test",
+      "queries": 371,
+      "elapsed_seconds": 0.008574082999984967,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/11700-primary/files.jsonl",
+      "path": "index/orderby_nosort/10/slt_good_0.test",
+      "queries": 10020,
+      "elapsed_seconds": 3.958400020565023e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/11700-primary/files.jsonl",
+      "path": "index/orderby_nosort/1000/slt_good_1.test",
+      "queries": 10020,
+      "elapsed_seconds": 0.001913791000333731,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/11700-primary/files.jsonl",
+      "path": "random/expr/slt_good_49.test",
+      "queries": 10000,
+      "elapsed_seconds": 7.683300009375671e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/11700-primary/files.jsonl",
+      "path": "random/select/slt_good_78.test",
+      "queries": 9999,
+      "elapsed_seconds": 0.0005375829996410175,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/12600-primary/files.jsonl",
+      "path": "index/commute/100/slt_good_5.test",
+      "queries": 10000,
+      "elapsed_seconds": 0.0006887920000053782,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/12600-primary/files.jsonl",
+      "path": "index/commute/1000/slt_good_3.test",
+      "queries": 10000,
+      "elapsed_seconds": 5.058300007476646e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/12600-primary/files.jsonl",
+      "path": "index/orderby_nosort/10/slt_good_0.test",
+      "queries": 10020,
+      "elapsed_seconds": 0.002986625000175991,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/12600-primary/files.jsonl",
+      "path": "index/orderby_nosort/10/slt_good_30.test",
+      "queries": 10020,
+      "elapsed_seconds": 0.017268584000248666,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/12600-primary/files.jsonl",
+      "path": "index/random/10/slt_good_0.test",
+      "queries": 10000,
+      "elapsed_seconds": 4.929199985781452e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/12600-primary/files.jsonl",
+      "path": "index/random/10/slt_good_3.test",
+      "queries": 10000,
+      "elapsed_seconds": 0.005238082999767357,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/12600-primary/files.jsonl",
+      "path": "index/random/1000/slt_good_8.test",
+      "queries": 3819,
+      "elapsed_seconds": 0.01995366599976478,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/12600-primary/files.jsonl",
+      "path": "random/aggregates/slt_good_57.test",
+      "queries": 10000,
+      "elapsed_seconds": 5.1125000027241185e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/12600-primary/files.jsonl",
+      "path": "random/aggregates/slt_good_60.test",
+      "queries": 10000,
+      "elapsed_seconds": 5.116700003782171e-05,
+      "abort_reason": "Engine input closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/12600-primary/files.jsonl",
+      "path": "random/aggregates/slt_good_94.test",
+      "queries": 10000,
+      "elapsed_seconds": 0.007556583000223327,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/12600-primary/files.jsonl",
+      "path": "random/select/slt_good_112.test",
+      "queries": 10000,
+      "elapsed_seconds": 0.005313042000125279,
+      "abort_reason": "Engine stdout closed"
+    },
+    {
+      "run_id": "measured-001",
+      "kind": "progress_checkpoint",
+      "output": "results/measured-001/evaluation/12600-primary/files.jsonl",
+      "path": "random/select/slt_good_58.test",
+      "queries": 10000,
+      "elapsed_seconds": 0.004728041999442212,
+      "abort_reason": "Engine stdout closed"
+    }
+  ]
+}

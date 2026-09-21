@@ -1,0 +1,118 @@
+{
+  "unit_tests": {
+    "frozen_evaluator": 15,
+    "replication": 10,
+    "v2": 7
+  },
+  "docker_integration": {
+    "passed": true,
+    "checks": [
+      "name collision is infrastructure",
+      "collision owner preserved",
+      "program exit125 is implementation failure",
+      "request timeout is implementation failure",
+      "valid query passes",
+      "raw protocol and stderr retained",
+      "all owned containers removed"
+    ]
+  },
+  "primary_diagnostic": {
+    "evaluator_revision": "launch-evidence-blob-bytes-v2",
+    "suite": "primary",
+    "checkpoint_sha256": "cfaf7e41250c7d32ed9305724f91232207414f3c0e3065527ab7e720b9281619",
+    "checkpoint_elapsed_seconds": 14400.078494415999,
+    "diagnostic_subset": true,
+    "files_scored": 2,
+    "image": "sha256:c379c6128e193682c40015eb8b126e2916b18c3985f0fb72cf1c642a1a3039f5",
+    "reference_sqlite_version": "3.51.0",
+    "build_ok": true,
+    "evaluation_complete": true,
+    "evaluation_elapsed_seconds": 14.62575075,
+    "queries": 45,
+    "queries_passed": 45,
+    "statements": 8,
+    "statements_passed": 8,
+    "queries_failed": 0,
+    "score": 1.0,
+    "image_architecture": "arm64",
+    "build_exit_code": 0
+  },
+  "secondary_001_diagnostic": {
+    "evaluator_revision": "launch-evidence-blob-bytes-v2",
+    "suite": "secondary",
+    "checkpoint_sha256": "cfaf7e41250c7d32ed9305724f91232207414f3c0e3065527ab7e720b9281619",
+    "checkpoint_elapsed_seconds": 14400.078494415999,
+    "diagnostic_subset": false,
+    "files_scored": 0,
+    "image": "sha256:c379c6128e193682c40015eb8b126e2916b18c3985f0fb72cf1c642a1a3039f5",
+    "reference_sqlite_version": "3.51.0",
+    "build_ok": true,
+    "evaluation_complete": true,
+    "evaluation_elapsed_seconds": 22.837604917,
+    "image_architecture": "arm64",
+    "build_exit_code": 0,
+    "secondary": {
+      "cases": [
+        {
+          "case": "typed_values",
+          "passed": true
+        },
+        {
+          "case": "transaction_rollback",
+          "passed": true
+        },
+        {
+          "case": "nested_savepoint",
+          "passed": true
+        },
+        {
+          "case": "constraints_and_statement_atomicity",
+          "passed": true
+        },
+        {
+          "case": "foreign_key_cascade",
+          "passed": true
+        },
+        {
+          "case": "recursive_cte",
+          "passed": true
+        },
+        {
+          "case": "window_function",
+          "passed": true
+        },
+        {
+          "case": "json_extract",
+          "passed": true
+        },
+        {
+          "case": "close_reopen",
+          "passed": true
+        },
+        {
+          "case": "process_restart",
+          "passed": true
+        },
+        {
+          "case": "sqlite_reads_generated_file",
+          "passed": false,
+          "reason": "Reference SQLite file readback or quick_check failed"
+        },
+        {
+          "case": "generated_reads_sqlite_file",
+          "passed": false,
+          "reason": "Open failed"
+        }
+      ],
+      "passed": 10,
+      "total": 12,
+      "not_assessed": [
+        "power_loss_recovery",
+        "concurrency",
+        "performance",
+        "comprehensive_documentation_coverage"
+      ]
+    }
+  },
+  "notes": "Diagnostics used unchanged archives and original image. Full v2 terminal queue remains separately required."
+}

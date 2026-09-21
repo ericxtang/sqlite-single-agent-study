@@ -1,5 +1,37 @@
 # Regrade saved outputs
 
+**Use v2 for new grading.** The original evaluator has confirmed scoring defects; see [Erratum 001](ERRATUM-001.md). The historical commands below require an explicit `--legacy-v1` opt-in. They reproduce known-defective scoring and are not corrected evaluations.
+
+## Corrected sequential v2 grading
+
+```sh
+python3 replication/manage.py setup
+python3 replication/manage.py fetch-corpus
+python3 -m unittest discover -s evaluator_v2 -p 'test_*.py'
+
+# Select your locally recorded immutable runtime image ID.
+IMAGE_ID=$(python3 -c 'import json; print(json.load(open("records/runtime-image.json"))["id"])')
+python3 evaluator_v2/grade.py --preset endpoints --image "$IMAGE_ID" --output grading/v2-endpoints
+# All 59 logical jobs, sequentially:
+# python3 evaluator_v2/grade.py --preset all --image "$IMAGE_ID" --output grading/v2-all
+```
+
+The study correction uses the original image digest recorded in the erratum. A fresh `setup` build can produce a different digest; report that difference. The controller acquires the same lock as fresh implementation runs, verifies the publication/corpus, seals its inputs, and dispatches one job at a time. New output paths are mandatory. `plan.json` and `plan.sha256` identify the inputs; `state.json` contains live controller/evaluator PIDs, completed jobs and current output directory. Each job updates `summary.json` and `files.jsonl`. An infrastructure error stops the queue with no accepted score.
+
+Under each job, `evidence/file-NNNN/` contains `container.json` (launch, runtime and removal evidence), `create.stderr`, `stderr.log` and `protocol.bin.gz`. The lossless protocol format is a concatenation of frames: direction byte (`>` request, `<` response), decimal byte length, a newline, then exactly that many raw bytes. Inspect only outside implementation environments. Preserve all logs, including incomplete attempts. The original source archive is unchanged.
+
+SIGTERM or Ctrl-C the controller to stop it; `records/STOP` is also polled. Verify the associated evaluator exits and `docker ps --filter label=sqlite-evaluator=v2` shows no running v2 containers. Do not remove unrelated workloads. No automatic retries or implementation/model calls occur.
+
+For a small diagnostic before a long queue:
+
+```sh
+python3 evaluator_v2/integration_test.py --image "$IMAGE_ID" --output grading/v2-integration
+python3 evaluator_v2/evaluate.py --archive results/measured-001/checkpoints/final.tar.gz \
+  --limit-files 2 --image "$IMAGE_ID" --output grading/v2-smoke
+```
+
+## Historical v1 reproduction (known defects)
+
 Grading makes no model calls. It builds generated source only in isolated Docker containers, sends SQL through the JSON-lines interface, and keeps test files/answers on the controller. Do not mount the repository or corpus into generated-code containers.
 
 ```sh
@@ -8,15 +40,15 @@ python3 replication/manage.py fetch-corpus
 python3 -m unittest discover -s evaluator -p 'test_*.py'
 
 # Quick diagnostic: first two files, including 45 eligible queries.
-python3 replication/grade.py \
+python3 replication/grade.py --legacy-v1 \
   --archive results/measured-001/checkpoints/final.tar.gz \
   --limit-files 2 --output grading/smoke-001
 
 # All four terminal primary + four terminal secondary assessments.
-python3 replication/grade.py --preset endpoints --output grading/endpoints --workers 1
+python3 replication/grade.py --legacy-v1 --preset endpoints --output grading/endpoints --workers 1
 
 # Full 59-job queue: endpoints, secondary assessments and all earlier checkpoints.
-python3 replication/grade.py --preset all --output grading/full --workers 7
+python3 replication/grade.py --legacy-v1 --preset all --output grading/full --workers 7
 ```
 
 Every output path must be new. Completed or incomplete evaluations are never overwritten or automatically retried. An infrastructure error stops dispatch and signals other active evaluators; inspect the preserved logs, fix infrastructure and create an explicit new retry plan/output. Build failure is a valid zero; infrastructure failure is incomplete, not zero.
@@ -28,9 +60,9 @@ Monitor `grading/full/*.log` and each job's `files.jsonl` as they are written. `
 For a fresh run:
 
 ```sh
-python3 replication/grade.py --archive runs/replicate-001/checkpoints/final.tar.gz \
+python3 replication/grade.py --legacy-v1 --archive runs/replicate-001/checkpoints/final.tar.gz \
   --output grading/replicate-001-primary
-python3 replication/grade.py --archive runs/replicate-001/checkpoints/final.tar.gz \
+python3 replication/grade.py --legacy-v1 --archive runs/replicate-001/checkpoints/final.tar.gz \
   --suite secondary --output grading/replicate-001-secondary
 ```
 

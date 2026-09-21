@@ -1,6 +1,8 @@
 > Public export: links and local identifiers were adapted for this repository. Original source archives and grading outputs are unchanged. Raw session/credential records and platform-supplied prompts are not distributed. See [reproducibility limits](../docs/reproducibility.md).
 
-# SQLite single-agent study: final comparison
+# SQLite single-agent study: original v1 comparison (under correction)
+
+> **September 21 erratum:** [issue #1](https://github.com/ericxtang/sqlite-single-agent-study/issues/1) confirmed launch-failure classification and blob-comparison defects. All numerical scores, charts, rankings, progress regressions and thresholds below describe preserved **v1 results**, not corrected measurements. The full terminal regrade is pending. The audit recovered several secondary failures, including 002 reading a reference SQLite file. See [Erratum 001](../docs/ERRATUM-001.md) and [the controlled follow-up design](../docs/future-experiments.md).
 
 <!-- executive-summary:start -->
 
@@ -29,7 +31,7 @@ Sources: [Cursor: self-driving codebases](https://cursor.com/blog/self-driving-c
 
 ## Study status and headline results
 
-Completed September 21, 2026. All **59 logical evaluations** are validated: 55 full-corpus primary evaluations and four terminal secondary assessments. Seven additional infrastructure-interrupted grading attempts remain preserved. Grading finished at **10:12:49 a.m. Eastern** (14:12:49 UTC); all graders and evaluator containers are stopped. The scheduled monitor remains paused.
+Completed September 21, 2026. The original completion review recorded **59 logical evaluations** as complete (their exact scoring is now under correction): 55 full-corpus primary evaluations and four terminal secondary assessments. Seven additional infrastructure-interrupted grading attempts remain preserved. Grading finished at **10:12:49 a.m. Eastern** (14:12:49 UTC); the original grading queue stopped. Its scheduled monitor remains paused; a separate issue-review monitor now tracks the correction.
 
 One GPT-6 Astra agent at Extra High, given four hours, passed a median **96.4636%** of this study's eligible sqllogictest queries, with a **96.4275%–96.7380%** range across **three completed runs**. Each endpoint used all **5,728,833 eligible queries in 622 files**. All three endpoint builds succeeded. This is strong performance on the selected SQL query benchmark, not evidence of a complete SQLite replacement. The original terminal compatibility totals are **7/12, 8/12, and 10/12**. A subsequent source review identified a blob-hex letter-case issue in the secondary checker that can fail otherwise equivalent values in 001/002; those strict probe failures need the [measurement caveat](#newly-identified-limitation-in-the-frozen-secondary-probes) below. Primary scores and all original grades remain unchanged.
 

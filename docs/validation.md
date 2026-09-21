@@ -17,3 +17,11 @@ The portable package was checked without launching a new live implementation tra
 The new controller was not tested with a paid/live four-hour model run during publication. The original run evidence, local mock-provider check and shutdown regression tests support its documented behavior, but replicators should run and audit their own operational pilot. A hosted model and its access cannot be guaranteed by this repo.
 
 GitHub Actions reruns the no-inference unit, integrity, archive and link checks. It does not run full Docker grading or consume a model allowance.
+
+## Evaluator v2 correction (September 21, 2026)
+
+The 25 original unit tests plus seven v2 tests pass. Explicit Docker regression checks verify a real name collision is infrastructure failure without removing the existing container; a confirmed generated-process exit 125 and a request timeout remain implementation failures; a valid query passes; raw protocol/stderr are retained; owned containers are removed. These checks make no model calls.
+
+An unchanged run 001 archive passed the 45-query/two-file v2 primary smoke diagnostic and 10/12 corrected secondary probes under the original image. These are validation diagnostics, not a completed full terminal regrade. [Machine-readable validation](../reports/data/v2-validation.json). [Erratum and pending full regrade](ERRATUM-001.md).
+
+The subsequent PR review identified missing file/directory synchronization in queue-state updates. Four additional tests exercise the actual controller save function: file sync precedes replacement, directory sync follows it, a failed file sync preserves the previous state, the directory descriptor closes on failure, and a real filesystem round trip succeeds. Total current unit tests: **36**. This controller bookkeeping correction was developed in a separate checkout; the already-running terminal queue retains its sealed source version and is not restarted or silently patched.
