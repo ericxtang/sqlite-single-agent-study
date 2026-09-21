@@ -19,10 +19,12 @@ def main():
     p=argparse.ArgumentParser(description=__doc__)
     group=p.add_mutually_exclusive_group(required=True)
     group.add_argument('--preset',choices=['endpoints','all']);group.add_argument('--archive',type=Path)
+    p.add_argument('--legacy-v1',action='store_true',help='Explicitly reproduce known-defective historical scoring; use evaluator_v2/grade.py for corrected grading')
     p.add_argument('--suite',choices=['primary','secondary'],default='primary')
     p.add_argument('--output',type=Path,required=True);p.add_argument('--workers',type=int,default=1)
     p.add_argument('--limit-files',type=int,help='Diagnostic primary subset; never a full score')
     a=p.parse_args()
+    if not a.legacy_v1:p.error('v1 has known scoring defects (issue #1). Use evaluator_v2/grade.py, or explicitly opt into --legacy-v1 for historical reproduction.')
     from execution_lock import acquire
     execution_guard=acquire()
     if not 1<=a.workers<=7:p.error('workers must be between 1 and 7')
