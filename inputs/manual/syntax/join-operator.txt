@@ -1,0 +1,57 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+join-operator
+
+NATURAL
+
+LEFT
+
+OUTER
+
+JOIN
+
+,
+
+RIGHT
+
+FULL
+
+INNER
+
+CROSS
+
+Used by:   join-clause
+
+See also:   lang_aggfunc.html   lang_altertable.html   lang_attach.html   lang_createindex.html   lang_createtable.html   lang_createtrigger.html   lang_createview.html   lang_delete.html   lang_expr.html   lang_insert.html   lang_returning.html   lang_select.html   lang_update.html   lang_upsert.html   lang_with.html   partialindex.html

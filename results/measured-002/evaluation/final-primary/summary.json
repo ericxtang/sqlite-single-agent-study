@@ -1,0 +1,17 @@
+{
+  "suite": "primary",
+  "checkpoint_sha256": "398fb9570eda5489c831a3ada77ab39637f961d844d3a53687112a827758e7b8",
+  "checkpoint_elapsed_seconds": 14400.070016958,
+  "diagnostic_subset": false,
+  "files_scored": 622,
+  "image": "sha256:c379c6128e193682c40015eb8b126e2916b18c3985f0fb72cf1c642a1a3039f5",
+  "build_ok": true,
+  "evaluation_complete": true,
+  "queries": 5728833,
+  "queries_passed": 5541959,
+  "statements": 210713,
+  "statements_passed": 189095,
+  "queries_failed": 186874,
+  "score": 0.9673800929438858,
+  "evaluation_elapsed_seconds": 5654.461280666999
+}

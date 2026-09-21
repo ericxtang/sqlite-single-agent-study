@@ -1,0 +1,19 @@
+{
+  "suite": "primary",
+  "checkpoint_sha256": "46a6a7e9ccee124c1f0e093fb4e1e652d7369583dd55b6ecc5ad295441a8c3d5",
+  "checkpoint_elapsed_seconds": 6300.136549417,
+  "diagnostic_subset": false,
+  "files_scored": 622,
+  "image": "sha256:c379c6128e193682c40015eb8b126e2916b18c3985f0fb72cf1c642a1a3039f5",
+  "build_ok": true,
+  "evaluation_complete": true,
+  "queries": 5728833,
+  "queries_passed": 5439932,
+  "statements": 210713,
+  "statements_passed": 197238,
+  "queries_failed": 288901,
+  "score": 0.949570706634318,
+  "evaluation_elapsed_seconds": 12104.520812875,
+  "evaluator_revision": "cleanup-recovery-001",
+  "frozen_evaluator_path": "evaluator/evaluate_snapshot.py"
+}

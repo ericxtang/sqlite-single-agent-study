@@ -1,0 +1,45 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+commit-stmt
+
+COMMIT
+
+TRANSACTION
+
+END
+
+Used by:   sql-stmt
+
+See also:   lang_transaction.html

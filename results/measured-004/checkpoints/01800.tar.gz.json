@@ -1,0 +1,113 @@
+{
+  "container": "astra-sqlite-measured-004",
+  "elapsed_seconds": 1800.211020833,
+  "started_at": "2026-09-19T15:05:17.370166+00:00",
+  "capture_seconds": 0.6049121250000553,
+  "sha256": "b452e1807e86093bbe68e080e3ddda5ff688c49bb54f96758746ce0f51c78ef8",
+  "archive": "01800.tar.gz",
+  "excluded_top_level": [
+    "target"
+  ],
+  "files": [
+    {
+      "path": ".",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "Cargo.lock",
+      "bytes": 2669,
+      "type": "0"
+    },
+    {
+      "path": "Cargo.toml",
+      "bytes": 160,
+      "type": "0"
+    },
+    {
+      "path": "IO_CONTRACT.md",
+      "bytes": 2071,
+      "type": "0"
+    },
+    {
+      "path": "NOTES.md",
+      "bytes": 1633,
+      "type": "0"
+    },
+    {
+      "path": "build.log",
+      "bytes": 733,
+      "type": "0"
+    },
+    {
+      "path": "fk_methods.txt",
+      "bytes": 3086,
+      "type": "0"
+    },
+    {
+      "path": "row_methods.txt",
+      "bytes": 1367,
+      "type": "0"
+    },
+    {
+      "path": "src",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "src/engine.rs",
+      "bytes": 70079,
+      "type": "0"
+    },
+    {
+      "path": "src/funcs.rs",
+      "bytes": 25884,
+      "type": "0"
+    },
+    {
+      "path": "src/main.rs",
+      "bytes": 1268,
+      "type": "0"
+    },
+    {
+      "path": "src/syntax.rs",
+      "bytes": 26406,
+      "type": "0"
+    },
+    {
+      "path": "src/value.rs",
+      "bytes": 4399,
+      "type": "0"
+    },
+    {
+      "path": "tests",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "tests/edges.py",
+      "bytes": 1273,
+      "type": "0"
+    },
+    {
+      "path": "tests/semantics.py",
+      "bytes": 4229,
+      "type": "0"
+    },
+    {
+      "path": "tests/triggers.py",
+      "bytes": 1445,
+      "type": "0"
+    },
+    {
+      "path": "tests/windows.py",
+      "bytes": 1024,
+      "type": "0"
+    },
+    {
+      "path": "window_methods.txt",
+      "bytes": 6406,
+      "type": "0"
+    }
+  ]
+}

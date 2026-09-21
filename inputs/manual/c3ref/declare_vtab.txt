@@ -1,0 +1,49 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+SQLite C Interface
+
+Declare The Schema Of A Virtual Table
+
+int sqlite3_declare_vtab(sqlite3*, const char *zSQL);
+
+The xCreate and xConnect methods of a
+virtual table module call this interface
+to declare the format (the names and datatypes of the columns) of
+the virtual tables they implement.
+
+See also lists of
+  Objects,
+  Constants, and
+  Functions.

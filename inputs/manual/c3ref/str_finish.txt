@@ -1,0 +1,58 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+SQLite C Interface
+
+Finalize A Dynamic String
+
+char *sqlite3_str_finish(sqlite3_str*);
+void sqlite3_str_free(sqlite3_str*);
+
+The sqlite3_str_finish(X) interface destroys the sqlite3_str object X
+and returns a pointer to a memory buffer obtained from sqlite3_malloc64()
+that contains the constructed string.  The calling application should
+pass the returned value to sqlite3_free() to avoid a memory leak.
+The sqlite3_str_finish(X) interface may return a NULL pointer if any
+errors were encountered during construction of the string.  The
+sqlite3_str_finish(X) interface might also return a NULL pointer if the
+string in sqlite3_str object X is zero bytes long.
+
+The sqlite3_str_free(X) interface destroys both the sqlite3_str object
+X and the string content it contains.  Calling sqlite3_str_free(X) is
+the equivalent of calling sqlite3_free(sqlite3_str_finish(X)).
+
+See also lists of
+  Objects,
+  Constants, and
+  Functions.

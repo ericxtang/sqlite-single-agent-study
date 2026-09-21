@@ -1,0 +1,51 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+SQLite C Interface
+
+Determine The Virtual Table Conflict Policy
+
+int sqlite3_vtab_on_conflict(sqlite3 *);
+
+This function may only be called from within a call to the xUpdate method
+of a virtual table implementation for an INSERT or UPDATE operation. The
+value returned is one of SQLITE_ROLLBACK, SQLITE_IGNORE, SQLITE_FAIL,
+SQLITE_ABORT, or SQLITE_REPLACE, according to the ON CONFLICT mode
+of the SQL statement that triggered the call to the xUpdate method of the
+virtual table.
+
+See also lists of
+  Objects,
+  Constants, and
+  Functions.

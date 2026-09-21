@@ -1,0 +1,273 @@
+{
+  "container": "astra-sqlite-measured-001",
+  "elapsed_seconds": 14400.078494415999,
+  "started_at": "2026-09-19T02:55:24.418913+00:00",
+  "capture_seconds": 0.3118928750009218,
+  "sha256": "cfaf7e41250c7d32ed9305724f91232207414f3c0e3065527ab7e720b9281619",
+  "archive": "final.tar.gz",
+  "excluded_top_level": [
+    "target"
+  ],
+  "files": [
+    {
+      "path": ".",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": ".agent-publication-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "Cargo.lock",
+      "bytes": 2669,
+      "type": "0"
+    },
+    {
+      "path": "Cargo.toml",
+      "bytes": 230,
+      "type": "0"
+    },
+    {
+      "path": "IO_CONTRACT.md",
+      "bytes": 2071,
+      "type": "0"
+    },
+    {
+      "path": "NOTES.md",
+      "bytes": 10578,
+      "type": "0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 945,
+      "type": "0"
+    },
+    {
+      "path": "attached-atomicity.db.agent-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "begin-first.db.agent-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "begin-second.db.agent-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "fault-child.db.agent-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "release-atomicity.db.agent-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "src",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "src/ast.rs",
+      "bytes": 5098,
+      "type": "0"
+    },
+    {
+      "path": "src/attach.rs",
+      "bytes": 3079,
+      "type": "0"
+    },
+    {
+      "path": "src/compound.rs",
+      "bytes": 5079,
+      "type": "0"
+    },
+    {
+      "path": "src/cte.rs",
+      "bytes": 6714,
+      "type": "0"
+    },
+    {
+      "path": "src/datetime.rs",
+      "bytes": 13548,
+      "type": "0"
+    },
+    {
+      "path": "src/engine.rs",
+      "bytes": 97125,
+      "type": "0"
+    },
+    {
+      "path": "src/foreign.rs",
+      "bytes": 5373,
+      "type": "0"
+    },
+    {
+      "path": "src/formatting.rs",
+      "bytes": 7652,
+      "type": "0"
+    },
+    {
+      "path": "src/functions.rs",
+      "bytes": 20002,
+      "type": "0"
+    },
+    {
+      "path": "src/journal.rs",
+      "bytes": 5031,
+      "type": "0"
+    },
+    {
+      "path": "src/json.rs",
+      "bytes": 17576,
+      "type": "0"
+    },
+    {
+      "path": "src/json_value.rs",
+      "bytes": 11716,
+      "type": "0"
+    },
+    {
+      "path": "src/jsonb.rs",
+      "bytes": 3109,
+      "type": "0"
+    },
+    {
+      "path": "src/lexer.rs",
+      "bytes": 5241,
+      "type": "0"
+    },
+    {
+      "path": "src/main.rs",
+      "bytes": 2214,
+      "type": "0"
+    },
+    {
+      "path": "src/maintenance.rs",
+      "bytes": 8515,
+      "type": "0"
+    },
+    {
+      "path": "src/memo.rs",
+      "bytes": 2741,
+      "type": "0"
+    },
+    {
+      "path": "src/mutate.rs",
+      "bytes": 68121,
+      "type": "0"
+    },
+    {
+      "path": "src/parser.rs",
+      "bytes": 51874,
+      "type": "0"
+    },
+    {
+      "path": "src/pragma.rs",
+      "bytes": 32404,
+      "type": "0"
+    },
+    {
+      "path": "src/schema.rs",
+      "bytes": 29203,
+      "type": "0"
+    },
+    {
+      "path": "src/sequence.rs",
+      "bytes": 4982,
+      "type": "0"
+    },
+    {
+      "path": "src/snapshot.rs",
+      "bytes": 7732,
+      "type": "0"
+    },
+    {
+      "path": "src/storage.rs",
+      "bytes": 10103,
+      "type": "0"
+    },
+    {
+      "path": "src/trigger.rs",
+      "bytes": 7476,
+      "type": "0"
+    },
+    {
+      "path": "src/upsert.rs",
+      "bytes": 4107,
+      "type": "0"
+    },
+    {
+      "path": "src/validate.rs",
+      "bytes": 9488,
+      "type": "0"
+    },
+    {
+      "path": "src/value.rs",
+      "bytes": 11763,
+      "type": "0"
+    },
+    {
+      "path": "src/window.rs",
+      "bytes": 20261,
+      "type": "0"
+    },
+    {
+      "path": "test-persistence.db.agent-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "tests/journal_recovery.py",
+      "bytes": 5647,
+      "type": "0"
+    },
+    {
+      "path": "tests/persistence.py",
+      "bytes": 13246,
+      "type": "0"
+    },
+    {
+      "path": "tests/properties.py",
+      "bytes": 4510,
+      "type": "0"
+    },
+    {
+      "path": "tests/regression.py",
+      "bytes": 84956,
+      "type": "0"
+    },
+    {
+      "path": "tests/run.sh",
+      "bytes": 240,
+      "type": "0"
+    },
+    {
+      "path": "tests/smoke.py",
+      "bytes": 4763,
+      "type": "0"
+    },
+    {
+      "path": "vacuum-copy.db.agent-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "vacuum-locked.db.agent-lock",
+      "bytes": 0,
+      "type": "0"
+    }
+  ]
+}

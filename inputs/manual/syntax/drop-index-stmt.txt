@@ -1,0 +1,53 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+drop-index-stmt
+
+DROP
+
+INDEX
+
+IF
+
+EXISTS
+
+schema-name
+
+.
+
+index-name
+
+Used by:   sql-stmt
+
+See also:   lang_dropindex.html

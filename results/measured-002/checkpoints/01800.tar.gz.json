@@ -1,0 +1,108 @@
+{
+  "container": "astra-sqlite-measured-002",
+  "elapsed_seconds": 1800.097384,
+  "started_at": "2026-09-19T03:25:27.353222+00:00",
+  "capture_seconds": 0.9734276249998857,
+  "sha256": "d243eb9f2e391e7d8bdb262b5f5834bbb1fb883e3b31400951c6ea2b8810f56b",
+  "archive": "01800.tar.gz",
+  "excluded_top_level": [
+    "target"
+  ],
+  "files": [
+    {
+      "path": ".",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "Cargo.lock",
+      "bytes": 2669,
+      "type": "0"
+    },
+    {
+      "path": "Cargo.toml",
+      "bytes": 160,
+      "type": "0"
+    },
+    {
+      "path": "IO_CONTRACT.md",
+      "bytes": 2071,
+      "type": "0"
+    },
+    {
+      "path": "NOTES.md",
+      "bytes": 689,
+      "type": "0"
+    },
+    {
+      "path": "src",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "src/ast.rs",
+      "bytes": 4066,
+      "type": "0"
+    },
+    {
+      "path": "src/date.rs",
+      "bytes": 8054,
+      "type": "0"
+    },
+    {
+      "path": "src/db.rs",
+      "bytes": 38905,
+      "type": "0"
+    },
+    {
+      "path": "src/func.rs",
+      "bytes": 10294,
+      "type": "0"
+    },
+    {
+      "path": "src/jsonfunc.rs",
+      "bytes": 11197,
+      "type": "0"
+    },
+    {
+      "path": "src/lex.rs",
+      "bytes": 2184,
+      "type": "0"
+    },
+    {
+      "path": "src/main.rs",
+      "bytes": 1375,
+      "type": "0"
+    },
+    {
+      "path": "src/parser.rs",
+      "bytes": 23320,
+      "type": "0"
+    },
+    {
+      "path": "src/query.rs",
+      "bytes": 31989,
+      "type": "0"
+    },
+    {
+      "path": "src/value.rs",
+      "bytes": 5557,
+      "type": "0"
+    },
+    {
+      "path": "tests",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "tests/persistence.db",
+      "bytes": 954,
+      "type": "0"
+    },
+    {
+      "path": "tests/semantics.py",
+      "bytes": 9448,
+      "type": "0"
+    }
+  ]
+}

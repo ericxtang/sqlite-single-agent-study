@@ -1,0 +1,68 @@
+{
+  "container": "astra-sqlite-measured-003",
+  "elapsed_seconds": 900.081358625,
+  "started_at": "2026-09-19T07:10:31.175210+00:00",
+  "capture_seconds": 0.11891416599996774,
+  "sha256": "4203fe6714729ba51539ff1bb435fcfa83e22a056318930d023e5dd332027051",
+  "archive": "00900.tar.gz",
+  "excluded_top_level": [
+    "target"
+  ],
+  "files": [
+    {
+      "path": ".",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "Cargo.toml",
+      "bytes": 160,
+      "type": "0"
+    },
+    {
+      "path": "IO_CONTRACT.md",
+      "bytes": 2071,
+      "type": "0"
+    },
+    {
+      "path": "src",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "src/ast.rs",
+      "bytes": 2980,
+      "type": "0"
+    },
+    {
+      "path": "src/funcs.rs",
+      "bytes": 9620,
+      "type": "0"
+    },
+    {
+      "path": "src/lex.rs",
+      "bytes": 1992,
+      "type": "0"
+    },
+    {
+      "path": "src/parser.rs",
+      "bytes": 18015,
+      "type": "0"
+    },
+    {
+      "path": "src/query.rs",
+      "bytes": 21604,
+      "type": "0"
+    },
+    {
+      "path": "src/value.rs",
+      "bytes": 4628,
+      "type": "0"
+    },
+    {
+      "path": "tests",
+      "bytes": 0,
+      "type": "5"
+    }
+  ]
+}

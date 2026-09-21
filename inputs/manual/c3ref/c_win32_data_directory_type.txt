@@ -1,0 +1,48 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+SQLite C Interface
+
+Win32 Directory Types
+
+#define SQLITE_WIN32_DATA_DIRECTORY_TYPE  1
+#define SQLITE_WIN32_TEMP_DIRECTORY_TYPE  2
+
+These macros are only available on Windows.  They define the allowed values
+for the type argument to the sqlite3_win32_set_directory interface.
+
+See also lists of
+  Objects,
+  Constants, and
+  Functions.

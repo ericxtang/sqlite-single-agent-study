@@ -1,0 +1,53 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+drop-table-stmt
+
+DROP
+
+TABLE
+
+IF
+
+EXISTS
+
+schema-name
+
+.
+
+table-name
+
+Used by:   sql-stmt
+
+See also:   lang_droptable.html

@@ -1,0 +1,68 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+C-language Interface Specification for SQLite
+
+These pages are intended to be a precise and detailed specification.
+For a tutorial introduction, see instead:
+
+SQLite In 5 Minutes Or Less and/or
+
+the Introduction To The SQLite C/C++ Interface.
+
+This same content is also available as a
+single large HTML file.
+
+The SQLite interface elements can be grouped into three categories:
+
+List Of Objects.
+    This is a list of all abstract objects and datatypes used by the
+    SQLite library.  There are a couple of dozen objects in total, but
+    the two most important objects are:
+    A database connection object sqlite3, and the
+    prepared statement object sqlite3_stmt.
+
+List Of Constants.
+    This is a list of numeric constants used by SQLite and represented by
+    #defines in the sqlite3.h header file.  These constants
+    are things such as numeric result codes from
+    various interfaces (ex: SQLITE_OK) or flags passed
+    into functions to control behavior
+    (ex: SQLITE_OPEN_READONLY).
+
+List Of Functions.
+    This is a list of all functions and methods operating on the
+    objects and using and/or
+    returning constants.  There
+    are many functions, but most applications only use a handful.

@@ -1,0 +1,49 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+SQLite C Interface
+
+Deprecated Soft Heap Limit Interface
+
+void sqlite3_soft_heap_limit(int N);
+
+This is a deprecated version of the sqlite3_soft_heap_limit64()
+interface.  This routine is provided for historical compatibility
+only.  All new applications should use the
+sqlite3_soft_heap_limit64() interface rather than this one.
+
+See also lists of
+  Objects,
+  Constants, and
+  Functions.

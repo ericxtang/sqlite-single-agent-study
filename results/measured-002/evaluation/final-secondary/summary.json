@@ -1,0 +1,75 @@
+{
+  "suite": "secondary",
+  "checkpoint_sha256": "398fb9570eda5489c831a3ada77ab39637f961d844d3a53687112a827758e7b8",
+  "checkpoint_elapsed_seconds": 14400.070016958,
+  "diagnostic_subset": false,
+  "files_scored": 0,
+  "image": "sha256:c379c6128e193682c40015eb8b126e2916b18c3985f0fb72cf1c642a1a3039f5",
+  "build_ok": true,
+  "evaluation_complete": true,
+  "secondary": {
+    "cases": [
+      {
+        "case": "typed_values",
+        "passed": false,
+        "reason": "Typed result mismatch"
+      },
+      {
+        "case": "transaction_rollback",
+        "passed": true
+      },
+      {
+        "case": "nested_savepoint",
+        "passed": true
+      },
+      {
+        "case": "constraints_and_statement_atomicity",
+        "passed": true
+      },
+      {
+        "case": "foreign_key_cascade",
+        "passed": true
+      },
+      {
+        "case": "recursive_cte",
+        "passed": true
+      },
+      {
+        "case": "window_function",
+        "passed": true
+      },
+      {
+        "case": "json_extract",
+        "passed": true
+      },
+      {
+        "case": "close_reopen",
+        "passed": false,
+        "reason": "Typed result mismatch"
+      },
+      {
+        "case": "process_restart",
+        "passed": false,
+        "reason": "Typed result mismatch"
+      },
+      {
+        "case": "sqlite_reads_generated_file",
+        "passed": true
+      },
+      {
+        "case": "generated_reads_sqlite_file",
+        "passed": false,
+        "reason": "Typed result mismatch"
+      }
+    ],
+    "passed": 8,
+    "total": 12,
+    "not_assessed": [
+      "power_loss_recovery",
+      "concurrency",
+      "performance",
+      "comprehensive_documentation_coverage"
+    ]
+  },
+  "evaluation_elapsed_seconds": 14.731347208
+}

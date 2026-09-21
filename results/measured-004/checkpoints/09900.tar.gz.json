@@ -1,0 +1,333 @@
+{
+  "container": "astra-sqlite-measured-004",
+  "elapsed_seconds": 9900.222447542,
+  "started_at": "2026-09-19T17:20:17.390692+00:00",
+  "capture_seconds": 3.7995842500004073,
+  "sha256": "b495655928b1379e15edc5ae4b37305ae440dd6a777c16225fce120c04378f20",
+  "archive": "09900.tar.gz",
+  "excluded_top_level": [
+    "target"
+  ],
+  "files": [
+    {
+      "path": ".",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": ".agent-commit-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "Cargo.lock",
+      "bytes": 2669,
+      "type": "0"
+    },
+    {
+      "path": "Cargo.toml",
+      "bytes": 229,
+      "type": "0"
+    },
+    {
+      "path": "IO_CONTRACT.md",
+      "bytes": 2071,
+      "type": "0"
+    },
+    {
+      "path": "NOTES.md",
+      "bytes": 7729,
+      "type": "0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1822,
+      "type": "0"
+    },
+    {
+      "path": "build.log",
+      "bytes": 103,
+      "type": "0"
+    },
+    {
+      "path": "edit_assignments.py",
+      "bytes": 6653,
+      "type": "0"
+    },
+    {
+      "path": "edit_foreign.py",
+      "bytes": 6910,
+      "type": "0"
+    },
+    {
+      "path": "edit_keys.py",
+      "bytes": 8179,
+      "type": "0"
+    },
+    {
+      "path": "edit_upsert.py",
+      "bytes": 10136,
+      "type": "0"
+    },
+    {
+      "path": "float-persist.db.agent-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "key-spec-persist.db.agent-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "persist-test.db.agent-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "src",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "src/engine.rs",
+      "bytes": 284467,
+      "type": "0"
+    },
+    {
+      "path": "src/funcs.rs",
+      "bytes": 74670,
+      "type": "0"
+    },
+    {
+      "path": "src/json.rs",
+      "bytes": 7495,
+      "type": "0"
+    },
+    {
+      "path": "src/main.rs",
+      "bytes": 2604,
+      "type": "0"
+    },
+    {
+      "path": "src/storage.rs",
+      "bytes": 22773,
+      "type": "0"
+    },
+    {
+      "path": "src/syntax.rs",
+      "bytes": 57191,
+      "type": "0"
+    },
+    {
+      "path": "src/value.rs",
+      "bytes": 9655,
+      "type": "0"
+    },
+    {
+      "path": "tests",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "tests/__pycache__",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "tests/__pycache__/datetime.cpython-311.pyc",
+      "bytes": 4858,
+      "type": "0"
+    },
+    {
+      "path": "tests/aggregate_window_edges.py",
+      "bytes": 2505,
+      "type": "0"
+    },
+    {
+      "path": "tests/alter_query.py",
+      "bytes": 1185,
+      "type": "0"
+    },
+    {
+      "path": "tests/assignments.py",
+      "bytes": 2383,
+      "type": "0"
+    },
+    {
+      "path": "tests/attach.py",
+      "bytes": 1890,
+      "type": "0"
+    },
+    {
+      "path": "tests/cascade_triggers.py",
+      "bytes": 1269,
+      "type": "0"
+    },
+    {
+      "path": "tests/concurrency.py",
+      "bytes": 1575,
+      "type": "0"
+    },
+    {
+      "path": "tests/cross_schema_atomic.py",
+      "bytes": 2315,
+      "type": "0"
+    },
+    {
+      "path": "tests/date_time.py",
+      "bytes": 3122,
+      "type": "0"
+    },
+    {
+      "path": "tests/deep_persistence.py",
+      "bytes": 1206,
+      "type": "0"
+    },
+    {
+      "path": "tests/derived_schemas.py",
+      "bytes": 1399,
+      "type": "0"
+    },
+    {
+      "path": "tests/dml_extra.py",
+      "bytes": 1374,
+      "type": "0"
+    },
+    {
+      "path": "tests/edges.py",
+      "bytes": 1273,
+      "type": "0"
+    },
+    {
+      "path": "tests/empty_evaluation.py",
+      "bytes": 915,
+      "type": "0"
+    },
+    {
+      "path": "tests/foreign_json.py",
+      "bytes": 1581,
+      "type": "0"
+    },
+    {
+      "path": "tests/foreign_schema.py",
+      "bytes": 2807,
+      "type": "0"
+    },
+    {
+      "path": "tests/format_cast.py",
+      "bytes": 1029,
+      "type": "0"
+    },
+    {
+      "path": "tests/functions_extra.py",
+      "bytes": 1699,
+      "type": "0"
+    },
+    {
+      "path": "tests/index_settings.py",
+      "bytes": 889,
+      "type": "0"
+    },
+    {
+      "path": "tests/joins.py",
+      "bytes": 1718,
+      "type": "0"
+    },
+    {
+      "path": "tests/json5.py",
+      "bytes": 946,
+      "type": "0"
+    },
+    {
+      "path": "tests/json_order.py",
+      "bytes": 1835,
+      "type": "0"
+    },
+    {
+      "path": "tests/key_constraints.py",
+      "bytes": 2958,
+      "type": "0"
+    },
+    {
+      "path": "tests/lazy_compound.py",
+      "bytes": 1136,
+      "type": "0"
+    },
+    {
+      "path": "tests/model_stress.py",
+      "bytes": 1224,
+      "type": "0"
+    },
+    {
+      "path": "tests/ordering.py",
+      "bytes": 1474,
+      "type": "0"
+    },
+    {
+      "path": "tests/recursive.py",
+      "bytes": 2744,
+      "type": "0"
+    },
+    {
+      "path": "tests/rowids.py",
+      "bytes": 1477,
+      "type": "0"
+    },
+    {
+      "path": "tests/rows_collation.py",
+      "bytes": 1015,
+      "type": "0"
+    },
+    {
+      "path": "tests/run_all.py",
+      "bytes": 574,
+      "type": "0"
+    },
+    {
+      "path": "tests/schema.py",
+      "bytes": 1768,
+      "type": "0"
+    },
+    {
+      "path": "tests/semantics.py",
+      "bytes": 4229,
+      "type": "0"
+    },
+    {
+      "path": "tests/sequence.py",
+      "bytes": 1089,
+      "type": "0"
+    },
+    {
+      "path": "tests/storage_edges.py",
+      "bytes": 3229,
+      "type": "0"
+    },
+    {
+      "path": "tests/temp_namespaces.py",
+      "bytes": 2695,
+      "type": "0"
+    },
+    {
+      "path": "tests/triggers.py",
+      "bytes": 1445,
+      "type": "0"
+    },
+    {
+      "path": "tests/upsert.py",
+      "bytes": 5235,
+      "type": "0"
+    },
+    {
+      "path": "tests/views_temp.py",
+      "bytes": 1381,
+      "type": "0"
+    },
+    {
+      "path": "tests/windows.py",
+      "bytes": 1024,
+      "type": "0"
+    }
+  ]
+}

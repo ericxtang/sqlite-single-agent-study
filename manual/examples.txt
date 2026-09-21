@@ -1,0 +1,27 @@
+.open :memory:
+SELECT 2 + 3 AS five, NULL IS NULL AS null_test;
+CREATE TABLE items(id INTEGER PRIMARY KEY, name TEXT NOT NULL UNIQUE, qty INTEGER);
+INSERT INTO items VALUES (1,'apricot',2),(2,'bread',5),(3,'coffee',1);
+SELECT name, qty FROM items ORDER BY qty DESC, name;
+SELECT count(*) AS products, sum(qty) AS total_quantity FROM items;
+BEGIN;
+UPDATE items SET qty=99 WHERE id=2;
+SELECT qty FROM items WHERE id=2;
+ROLLBACK;
+SELECT qty FROM items WHERE id=2;
+INSERT INTO items VALUES (2,'duplicate',9);
+SELECT count(*) AS still_three FROM items;
+WITH RECURSIVE n(x) AS (VALUES(1) UNION ALL SELECT x+1 FROM n WHERE x<5) SELECT sum(x) AS fifteen FROM n;
+SELECT name, row_number() OVER (ORDER BY qty DESC, name) AS rank FROM items ORDER BY qty DESC, name;
+SELECT json_extract('{"answer":42}', '$.answer') AS answer;
+.raw on
+SELECT NULL AS n, 42 AS i, 3.5 AS r, 'hello' AS t, X'00abff' AS b;
+.raw off
+.open /work/manual-demo.db
+DROP TABLE IF EXISTS notes;
+CREATE TABLE notes(id INTEGER PRIMARY KEY, note TEXT, payload BLOB);
+INSERT INTO notes VALUES(1,'saved across restart',X'00abff');
+.restart
+SELECT id, note, hex(payload) AS hex_bytes FROM notes;
+.header
+.quit

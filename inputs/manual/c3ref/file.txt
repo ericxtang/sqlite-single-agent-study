@@ -1,0 +1,55 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+SQLite C Interface
+
+OS Interface Open File Handle
+
+typedef struct sqlite3_file sqlite3_file;
+struct sqlite3_file {
+  const struct sqlite3_io_methods *pMethods;  /* Methods for an open file */
+};
+
+An sqlite3_file object represents an open file in the
+OS interface layer.  Individual OS interface
+implementations will
+want to subclass this object by appending additional fields
+for their own use.  The pMethods entry is a pointer to an
+sqlite3_io_methods object that defines methods for performing
+I/O operations on the open file.
+
+See also lists of
+  Objects,
+  Constants, and
+  Functions.

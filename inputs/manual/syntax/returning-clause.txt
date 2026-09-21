@@ -1,0 +1,53 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+returning-clause
+
+RETURNING
+
+expr
+
+AS
+
+column-alias
+
+*
+
+,
+
+Used by:   delete-stmt   delete-stmt-limited   insert-stmt   update-stmt   update-stmt-limited
+
+References:   expr
+
+See also:   lang_createtrigger.html   lang_delete.html   lang_insert.html   lang_returning.html   lang_update.html

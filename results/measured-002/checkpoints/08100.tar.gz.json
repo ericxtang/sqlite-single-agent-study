@@ -1,0 +1,473 @@
+{
+  "container": "astra-sqlite-measured-002",
+  "elapsed_seconds": 8100.16987625,
+  "started_at": "2026-09-19T05:10:27.426953+00:00",
+  "capture_seconds": 3.191468709000219,
+  "sha256": "6e1dd6aff813de9a5023ade1c3a97c663d0a2025418dec326157d7cf2595b0f2",
+  "archive": "08100.tar.gz",
+  "excluded_top_level": [
+    "target"
+  ],
+  "files": [
+    {
+      "path": ".",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "Cargo.lock",
+      "bytes": 2669,
+      "type": "0"
+    },
+    {
+      "path": "Cargo.toml",
+      "bytes": 160,
+      "type": "0"
+    },
+    {
+      "path": "IO_CONTRACT.md",
+      "bytes": 2071,
+      "type": "0"
+    },
+    {
+      "path": "NOTES.md",
+      "bytes": 11769,
+      "type": "0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2570,
+      "type": "0"
+    },
+    {
+      "path": "src",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "src/ast.rs",
+      "bytes": 6023,
+      "type": "0"
+    },
+    {
+      "path": "src/date.rs",
+      "bytes": 8054,
+      "type": "0"
+    },
+    {
+      "path": "src/db.rs",
+      "bytes": 77324,
+      "type": "0"
+    },
+    {
+      "path": "src/func.rs",
+      "bytes": 11871,
+      "type": "0"
+    },
+    {
+      "path": "src/journal.rs",
+      "bytes": 4342,
+      "type": "0"
+    },
+    {
+      "path": "src/jsonfunc.rs",
+      "bytes": 15748,
+      "type": "0"
+    },
+    {
+      "path": "src/lex.rs",
+      "bytes": 2184,
+      "type": "0"
+    },
+    {
+      "path": "src/locking.rs",
+      "bytes": 1892,
+      "type": "0"
+    },
+    {
+      "path": "src/main.rs",
+      "bytes": 1449,
+      "type": "0"
+    },
+    {
+      "path": "src/parser.rs",
+      "bytes": 26497,
+      "type": "0"
+    },
+    {
+      "path": "src/query.rs",
+      "bytes": 52576,
+      "type": "0"
+    },
+    {
+      "path": "src/render.rs",
+      "bytes": 11137,
+      "type": "0"
+    },
+    {
+      "path": "src/schema.rs",
+      "bytes": 5254,
+      "type": "0"
+    },
+    {
+      "path": "src/schema_edit.rs",
+      "bytes": 20519,
+      "type": "0"
+    },
+    {
+      "path": "src/storage.rs",
+      "bytes": 19682,
+      "type": "0"
+    },
+    {
+      "path": "src/value.rs",
+      "bytes": 5444,
+      "type": "0"
+    },
+    {
+      "path": "tests",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "tests/alter.db",
+      "bytes": 65536,
+      "type": "0"
+    },
+    {
+      "path": "tests/alter.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/alter.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/alter.py",
+      "bytes": 5571,
+      "type": "0"
+    },
+    {
+      "path": "tests/attach.py",
+      "bytes": 2720,
+      "type": "0"
+    },
+    {
+      "path": "tests/attached.db",
+      "bytes": 32768,
+      "type": "0"
+    },
+    {
+      "path": "tests/attached.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/attached.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/bulk.db",
+      "bytes": 192512,
+      "type": "0"
+    },
+    {
+      "path": "tests/bulk.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/bulk.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/bulk.py",
+      "bytes": 1858,
+      "type": "0"
+    },
+    {
+      "path": "tests/busy.db",
+      "bytes": 8192,
+      "type": "0"
+    },
+    {
+      "path": "tests/busy.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/busy.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/busy.py",
+      "bytes": 1600,
+      "type": "0"
+    },
+    {
+      "path": "tests/corruption-bad.db",
+      "bytes": 11264,
+      "type": "0"
+    },
+    {
+      "path": "tests/corruption-bad.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/corruption-bad.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/corruption-source.db",
+      "bytes": 12288,
+      "type": "0"
+    },
+    {
+      "path": "tests/corruption-source.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/corruption-source.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/corruption.py",
+      "bytes": 3512,
+      "type": "0"
+    },
+    {
+      "path": "tests/ctes.py",
+      "bytes": 2880,
+      "type": "0"
+    },
+    {
+      "path": "tests/edgecases.py",
+      "bytes": 4139,
+      "type": "0"
+    },
+    {
+      "path": "tests/foreignkeys.py",
+      "bytes": 3724,
+      "type": "0"
+    },
+    {
+      "path": "tests/indexes.py",
+      "bytes": 2786,
+      "type": "0"
+    },
+    {
+      "path": "tests/isolation.db",
+      "bytes": 8192,
+      "type": "0"
+    },
+    {
+      "path": "tests/isolation.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/isolation.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/isolation.py",
+      "bytes": 2552,
+      "type": "0"
+    },
+    {
+      "path": "tests/meta-aux.db",
+      "bytes": 20480,
+      "type": "0"
+    },
+    {
+      "path": "tests/meta-aux.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/meta-aux.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/meta-main.db",
+      "bytes": 12288,
+      "type": "0"
+    },
+    {
+      "path": "tests/meta-main.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/meta-main.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/metadata.py",
+      "bytes": 2829,
+      "type": "0"
+    },
+    {
+      "path": "tests/names.py",
+      "bytes": 4571,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-4096.db",
+      "bytes": 372736,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-4096.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-4096.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-512.db",
+      "bytes": 703488,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-512.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-512.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-65536.db",
+      "bytes": 589824,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-65536.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-65536.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/patterns.py",
+      "bytes": 2354,
+      "type": "0"
+    },
+    {
+      "path": "tests/persistence.db",
+      "bytes": 8192,
+      "type": "0"
+    },
+    {
+      "path": "tests/persistence.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/persistence.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/recover-a.db",
+      "bytes": 8192,
+      "type": "0"
+    },
+    {
+      "path": "tests/recover-a.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/recover-a.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/recover-b.db",
+      "bytes": 12288,
+      "type": "0"
+    },
+    {
+      "path": "tests/recover-b.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/recover-b.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/recovery.py",
+      "bytes": 2303,
+      "type": "0"
+    },
+    {
+      "path": "tests/robustness.py",
+      "bytes": 1508,
+      "type": "0"
+    },
+    {
+      "path": "tests/scopes.py",
+      "bytes": 3463,
+      "type": "0"
+    },
+    {
+      "path": "tests/semantics.py",
+      "bytes": 9448,
+      "type": "0"
+    },
+    {
+      "path": "tests/storage.py",
+      "bytes": 4471,
+      "type": "0"
+    },
+    {
+      "path": "tests/triggers.db",
+      "bytes": 24576,
+      "type": "0"
+    },
+    {
+      "path": "tests/triggers.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/triggers.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/triggers.py",
+      "bytes": 3324,
+      "type": "0"
+    },
+    {
+      "path": "tests/windows.py",
+      "bytes": 2610,
+      "type": "0"
+    }
+  ]
+}

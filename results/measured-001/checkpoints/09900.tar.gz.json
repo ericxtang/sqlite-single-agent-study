@@ -1,0 +1,228 @@
+{
+  "container": "astra-sqlite-measured-001",
+  "elapsed_seconds": 9900.121238916,
+  "started_at": "2026-09-19T01:40:24.282878+00:00",
+  "capture_seconds": 0.3644426669998211,
+  "sha256": "52ac46330ed5fe5b3ca5e5731495feef3e0003645c3324942d30ed77fe05017e",
+  "archive": "09900.tar.gz",
+  "excluded_top_level": [
+    "target"
+  ],
+  "files": [
+    {
+      "path": ".",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "Cargo.lock",
+      "bytes": 2669,
+      "type": "0"
+    },
+    {
+      "path": "Cargo.toml",
+      "bytes": 230,
+      "type": "0"
+    },
+    {
+      "path": "IO_CONTRACT.md",
+      "bytes": 2071,
+      "type": "0"
+    },
+    {
+      "path": "NOTES.md",
+      "bytes": 11637,
+      "type": "0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 945,
+      "type": "0"
+    },
+    {
+      "path": "attached-atomicity.db.agent-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "begin-first.db.agent-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "begin-second.db.agent-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "fault-child.db.agent-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "release-atomicity.db.agent-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "src",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "src/ast.rs",
+      "bytes": 5045,
+      "type": "0"
+    },
+    {
+      "path": "src/attach.rs",
+      "bytes": 2778,
+      "type": "0"
+    },
+    {
+      "path": "src/datetime.rs",
+      "bytes": 13548,
+      "type": "0"
+    },
+    {
+      "path": "src/engine.rs",
+      "bytes": 87956,
+      "type": "0"
+    },
+    {
+      "path": "src/foreign.rs",
+      "bytes": 2208,
+      "type": "0"
+    },
+    {
+      "path": "src/formatting.rs",
+      "bytes": 7652,
+      "type": "0"
+    },
+    {
+      "path": "src/functions.rs",
+      "bytes": 20098,
+      "type": "0"
+    },
+    {
+      "path": "src/json.rs",
+      "bytes": 17574,
+      "type": "0"
+    },
+    {
+      "path": "src/json_value.rs",
+      "bytes": 11716,
+      "type": "0"
+    },
+    {
+      "path": "src/jsonb.rs",
+      "bytes": 3109,
+      "type": "0"
+    },
+    {
+      "path": "src/lexer.rs",
+      "bytes": 3962,
+      "type": "0"
+    },
+    {
+      "path": "src/main.rs",
+      "bytes": 2154,
+      "type": "0"
+    },
+    {
+      "path": "src/maintenance.rs",
+      "bytes": 8241,
+      "type": "0"
+    },
+    {
+      "path": "src/mutate.rs",
+      "bytes": 69762,
+      "type": "0"
+    },
+    {
+      "path": "src/parser.rs",
+      "bytes": 50312,
+      "type": "0"
+    },
+    {
+      "path": "src/pragma.rs",
+      "bytes": 23516,
+      "type": "0"
+    },
+    {
+      "path": "src/schema.rs",
+      "bytes": 29203,
+      "type": "0"
+    },
+    {
+      "path": "src/sequence.rs",
+      "bytes": 3056,
+      "type": "0"
+    },
+    {
+      "path": "src/storage.rs",
+      "bytes": 6511,
+      "type": "0"
+    },
+    {
+      "path": "src/trigger.rs",
+      "bytes": 7423,
+      "type": "0"
+    },
+    {
+      "path": "src/upsert.rs",
+      "bytes": 4107,
+      "type": "0"
+    },
+    {
+      "path": "src/validate.rs",
+      "bytes": 8948,
+      "type": "0"
+    },
+    {
+      "path": "src/value.rs",
+      "bytes": 10833,
+      "type": "0"
+    },
+    {
+      "path": "src/window.rs",
+      "bytes": 19974,
+      "type": "0"
+    },
+    {
+      "path": "test-persistence.db.agent-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "tests/persistence.py",
+      "bytes": 9290,
+      "type": "0"
+    },
+    {
+      "path": "tests/properties.py",
+      "bytes": 4104,
+      "type": "0"
+    },
+    {
+      "path": "tests/regression.py",
+      "bytes": 52394,
+      "type": "0"
+    },
+    {
+      "path": "tests/run.sh",
+      "bytes": 206,
+      "type": "0"
+    },
+    {
+      "path": "tests/smoke.py",
+      "bytes": 4763,
+      "type": "0"
+    }
+  ]
+}

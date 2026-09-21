@@ -1,0 +1,7 @@
+Implement SQLite in Rust from the supplied reference documentation at `/docs`. Aim for broad, correct implementation of the documented SQL semantics, storage, persistence, transactions, and other database behavior. The supplied process interface is in `/work/IO_CONTRACT.md`; implement it so the database can be used programmatically.
+
+Work independently using the provided offline workspace tool. All shell execution, file reads and writes, compilation, and tests must use that tool. Your working directory inside it is `/work`. You may write tests based on the documentation and maintain concise notes about architecture decisions, task progress, unresolved issues, and next actions. Plan, implement, and review your own work; keep a usable integrated implementation as you develop it. Let the reference guide the design and feature priorities.
+
+Use only the supplied documentation and permitted general-purpose dependencies. Do not obtain or invoke a reference database, an existing SQL parser or database engine, external source code or tests, internet services, other models, or other agents. Do not ask the human for advice. You can resolve design choices yourself and record them.
+
+Continue making useful progress until the controller ends the work period. If a continuation arrives, resume the same work from your state and notes. Do not treat completion of one component as completion of the whole task.

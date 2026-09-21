@@ -1,0 +1,203 @@
+{
+  "container": "astra-sqlite-measured-001",
+  "elapsed_seconds": 9000.236690916,
+  "started_at": "2026-09-19T01:25:24.420210+00:00",
+  "capture_seconds": 0.3647114590003184,
+  "sha256": "396e693b39b0718d54fd7277d6dc7926165c4da9c210b6bc43f03e4e43b16357",
+  "archive": "09000.tar.gz",
+  "excluded_top_level": [
+    "target"
+  ],
+  "files": [
+    {
+      "path": ".",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "Cargo.lock",
+      "bytes": 2669,
+      "type": "0"
+    },
+    {
+      "path": "Cargo.toml",
+      "bytes": 230,
+      "type": "0"
+    },
+    {
+      "path": "IO_CONTRACT.md",
+      "bytes": 2071,
+      "type": "0"
+    },
+    {
+      "path": "NOTES.md",
+      "bytes": 8319,
+      "type": "0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 945,
+      "type": "0"
+    },
+    {
+      "path": "date_edit.py",
+      "bytes": 7746,
+      "type": "0"
+    },
+    {
+      "path": "format_tests.py",
+      "bytes": 1871,
+      "type": "0"
+    },
+    {
+      "path": "src",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "src/ast.rs",
+      "bytes": 4910,
+      "type": "0"
+    },
+    {
+      "path": "src/attach.rs",
+      "bytes": 2778,
+      "type": "0"
+    },
+    {
+      "path": "src/datetime.rs",
+      "bytes": 13548,
+      "type": "0"
+    },
+    {
+      "path": "src/engine.rs",
+      "bytes": 88216,
+      "type": "0"
+    },
+    {
+      "path": "src/foreign.rs",
+      "bytes": 2208,
+      "type": "0"
+    },
+    {
+      "path": "src/formatting.rs",
+      "bytes": 7652,
+      "type": "0"
+    },
+    {
+      "path": "src/functions.rs",
+      "bytes": 20098,
+      "type": "0"
+    },
+    {
+      "path": "src/json.rs",
+      "bytes": 17574,
+      "type": "0"
+    },
+    {
+      "path": "src/json_value.rs",
+      "bytes": 11716,
+      "type": "0"
+    },
+    {
+      "path": "src/jsonb.rs",
+      "bytes": 3109,
+      "type": "0"
+    },
+    {
+      "path": "src/lexer.rs",
+      "bytes": 3962,
+      "type": "0"
+    },
+    {
+      "path": "src/main.rs",
+      "bytes": 2142,
+      "type": "0"
+    },
+    {
+      "path": "src/maintenance.rs",
+      "bytes": 8241,
+      "type": "0"
+    },
+    {
+      "path": "src/mutate.rs",
+      "bytes": 67875,
+      "type": "0"
+    },
+    {
+      "path": "src/parser.rs",
+      "bytes": 50144,
+      "type": "0"
+    },
+    {
+      "path": "src/pragma.rs",
+      "bytes": 23516,
+      "type": "0"
+    },
+    {
+      "path": "src/schema.rs",
+      "bytes": 28802,
+      "type": "0"
+    },
+    {
+      "path": "src/sequence.rs",
+      "bytes": 3056,
+      "type": "0"
+    },
+    {
+      "path": "src/storage.rs",
+      "bytes": 6920,
+      "type": "0"
+    },
+    {
+      "path": "src/trigger.rs",
+      "bytes": 7169,
+      "type": "0"
+    },
+    {
+      "path": "src/validate.rs",
+      "bytes": 7055,
+      "type": "0"
+    },
+    {
+      "path": "src/value.rs",
+      "bytes": 10833,
+      "type": "0"
+    },
+    {
+      "path": "src/window.rs",
+      "bytes": 18355,
+      "type": "0"
+    },
+    {
+      "path": "tests",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "tests/persistence.py",
+      "bytes": 6696,
+      "type": "0"
+    },
+    {
+      "path": "tests/properties.py",
+      "bytes": 4104,
+      "type": "0"
+    },
+    {
+      "path": "tests/regression.py",
+      "bytes": 45423,
+      "type": "0"
+    },
+    {
+      "path": "tests/run.sh",
+      "bytes": 206,
+      "type": "0"
+    },
+    {
+      "path": "tests/smoke.py",
+      "bytes": 4763,
+      "type": "0"
+    }
+  ]
+}

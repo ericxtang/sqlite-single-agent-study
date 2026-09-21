@@ -1,0 +1,23 @@
+{
+  "container": "astra-sqlite-measured-004",
+  "elapsed_seconds": 0,
+  "started_at": "2026-09-19T14:35:17.007113+00:00",
+  "capture_seconds": 0.09990575000000002,
+  "sha256": "2ddf22ee4cbf491f22fb9c6900b23a75ad46460e6e0e9c6e7f4be6759208a6fa",
+  "archive": "00000.tar.gz",
+  "excluded_top_level": [
+    "target"
+  ],
+  "files": [
+    {
+      "path": ".",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "IO_CONTRACT.md",
+      "bytes": 2071,
+      "type": "0"
+    }
+  ]
+}

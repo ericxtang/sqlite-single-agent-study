@@ -1,0 +1,25 @@
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.26
+   Compiling quote v1.0.47
+   Compiling serde_core v1.0.228
+   Compiling serde v1.0.228
+   Compiling serde_json v1.0.145
+   Compiling ryu v1.0.23
+   Compiling itoa v1.0.18
+   Compiling memchr v2.8.3
+   Compiling syn v2.0.119
+   Compiling serde_derive v1.0.228
+   Compiling sqlite-agent v0.1.0 (/work)
+warning: field `target` is never read
+  --> src/syntax.rs:19:45
+   |
+19 | #[derive(Clone,Debug)]pub struct Upsert{pub target:Vec<String>,pub sets:Vec<(String,E)>,pub filter:Option<E>}
+   |                                  ------     ^^^^^^
+   |                                  |
+   |                                  field in this struct
+   |
+   = note: `Upsert` has derived impls for the traits `Debug` and `Clone`, but these are intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `sqlite-agent` (bin "sqlite-agent") generated 1 warning
+    Finished `release` profile [optimized] target(s) in 9.42s

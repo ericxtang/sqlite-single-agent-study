@@ -1,0 +1,81 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+upsert-clause
+
+ON
+
+CONFLICT
+
+(
+
+indexed-column
+
+)
+
+WHERE
+
+expr
+
+DO
+
+,
+
+conflict target
+
+UPDATE
+
+SET
+
+column-name-list
+
+=
+
+expr
+
+WHERE
+
+expr
+
+NOTHING
+
+,
+
+column-name
+
+Used by:   insert-stmt
+
+References:   column-name-list   expr   indexed-column
+
+See also:   lang_createtrigger.html   lang_insert.html   lang_upsert.html

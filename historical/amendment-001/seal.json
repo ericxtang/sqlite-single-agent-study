@@ -1,0 +1,16 @@
+{
+  "version": "1.1",
+  "amendment_id": "001",
+  "created_at": "2026-09-19T14:34:59.249590+00:00",
+  "base_seal_sha256": "fbe70d948671242067d3a831016b7095c2a6f4e60ffeb8bbc785f55c727166d5",
+  "files": {
+    "AMENDMENT.md": "27455d0e50f530771afbac46f7286aaa64c16098a97888851ab485416f254ff1",
+    "decision.json": "a24f625cd3cf037fb6b2afd287e8610f5eb976a8e077f39c69c8ea0dbd773df7",
+    "amendment.py": "53a9e78ed359ea34ea2775b53252f6d75f849de840d00334f7df453318fe30bf",
+    "supervise.py": "68e6ecfbe87f6ce61903c25e9f4cd65776946318eb90503bf89a8acb6ea1fd3f",
+    "run.py": "ebc5fa8f310e0a9ecd0477ad314b31d9324d5c7116523bbd034ef7a798c018df",
+    "runner.diff": "1cdbf2c3a5589b5d3251f92cf5876933c08b62d8dff93096baa21e71f48b1e4d",
+    "test_cleanup.py": "e086366b2736f5533321f510a3edeea23e3f217608ff46f876ee89f0564f526d",
+    "cleanup-validation.json": "d91c9af5e23544a6ea80ee1020785658d5e616f337b5d95d4b26a64becee9c89"
+  }
+}

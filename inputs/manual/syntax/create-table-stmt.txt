@@ -1,0 +1,79 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+create-table-stmt
+
+CREATE
+
+TEMP
+
+TEMPORARY
+
+TABLE
+
+IF
+
+NOT
+
+EXISTS
+
+schema-name
+
+.
+
+table-name
+
+(
+
+column-def
+
+table-constraint
+
+,
+
+)
+
+table-options
+
+,
+
+AS
+
+select-stmt
+
+Used by:   sql-stmt
+
+References:   column-def   select-stmt   table-constraint   table-options
+
+See also:   lang_createtable.html

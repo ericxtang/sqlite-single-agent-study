@@ -1,0 +1,60 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+drop-trigger-stmt:
+hide
+
+DROP
+
+TRIGGER
+
+IF
+
+EXISTS
+
+schema-name
+
+.
+
+trigger-name
+
+The DROP TRIGGER statement removes a trigger created by the 
+CREATE TRIGGER statement. Once removed, the trigger definition is no
+longer present in the sqlite_schema (or sqlite_temp_schema) table and is
+not fired by any subsequent INSERT, UPDATE or DELETE statements.
+
+Note that triggers are automatically dropped when the associated table is
+dropped.
+
+This page was last updated on 2022-01-08 05:02:57Z

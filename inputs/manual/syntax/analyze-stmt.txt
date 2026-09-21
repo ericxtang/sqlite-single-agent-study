@@ -1,0 +1,51 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+analyze-stmt
+
+ANALYZE
+
+schema-name
+
+.
+
+table-or-index-name
+
+schema-name
+
+index-or-table-name
+
+Used by:   sql-stmt
+
+See also:   lang_analyze.html

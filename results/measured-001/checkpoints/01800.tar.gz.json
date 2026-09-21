@@ -1,0 +1,138 @@
+{
+  "container": "astra-sqlite-measured-001",
+  "elapsed_seconds": 1800.0728142500002,
+  "started_at": "2026-09-18T23:25:23.905567+00:00",
+  "capture_seconds": 0.431408374999819,
+  "sha256": "09e1adaa043d62c0d44befaf1f8d9e3d4f693fc21e294fcd3cb7671fbf8ddc7d",
+  "archive": "01800.tar.gz",
+  "excluded_top_level": [
+    "target"
+  ],
+  "files": [
+    {
+      "path": ".",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "Cargo.lock",
+      "bytes": 2669,
+      "type": "0"
+    },
+    {
+      "path": "Cargo.toml",
+      "bytes": 161,
+      "type": "0"
+    },
+    {
+      "path": "IO_CONTRACT.md",
+      "bytes": 2071,
+      "type": "0"
+    },
+    {
+      "path": "NOTES.md",
+      "bytes": 1888,
+      "type": "0"
+    },
+    {
+      "path": "patch_triggers.py",
+      "bytes": 6640,
+      "type": "0"
+    },
+    {
+      "path": "src",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "src/ast.rs",
+      "bytes": 3919,
+      "type": "0"
+    },
+    {
+      "path": "src/datetime.rs",
+      "bytes": 6748,
+      "type": "0"
+    },
+    {
+      "path": "src/engine.rs",
+      "bytes": 31647,
+      "type": "0"
+    },
+    {
+      "path": "src/functions.rs",
+      "bytes": 9351,
+      "type": "0"
+    },
+    {
+      "path": "src/json.rs",
+      "bytes": 6408,
+      "type": "0"
+    },
+    {
+      "path": "src/lexer.rs",
+      "bytes": 2166,
+      "type": "0"
+    },
+    {
+      "path": "src/main.rs",
+      "bytes": 1392,
+      "type": "0"
+    },
+    {
+      "path": "src/mutate.rs",
+      "bytes": 26665,
+      "type": "0"
+    },
+    {
+      "path": "src/parser.rs",
+      "bytes": 21916,
+      "type": "0"
+    },
+    {
+      "path": "src/pragma.rs",
+      "bytes": 8268,
+      "type": "0"
+    },
+    {
+      "path": "src/storage.rs",
+      "bytes": 3095,
+      "type": "0"
+    },
+    {
+      "path": "src/trigger.rs",
+      "bytes": 1474,
+      "type": "0"
+    },
+    {
+      "path": "src/validate.rs",
+      "bytes": 1955,
+      "type": "0"
+    },
+    {
+      "path": "src/value.rs",
+      "bytes": 5415,
+      "type": "0"
+    },
+    {
+      "path": "src/window.rs",
+      "bytes": 5242,
+      "type": "0"
+    },
+    {
+      "path": "tests",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "tests/regression.py",
+      "bytes": 5601,
+      "type": "0"
+    },
+    {
+      "path": "tests/smoke.py",
+      "bytes": 4763,
+      "type": "0"
+    }
+  ]
+}

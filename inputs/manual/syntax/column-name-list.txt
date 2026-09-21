@@ -1,0 +1,47 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+column-name-list
+
+(
+
+column-name
+
+)
+
+,
+
+Used by:   update-stmt   update-stmt-limited   upsert-clause
+
+See also:   lang_createtrigger.html   lang_insert.html   lang_update.html   lang_upsert.html

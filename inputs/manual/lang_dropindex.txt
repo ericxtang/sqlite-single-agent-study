@@ -1,0 +1,59 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+DROP INDEX
+
+drop-index-stmt:
+hide
+
+DROP
+
+INDEX
+
+IF
+
+EXISTS
+
+schema-name
+
+.
+
+index-name
+
+The DROP INDEX statement removes an index added
+with the CREATE INDEX statement.  The index is completely removed from
+the disk.  The only way to recover the index is to reenter the
+appropriate CREATE INDEX command.
+
+This page was last updated on 2022-01-08 05:02:57Z

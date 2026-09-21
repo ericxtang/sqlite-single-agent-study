@@ -1,0 +1,56 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+SQLite C Interface
+
+Copy And Free SQL Values
+
+sqlite3_value *sqlite3_value_dup(const sqlite3_value*);
+void sqlite3_value_free(sqlite3_value*);
+
+The sqlite3_value_dup(V) interface makes a copy of the sqlite3_value
+object V and returns a pointer to that copy.  The sqlite3_value returned
+is a protected sqlite3_value object even if the input is not.
+The sqlite3_value_dup(V) interface returns NULL if V is NULL or if a
+memory allocation fails. If V is a pointer value, then the result
+of sqlite3_value_dup(V) is a NULL value.
+
+The sqlite3_value_free(V) interface frees an sqlite3_value object
+previously obtained from sqlite3_value_dup().  If V is a NULL pointer
+then sqlite3_value_free(V) is a harmless no-op.
+
+See also lists of
+  Objects,
+  Constants, and
+  Functions.

@@ -1,0 +1,49 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+SQLite C Interface
+
+Loadable Extension Thunk
+
+typedef struct sqlite3_api_routines sqlite3_api_routines;
+
+A pointer to the opaque sqlite3_api_routines structure is passed as
+the third parameter to entry points of loadable extensions.  This
+structure must be typedefed in order to work around compiler warnings
+on some platforms.
+
+See also lists of
+  Objects,
+  Constants, and
+  Functions.

@@ -1,0 +1,153 @@
+{
+  "container": "astra-sqlite-measured-004",
+  "elapsed_seconds": 2700.1677396249997,
+  "started_at": "2026-09-19T15:20:17.331058+00:00",
+  "capture_seconds": 0.6926961660001325,
+  "sha256": "ee2cdaab4311c451a10d118c0173eb4079bc8f2ded88501675740269a9ac2228",
+  "archive": "02700.tar.gz",
+  "excluded_top_level": [
+    "target"
+  ],
+  "files": [
+    {
+      "path": ".",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "Cargo.lock",
+      "bytes": 2669,
+      "type": "0"
+    },
+    {
+      "path": "Cargo.toml",
+      "bytes": 160,
+      "type": "0"
+    },
+    {
+      "path": "IO_CONTRACT.md",
+      "bytes": 2071,
+      "type": "0"
+    },
+    {
+      "path": "NOTES.md",
+      "bytes": 1633,
+      "type": "0"
+    },
+    {
+      "path": "build.log",
+      "bytes": 103,
+      "type": "0"
+    },
+    {
+      "path": "fk_methods.txt",
+      "bytes": 3086,
+      "type": "0"
+    },
+    {
+      "path": "float-persist.db.agent-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "persist-test.db.agent-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "row_methods.txt",
+      "bytes": 1367,
+      "type": "0"
+    },
+    {
+      "path": "src",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "src/engine.rs",
+      "bytes": 89510,
+      "type": "0"
+    },
+    {
+      "path": "src/funcs.rs",
+      "bytes": 27418,
+      "type": "0"
+    },
+    {
+      "path": "src/main.rs",
+      "bytes": 1268,
+      "type": "0"
+    },
+    {
+      "path": "src/syntax.rs",
+      "bytes": 28193,
+      "type": "0"
+    },
+    {
+      "path": "src/value.rs",
+      "bytes": 4930,
+      "type": "0"
+    },
+    {
+      "path": "tests",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "tests/concurrency.py",
+      "bytes": 1414,
+      "type": "0"
+    },
+    {
+      "path": "tests/dml_extra.py",
+      "bytes": 1374,
+      "type": "0"
+    },
+    {
+      "path": "tests/edges.py",
+      "bytes": 1273,
+      "type": "0"
+    },
+    {
+      "path": "tests/foreign_json.py",
+      "bytes": 1581,
+      "type": "0"
+    },
+    {
+      "path": "tests/schema.py",
+      "bytes": 1768,
+      "type": "0"
+    },
+    {
+      "path": "tests/semantics.py",
+      "bytes": 4229,
+      "type": "0"
+    },
+    {
+      "path": "tests/triggers.py",
+      "bytes": 1445,
+      "type": "0"
+    },
+    {
+      "path": "tests/views_temp.py",
+      "bytes": 1381,
+      "type": "0"
+    },
+    {
+      "path": "tests/windows.py",
+      "bytes": 1024,
+      "type": "0"
+    },
+    {
+      "path": "view_methods.txt",
+      "bytes": 2605,
+      "type": "0"
+    },
+    {
+      "path": "window_methods.txt",
+      "bytes": 6406,
+      "type": "0"
+    }
+  ]
+}

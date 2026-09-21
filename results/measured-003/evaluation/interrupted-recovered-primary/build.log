@@ -1,0 +1,55 @@
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.26
+   Compiling quote v1.0.47
+   Compiling serde_core v1.0.228
+   Compiling serde_json v1.0.145
+   Compiling serde v1.0.228
+   Compiling memchr v2.8.3
+   Compiling ryu v1.0.23
+   Compiling syn v2.0.119
+   Compiling itoa v1.0.18
+   Compiling serde_derive v1.0.228
+   Compiling sqlite-agent v0.1.0 (/work)
+error[E0425]: cannot find value `old` in this scope
+ --> src/schema.rs:3:169
+  |
+3 | ...e|match e{E::DQuote(n)=>{if n.eq_ignore_ascii_case(old){*n=new.into()}},E::Sort(e,_)=>rename_expr(e,old,new),E::Col(ns)=>Ok(V::Tex...
+  |                                                       ^^^ not found in this scope
+
+error[E0425]: cannot find value `new` in this scope
+ --> src/schema.rs:3:177
+  |
+3 | ...e{E::DQuote(n)=>{if n.eq_ignore_ascii_case(old){*n=new.into()}},E::Sort(e,_)=>rename_expr(e,old,new),E::Col(ns)=>Ok(V::Text(ns.joi...
+  |                                                       ^^^ not found in this scope
+
+error[E0425]: cannot find value `old` in this scope
+ --> src/schema.rs:3:218
+  |
+3 | ...e(old){*n=new.into()}},E::Sort(e,_)=>rename_expr(e,old,new),E::Col(ns)=>Ok(V::Text(ns.join("."))),_=>self.eval(e,&Env::default(),N...
+  |                                                       ^^^ not found in this scope
+
+error[E0425]: cannot find value `new` in this scope
+ --> src/schema.rs:3:222
+  |
+3 | ...d){*n=new.into()}},E::Sort(e,_)=>rename_expr(e,old,new),E::Col(ns)=>Ok(V::Text(ns.join("."))),_=>self.eval(e,&Env::default(),None,...
+  |                                                       ^^^ not found in this scope
+
+error[E0308]: mismatched types
+  --> src/schema.rs:3:216
+   |
+ 3 | ...se(old){*n=new.into()}},E::Sort(e,_)=>rename_expr(e,old,new),E::Col(ns)=>Ok(V::Text(ns.join("."))),_=>self.eval(e,&Env::default()...
+   |                                          ----------- ^ types differ in mutability
+   |                                          |
+   |                                          arguments to this function are incorrect
+   |
+   = note: expected mutable reference `&mut ast::E`
+                      found reference `&Box<ast::E>`
+note: function defined here
+  --> src/schema.rs:19:4
+   |
+19 | fn rename_expr(e:&mut E,old:&str,new:&str){match e{E::DQuote(n)=>{if n.eq_ignore_ascii_case(old){*n=new.into()}},E::Sort(e,_)=>renam...
+   |    ^^^^^^^^^^^ --------
+
+Some errors have detailed explanations: E0308, E0425.
+For more information about an error, try `rustc --explain E0308`.
+error: could not compile `sqlite-agent` (bin "sqlite-agent") due to 5 previous errors

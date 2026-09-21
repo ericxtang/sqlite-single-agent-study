@@ -1,0 +1,73 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+create-view-stmt
+
+CREATE
+
+TEMP
+
+TEMPORARY
+
+VIEW
+
+IF
+
+NOT
+
+EXISTS
+
+schema-name
+
+.
+
+view-name
+
+(
+
+column-name
+
+)
+
+AS
+
+select-stmt
+
+,
+
+Used by:   sql-stmt
+
+References:   select-stmt
+
+See also:   lang_createview.html

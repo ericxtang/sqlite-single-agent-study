@@ -1,0 +1,54 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+SQLite C Interface
+
+Authorizer Return Codes
+
+#define SQLITE_DENY   1   /* Abort the SQL statement with an error */
+#define SQLITE_IGNORE 2   /* Don't allow access, but don't generate an error */
+
+The authorizer callback function must
+return either SQLITE_OK or one of these two constants in order
+to signal SQLite whether or not the action is permitted.  See the
+authorizer documentation for additional
+information.
+
+Note that SQLITE_IGNORE is also used as a conflict resolution mode
+returned from the sqlite3_vtab_on_conflict() interface.
+
+See also lists of
+  Objects,
+  Constants, and
+  Functions.

@@ -1,0 +1,193 @@
+{
+  "container": "astra-sqlite-measured-004",
+  "elapsed_seconds": 3600.226982333,
+  "started_at": "2026-09-19T15:35:17.411810+00:00",
+  "capture_seconds": 0.6848998750001556,
+  "sha256": "b9c95350e3e30ff6eb3e19a4f123a6203057654ee7547f28718dbdafb5abea49",
+  "archive": "03600.tar.gz",
+  "excluded_top_level": [
+    "target"
+  ],
+  "files": [
+    {
+      "path": ".",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "Cargo.lock",
+      "bytes": 2669,
+      "type": "0"
+    },
+    {
+      "path": "Cargo.toml",
+      "bytes": 160,
+      "type": "0"
+    },
+    {
+      "path": "IO_CONTRACT.md",
+      "bytes": 2071,
+      "type": "0"
+    },
+    {
+      "path": "NOTES.md",
+      "bytes": 4055,
+      "type": "0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1715,
+      "type": "0"
+    },
+    {
+      "path": "build.log",
+      "bytes": 103,
+      "type": "0"
+    },
+    {
+      "path": "fk_methods.txt",
+      "bytes": 3086,
+      "type": "0"
+    },
+    {
+      "path": "float-persist.db.agent-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "persist-test.db.agent-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "row_methods.txt",
+      "bytes": 1367,
+      "type": "0"
+    },
+    {
+      "path": "src",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "src/engine.rs",
+      "bytes": 104254,
+      "type": "0"
+    },
+    {
+      "path": "src/funcs.rs",
+      "bytes": 31307,
+      "type": "0"
+    },
+    {
+      "path": "src/main.rs",
+      "bytes": 1268,
+      "type": "0"
+    },
+    {
+      "path": "src/syntax.rs",
+      "bytes": 28925,
+      "type": "0"
+    },
+    {
+      "path": "src/value.rs",
+      "bytes": 4930,
+      "type": "0"
+    },
+    {
+      "path": "tests",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "tests/alter_query.py",
+      "bytes": 1185,
+      "type": "0"
+    },
+    {
+      "path": "tests/attach.py",
+      "bytes": 1324,
+      "type": "0"
+    },
+    {
+      "path": "tests/cascade_triggers.py",
+      "bytes": 1269,
+      "type": "0"
+    },
+    {
+      "path": "tests/concurrency.py",
+      "bytes": 1414,
+      "type": "0"
+    },
+    {
+      "path": "tests/dml_extra.py",
+      "bytes": 1374,
+      "type": "0"
+    },
+    {
+      "path": "tests/edges.py",
+      "bytes": 1273,
+      "type": "0"
+    },
+    {
+      "path": "tests/foreign_json.py",
+      "bytes": 1581,
+      "type": "0"
+    },
+    {
+      "path": "tests/functions_extra.py",
+      "bytes": 1699,
+      "type": "0"
+    },
+    {
+      "path": "tests/index_settings.py",
+      "bytes": 889,
+      "type": "0"
+    },
+    {
+      "path": "tests/model_stress.py",
+      "bytes": 1224,
+      "type": "0"
+    },
+    {
+      "path": "tests/run_all.py",
+      "bytes": 450,
+      "type": "0"
+    },
+    {
+      "path": "tests/schema.py",
+      "bytes": 1768,
+      "type": "0"
+    },
+    {
+      "path": "tests/semantics.py",
+      "bytes": 4229,
+      "type": "0"
+    },
+    {
+      "path": "tests/triggers.py",
+      "bytes": 1445,
+      "type": "0"
+    },
+    {
+      "path": "tests/views_temp.py",
+      "bytes": 1381,
+      "type": "0"
+    },
+    {
+      "path": "tests/windows.py",
+      "bytes": 1024,
+      "type": "0"
+    },
+    {
+      "path": "view_methods.txt",
+      "bytes": 2605,
+      "type": "0"
+    },
+    {
+      "path": "window_methods.txt",
+      "bytes": 6406,
+      "type": "0"
+    }
+  ]
+}

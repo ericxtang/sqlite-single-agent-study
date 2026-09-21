@@ -1,0 +1,49 @@
+{
+  "reviewed_date_utc": "2026-09-21",
+  "source": "https://cursor.com/blog/agent-swarm-model-economics",
+  "source_published_date": "2026-07-20",
+  "method": "Visual reading of the original embedded cost and token charts through the browser. Labels are rounded published totals; no raw Cursor billing ledger was available.",
+  "charts": [
+    "Cost to rebuild SQLite by model mix",
+    "Tokens by model (planner vs worker)"
+  ],
+  "controlled_configurations": [
+    {
+      "label": "Opus 4.8 + Composer 2.5",
+      "usd": 1339,
+      "tokens_billions_rounded": 2.6
+    },
+    {
+      "label": "Grok 4.5",
+      "usd": 1928,
+      "tokens_billions_rounded": 3.2
+    },
+    {
+      "label": "Fable 5 + Composer 2.5",
+      "usd": 2234,
+      "tokens_billions_rounded": 6.7
+    },
+    {
+      "label": "GPT-5.5",
+      "usd": 10565,
+      "tokens_billions_rounded": 14.7
+    }
+  ],
+  "informal_configurations": [
+    {
+      "label": "Opus 4.8*",
+      "usd": 5153,
+      "tokens_billions_rounded": 5.5
+    },
+    {
+      "label": "Fable 5*",
+      "usd": 20057,
+      "tokens_billions_rounded": 12.2
+    }
+  ],
+  "limitations": [
+    "The footnote calls the starred configurations solo and grades them informally; the token chart still partitions planner and worker use. This does not establish a matched single-agent four-hour control.",
+    "The common time horizon for these chart totals, the four-hour scores and later full completion is not established.",
+    "Input/output/cache details, response ledger and exact accounting exclusions are unavailable; direct repricing or equal-quality cost ratios are not supported."
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "container": "astra-sqlite-measured-002",
+  "elapsed_seconds": 3600.053674792,
+  "started_at": "2026-09-19T03:55:27.301306+00:00",
+  "capture_seconds": 1.4536938749997717,
+  "sha256": "088de328a9a842b85353c7533ea4dbf3225f863869efd27cb0fb1bb4f13093ff",
+  "archive": "03600.tar.gz",
+  "excluded_top_level": [
+    "target"
+  ],
+  "files": [
+    {
+      "path": ".",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "Cargo.lock",
+      "bytes": 2669,
+      "type": "0"
+    },
+    {
+      "path": "Cargo.toml",
+      "bytes": 160,
+      "type": "0"
+    },
+    {
+      "path": "IO_CONTRACT.md",
+      "bytes": 2071,
+      "type": "0"
+    },
+    {
+      "path": "NOTES.md",
+      "bytes": 3319,
+      "type": "0"
+    },
+    {
+      "path": "src",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "src/ast.rs",
+      "bytes": 5032,
+      "type": "0"
+    },
+    {
+      "path": "src/date.rs",
+      "bytes": 8054,
+      "type": "0"
+    },
+    {
+      "path": "src/db.rs",
+      "bytes": 58244,
+      "type": "0"
+    },
+    {
+      "path": "src/func.rs",
+      "bytes": 10930,
+      "type": "0"
+    },
+    {
+      "path": "src/jsonfunc.rs",
+      "bytes": 15406,
+      "type": "0"
+    },
+    {
+      "path": "src/lex.rs",
+      "bytes": 2184,
+      "type": "0"
+    },
+    {
+      "path": "src/locking.rs",
+      "bytes": 1479,
+      "type": "0"
+    },
+    {
+      "path": "src/main.rs",
+      "bytes": 1421,
+      "type": "0"
+    },
+    {
+      "path": "src/parser.rs",
+      "bytes": 25042,
+      "type": "0"
+    },
+    {
+      "path": "src/query.rs",
+      "bytes": 41446,
+      "type": "0"
+    },
+    {
+      "path": "src/render.rs",
+      "bytes": 3492,
+      "type": "0"
+    },
+    {
+      "path": "src/schema.rs",
+      "bytes": 4322,
+      "type": "0"
+    },
+    {
+      "path": "src/storage.rs",
+      "bytes": 17144,
+      "type": "0"
+    },
+    {
+      "path": "src/value.rs",
+      "bytes": 5593,
+      "type": "0"
+    },
+    {
+      "path": "tests",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "tests/edgecases.py",
+      "bytes": 4139,
+      "type": "0"
+    },
+    {
+      "path": "tests/isolation.db",
+      "bytes": 8192,
+      "type": "0"
+    },
+    {
+      "path": "tests/isolation.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/isolation.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/isolation.py",
+      "bytes": 2104,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-4096.db",
+      "bytes": 372736,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-4096.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-4096.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-512.db",
+      "bytes": 703488,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-512.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-512.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-65536.db",
+      "bytes": 589824,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-65536.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-65536.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/persistence.db",
+      "bytes": 8192,
+      "type": "0"
+    },
+    {
+      "path": "tests/persistence.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/persistence.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/semantics.py",
+      "bytes": 9448,
+      "type": "0"
+    },
+    {
+      "path": "tests/storage.py",
+      "bytes": 4471,
+      "type": "0"
+    },
+    {
+      "path": "tests/triggers.db",
+      "bytes": 16384,
+      "type": "0"
+    },
+    {
+      "path": "tests/triggers.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/triggers.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/triggers.py",
+      "bytes": 2930,
+      "type": "0"
+    },
+    {
+      "path": "tests/windows.py",
+      "bytes": 2610,
+      "type": "0"
+    },
+    {
+      "path": "window_method.tmp",
+      "bytes": 7484,
+      "type": "0"
+    }
+  ]
+}

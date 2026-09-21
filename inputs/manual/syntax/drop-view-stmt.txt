@@ -1,0 +1,53 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+drop-view-stmt
+
+DROP
+
+VIEW
+
+IF
+
+EXISTS
+
+schema-name
+
+.
+
+view-name
+
+Used by:   sql-stmt
+
+See also:   lang_dropview.html

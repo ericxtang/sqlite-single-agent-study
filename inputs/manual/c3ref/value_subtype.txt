@@ -1,0 +1,56 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+SQLite C Interface
+
+Finding The Subtype Of SQL Values
+
+unsigned int sqlite3_value_subtype(sqlite3_value*);
+
+The sqlite3_value_subtype(V) function returns the subtype for
+an application-defined SQL function argument V.  The subtype
+information can be used to pass a limited amount of context from
+one SQL function to another.  Use the sqlite3_result_subtype()
+routine to set the subtype for the return value of an SQL function.
+
+Every application-defined SQL function that invokes this interface
+should include the SQLITE_SUBTYPE property in the text
+encoding argument when the function is registered.
+If the SQLITE_SUBTYPE property is omitted, then sqlite3_value_subtype()
+might return zero instead of the upstream subtype in some corner cases.
+
+See also lists of
+  Objects,
+  Constants, and
+  Functions.

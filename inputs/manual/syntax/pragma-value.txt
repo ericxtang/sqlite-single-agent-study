@@ -1,0 +1,47 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+pragma-value
+
+signed-number
+
+name
+
+signed-literal
+
+Used by:   pragma-stmt
+
+References:   signed-number
+
+See also:   pragma.html

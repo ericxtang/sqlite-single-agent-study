@@ -1,0 +1,225 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+SQLite C Interface
+
+Database Connection Handle
+
+typedef struct sqlite3 sqlite3;
+
+Each open SQLite database is represented by a pointer to an instance of
+the opaque structure named "sqlite3".  It is useful to think of an sqlite3
+pointer as an object.  The sqlite3_open(), sqlite3_open16(), and
+sqlite3_open_v2() interfaces are its constructors, and sqlite3_close()
+and sqlite3_close_v2() are its destructors.  There are many other
+interfaces (such as
+sqlite3_prepare_v2(), sqlite3_create_function(), and
+sqlite3_busy_timeout() to name but three) that are methods on an
+sqlite3 object.
+
+3 Constructors using this object:
+ sqlite3_open(),
+sqlite3_open16(),
+sqlite3_open_v2()
+
+2 Destructors using this object:
+ sqlite3_close(),
+sqlite3_close_v2()
+
+80 Methods using this object:
+
+sqlite3_autovacuum_pages
+
+sqlite3_blob_open
+
+sqlite3_busy_handler
+
+sqlite3_busy_timeout
+
+sqlite3_changes
+
+sqlite3_changes64
+
+sqlite3_collation_needed
+
+sqlite3_collation_needed16
+
+sqlite3_commit_hook
+
+sqlite3_create_collation
+
+sqlite3_create_collation16
+
+sqlite3_create_collation_v2
+
+sqlite3_create_function
+
+sqlite3_create_function16
+
+sqlite3_create_function_v2
+
+sqlite3_create_module
+
+sqlite3_create_module_v2
+
+sqlite3_create_window_function
+
+sqlite3_db_cacheflush
+
+sqlite3_db_config
+
+sqlite3_db_filename
+
+sqlite3_db_mutex
+
+sqlite3_db_name
+
+sqlite3_db_readonly
+
+sqlite3_db_release_memory
+
+sqlite3_db_status
+
+sqlite3_db_status64
+
+sqlite3_drop_modules
+
+sqlite3_enable_load_extension
+
+sqlite3_errcode
+
+sqlite3_errmsg
+
+sqlite3_errmsg16
+
+sqlite3_error_offset
+
+sqlite3_errstr
+
+sqlite3_exec
+
+sqlite3_extended_errcode
+
+sqlite3_extended_result_codes
+
+sqlite3_file_control
+
+sqlite3_free_table
+
+sqlite3_get_autocommit
+
+sqlite3_get_clientdata
+
+sqlite3_get_table
+
+sqlite3_interrupt
+
+sqlite3_is_interrupted
+
+sqlite3_last_insert_rowid
+
+sqlite3_limit
+
+sqlite3_load_extension
+
+sqlite3_next_stmt
+
+sqlite3_overload_function
+
+sqlite3_prepare
+
+sqlite3_prepare16
+
+sqlite3_prepare16_v2
+
+sqlite3_prepare16_v3
+
+sqlite3_prepare_v2
+
+sqlite3_prepare_v3
+
+sqlite3_preupdate_blobwrite
+
+sqlite3_preupdate_count
+
+sqlite3_preupdate_depth
+
+sqlite3_preupdate_hook
+
+sqlite3_preupdate_new
+
+sqlite3_preupdate_old
+
+sqlite3_progress_handler
+
+sqlite3_rollback_hook
+
+sqlite3_set_authorizer
+
+sqlite3_set_clientdata
+
+sqlite3_set_errmsg
+
+sqlite3_set_last_insert_rowid
+
+sqlite3_setlk_timeout
+
+sqlite3_system_errno
+
+sqlite3_table_column_metadata
+
+sqlite3_total_changes
+
+sqlite3_total_changes64
+
+sqlite3_trace_v2
+
+sqlite3_txn_state
+
+sqlite3_unlock_notify
+
+sqlite3_update_hook
+
+sqlite3_wal_autocheckpoint
+
+sqlite3_wal_checkpoint
+
+sqlite3_wal_checkpoint_v2
+
+sqlite3_wal_hook
+
+See also lists of
+  Objects,
+  Constants, and
+  Functions.

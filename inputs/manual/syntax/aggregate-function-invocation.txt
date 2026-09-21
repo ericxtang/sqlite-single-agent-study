@@ -1,0 +1,63 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+aggregate-function-invocation
+
+aggregate-func
+
+(
+
+DISTINCT
+
+expr
+
+)
+
+filter-clause
+
+,
+
+*
+
+ORDER
+
+BY
+
+ordering-term
+
+,
+
+References:   expr   filter-clause   ordering-term
+
+See also:   lang_aggfunc.html   lang_expr.html

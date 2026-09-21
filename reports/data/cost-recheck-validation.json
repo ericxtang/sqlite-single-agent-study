@@ -1,0 +1,20 @@
+{
+  "validated_at": "2026-09-21T16:34:17.248767+00:00",
+  "passed": true,
+  "report_sha256": "caebe4bf5118ab0f648e1500eb2a6e3c388bcb9f5d406f3ddd712fb1e9b7f465",
+  "pdf_sha256": "a7f1d5e1e60e3b7970f65b36c121ae482713eae18b6d5e16c5dcb0580444aa57",
+  "original_measurements_unchanged": true,
+  "raw_grading_hashes_verified": 268,
+  "raw_usage_audit": "reports/data/cost-audit.json",
+  "cursor_chart_review": "reports/data/cursor-chart-review.json",
+  "local_links_checked": 80,
+  "manual_examples": "manual/example-validation.json",
+  "manual_examples_runs_passed": [
+    "001",
+    "002",
+    "004",
+    "003-30min"
+  ],
+  "interrupted_terminal_manual_build": "failed; source unmodified",
+  "manual_activity_is_post_study_and_separate": true
+}

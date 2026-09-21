@@ -1,0 +1,44 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+SQLite C Interface
+
+Flags for sqlite3_setlk_timeout()
+
+#define SQLITE_SETLK_BLOCK_ON_CONNECT 0x01
+
+See also lists of
+  Objects,
+  Constants, and
+  Functions.

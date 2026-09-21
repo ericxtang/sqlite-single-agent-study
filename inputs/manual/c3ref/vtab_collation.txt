@@ -1,0 +1,73 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+SQLite C Interface
+
+Determine The Collation For a Virtual Table Constraint
+
+const char *sqlite3_vtab_collation(sqlite3_index_info*,int);
+
+This function may only be called from within a call to the xBestIndex
+method of a virtual table.  This function returns a pointer to a string
+that is the name of the appropriate collation sequence to use for text
+comparisons on the constraint identified by its arguments.
+
+The first argument must be the pointer to the sqlite3_index_info object
+that is the first parameter to the xBestIndex() method. The second argument
+must be an index into the aConstraint[] array belonging to the
+sqlite3_index_info structure passed to xBestIndex.
+
+Important:
+The first parameter must be the same pointer that is passed into the
+xBestMethod() method.  The first parameter may not be a pointer to a
+different sqlite3_index_info object, even an exact copy.
+
+The return value is computed as follows:
+
+ If the constraint comes from a WHERE clause expression that contains
+a COLLATE operator, then the name of the collation specified by
+that COLLATE operator is returned.
+
+ If there is no COLLATE operator, but the column that is the subject
+of the constraint specifies an alternative collating sequence via
+a COLLATE clause on the column definition within the CREATE TABLE
+statement that was passed into sqlite3_declare_vtab(), then the
+name of that alternative collating sequence is returned.
+
+ Otherwise, "BINARY" is returned.
+
+See also lists of
+  Objects,
+  Constants, and
+  Functions.

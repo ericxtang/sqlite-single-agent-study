@@ -1,0 +1,58 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+SQLite C Interface
+
+Database File Corresponding To A Journal
+
+sqlite3_file *sqlite3_database_file_object(const char*);
+
+If X is the name of a rollback or WAL-mode journal file that is
+passed into the xOpen method of sqlite3_vfs, then
+sqlite3_database_file_object(X) returns a pointer to the sqlite3_file
+object that represents the main database file.
+
+This routine is intended for use in custom VFS implementations
+only.  It is not a general-purpose interface.
+The argument sqlite3_file_object(X) must be a filename pointer that
+has been passed into sqlite3_vfs.xOpen method where the
+flags parameter to xOpen contains one of the bits
+SQLITE_OPEN_MAIN_JOURNAL or SQLITE_OPEN_WAL.  Any other use
+of this routine results in undefined and probably undesirable
+behavior.
+
+See also lists of
+  Objects,
+  Constants, and
+  Functions.

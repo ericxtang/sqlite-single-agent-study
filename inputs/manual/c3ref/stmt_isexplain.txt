@@ -1,0 +1,50 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+SQLite C Interface
+
+Query The EXPLAIN Setting For A Prepared Statement
+
+int sqlite3_stmt_isexplain(sqlite3_stmt *pStmt);
+
+The sqlite3_stmt_isexplain(S) interface returns 1 if the
+prepared statement S is an EXPLAIN statement, or 2 if the
+statement S is an EXPLAIN QUERY PLAN.
+The sqlite3_stmt_isexplain(S) interface returns 0 if S is
+an ordinary statement or a NULL pointer.
+
+See also lists of
+  Objects,
+  Constants, and
+  Functions.

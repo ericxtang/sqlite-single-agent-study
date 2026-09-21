@@ -1,0 +1,188 @@
+{
+  "container": "astra-sqlite-measured-001",
+  "elapsed_seconds": 8100.13352775,
+  "started_at": "2026-09-19T01:10:24.339465+00:00",
+  "capture_seconds": 0.3922155419995761,
+  "sha256": "681125c116af73fab730f17dcf3656915d1d27886a0d187ba43b7c2b4ea71c8a",
+  "archive": "08100.tar.gz",
+  "excluded_top_level": [
+    "target"
+  ],
+  "files": [
+    {
+      "path": ".",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "Cargo.lock",
+      "bytes": 2669,
+      "type": "0"
+    },
+    {
+      "path": "Cargo.toml",
+      "bytes": 230,
+      "type": "0"
+    },
+    {
+      "path": "IO_CONTRACT.md",
+      "bytes": 2071,
+      "type": "0"
+    },
+    {
+      "path": "NOTES.md",
+      "bytes": 7221,
+      "type": "0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 945,
+      "type": "0"
+    },
+    {
+      "path": "src",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "src/ast.rs",
+      "bytes": 4886,
+      "type": "0"
+    },
+    {
+      "path": "src/attach.rs",
+      "bytes": 2778,
+      "type": "0"
+    },
+    {
+      "path": "src/datetime.rs",
+      "bytes": 13071,
+      "type": "0"
+    },
+    {
+      "path": "src/engine.rs",
+      "bytes": 88121,
+      "type": "0"
+    },
+    {
+      "path": "src/foreign.rs",
+      "bytes": 2208,
+      "type": "0"
+    },
+    {
+      "path": "src/functions.rs",
+      "bytes": 22681,
+      "type": "0"
+    },
+    {
+      "path": "src/json.rs",
+      "bytes": 17574,
+      "type": "0"
+    },
+    {
+      "path": "src/json_value.rs",
+      "bytes": 11716,
+      "type": "0"
+    },
+    {
+      "path": "src/jsonb.rs",
+      "bytes": 3109,
+      "type": "0"
+    },
+    {
+      "path": "src/lexer.rs",
+      "bytes": 3962,
+      "type": "0"
+    },
+    {
+      "path": "src/main.rs",
+      "bytes": 2126,
+      "type": "0"
+    },
+    {
+      "path": "src/maintenance.rs",
+      "bytes": 4627,
+      "type": "0"
+    },
+    {
+      "path": "src/mutate.rs",
+      "bytes": 67369,
+      "type": "0"
+    },
+    {
+      "path": "src/parser.rs",
+      "bytes": 50130,
+      "type": "0"
+    },
+    {
+      "path": "src/pragma.rs",
+      "bytes": 21504,
+      "type": "0"
+    },
+    {
+      "path": "src/schema.rs",
+      "bytes": 27389,
+      "type": "0"
+    },
+    {
+      "path": "src/sequence.rs",
+      "bytes": 3056,
+      "type": "0"
+    },
+    {
+      "path": "src/storage.rs",
+      "bytes": 6920,
+      "type": "0"
+    },
+    {
+      "path": "src/trigger.rs",
+      "bytes": 6681,
+      "type": "0"
+    },
+    {
+      "path": "src/validate.rs",
+      "bytes": 7055,
+      "type": "0"
+    },
+    {
+      "path": "src/value.rs",
+      "bytes": 10833,
+      "type": "0"
+    },
+    {
+      "path": "src/window.rs",
+      "bytes": 18355,
+      "type": "0"
+    },
+    {
+      "path": "tests",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "tests/persistence.py",
+      "bytes": 6696,
+      "type": "0"
+    },
+    {
+      "path": "tests/properties.py",
+      "bytes": 3419,
+      "type": "0"
+    },
+    {
+      "path": "tests/regression.py",
+      "bytes": 39140,
+      "type": "0"
+    },
+    {
+      "path": "tests/run.sh",
+      "bytes": 206,
+      "type": "0"
+    },
+    {
+      "path": "tests/smoke.py",
+      "bytes": 4763,
+      "type": "0"
+    }
+  ]
+}

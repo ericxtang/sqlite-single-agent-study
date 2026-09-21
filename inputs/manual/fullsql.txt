@@ -1,0 +1,128 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+Full-Featured SQL
+
+Do not be misled by the "Lite" in the name.  SQLite has a full-featured
+SQL implementation, including:
+
+Tables, indexes,
+    triggers, and views
+    in unlimited quantity
+
+Up to 32K columns in a table and unlimited rows
+
+Multi-column indexes
+
+Indexes can use DESC and COLLATE
+
+Partial indexes
+
+Indexes On Expressions
+
+Clustered indexes
+
+Covering indexes
+
+CHECK, UNIQUE, NOT NULL, and FOREIGN KEY constraints.
+
+ACID transactions using BEGIN, COMMIT, and ROLLBACK
+
+Nested transactions using SAVEPOINT, RELEASE, and 
+    ROLLBACK TO
+
+Subqueries, including correlated subqueries
+
+Up to 64-way joins
+
+LEFT, RIGHT, and FULL OUTER JOINs
+
+DISTINCT, ORDER BY, GROUP BY, HAVING, LIMIT, and OFFSET
+
+UNION, UNION ALL, INTERSECT, and EXCEPT
+
+A rich library of standard SQL functions
+
+Aggregate functions including DISTINCT aggregates
+
+Window functions
+
+UPDATE, DELETE, and INSERT (of course)
+
+Common table expressions including
+    recursive common table expressions
+
+Row values
+
+UPSERT
+
+An advanced query planner
+
+Full-text search
+
+R-tree indexes
+
+JSON support
+
+The IS operator
+
+Table-valued functions
+
+REPLACE INTO
+
+VACUUM
+
+REINDEX
+
+The GLOB operator
+
+Hexadecimal integer literals
+
+The ON CONFLICT clause
+
+The INDEXED BY clause
+
+Virtual tables
+
+Multiple databases on the same database connection using
+    ATTACH DATABASE
+
+The ability to add application-defined SQL functions, including
+    aggregate and table-valued functions.
+
+Application-defined collating functions
+
+There are many more features not listed above.
+SQLite may be small in size and have "Lite" in its name, but it is
+not lacking in capability.

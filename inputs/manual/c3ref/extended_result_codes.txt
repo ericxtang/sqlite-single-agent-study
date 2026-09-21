@@ -1,0 +1,48 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+SQLite C Interface
+
+Enable Or Disable Extended Result Codes
+
+int sqlite3_extended_result_codes(sqlite3*, int onoff);
+
+The sqlite3_extended_result_codes() routine enables or disables the
+extended result codes feature of SQLite. The extended result
+codes are disabled by default for historical compatibility.
+
+See also lists of
+  Objects,
+  Constants, and
+  Functions.

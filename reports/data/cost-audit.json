@@ -1,0 +1,202 @@
+{
+  "audited_at": "2026-09-21T16:28:18.523717+00:00",
+  "authoritative_ledger_sha256": "8377ade7408ab4445ac1c4c256029e131cfc81c4195e8534c223ad3cf71cfbe6",
+  "rate_card": {
+    "model": "gpt-6-astra",
+    "verified_date_utc": "2026-09-21",
+    "pricing_source": "https://developers.openai.com/api/docs/pricing",
+    "context_rule_source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "retrieval_method": "Official OpenAI documentation search and fetched pricing/model pages",
+    "currency": "USD",
+    "tier": "Standard",
+    "per_million_tokens": {
+      "uncached_input": 10,
+      "cached_input": 1,
+      "cache_write": 12.5,
+      "output": 50
+    },
+    "long_context_threshold_input_tokens": 272000,
+    "long_context_rule": "Above 272000 input tokens: 2x input/cache rates and 1.5x output on the whole request.",
+    "status": "Rate card observed on this date; not an actual subscription invoice or a guarantee of prices on the implementation dates."
+  },
+  "formula": "(input - cached_read - cache_write)*10/M + cached_read*1/M + cache_write*12.5/M + output*50/M",
+  "assumptions": [
+    "Standard API, September 21 observed prices; no regional uplift.",
+    "Recorded usage is from subscription telemetry, not an API invoice.",
+    "Reasoning is already included in output; cached reads and cache writes are input subsets.",
+    "Zero recorded cache writes do not prove identical API billing categorization.",
+    "Cutoff-request completeness and additional backend/compaction billing coverage are unknown.",
+    "Host, grading, setup and supervision are excluded. Scenarios are not confidence bounds."
+  ],
+  "runs": [
+    {
+      "run_id": "pilot-001",
+      "usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 0
+      },
+      "responses": 0,
+      "reconciled_to_final_raw_thread": false,
+      "max_request_input": 0,
+      "input_cache_percent": null,
+      "components_usd": {
+        "ordinary_input": "0.00000",
+        "cache_read": "0.000000",
+        "cache_write": "0E-7",
+        "output": "0.00000"
+      },
+      "scenarios_usd": {
+        "recorded_categories_standard": "0E-7",
+        "same_read_hits_all_misses_are_cache_writes": "0E-7",
+        "no_cache_reads_or_writes_standard": "0.00000",
+        "recorded_categories_fast_2x": "0E-7"
+      }
+    },
+    {
+      "run_id": "pilot-002",
+      "usage": {
+        "input_tokens": 1162391,
+        "cached_input_tokens": 1060608,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 54768,
+        "reasoning_output_tokens": 3702,
+        "total_tokens": 1217159
+      },
+      "responses": 23,
+      "reconciled_to_final_raw_thread": true,
+      "max_request_input": 88506,
+      "input_cache_percent": "91.24365209297043765824064364",
+      "components_usd": {
+        "ordinary_input": "1.01783",
+        "cache_read": "1.060608",
+        "cache_write": "0E-7",
+        "output": "2.73840"
+      },
+      "scenarios_usd": {
+        "recorded_categories_standard": "4.8168380",
+        "same_read_hits_all_misses_are_cache_writes": "5.0712955",
+        "no_cache_reads_or_writes_standard": "14.36231",
+        "recorded_categories_fast_2x": "9.6336760"
+      }
+    },
+    {
+      "run_id": "measured-001",
+      "usage": {
+        "input_tokens": 39424280,
+        "cached_input_tokens": 38314368,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 429708,
+        "reasoning_output_tokens": 160694,
+        "total_tokens": 39853988
+      },
+      "responses": 301,
+      "reconciled_to_final_raw_thread": true,
+      "max_request_input": 245454,
+      "input_cache_percent": "97.18469937814970875815614134",
+      "components_usd": {
+        "ordinary_input": "11.09912",
+        "cache_read": "38.314368",
+        "cache_write": "0E-7",
+        "output": "21.48540"
+      },
+      "scenarios_usd": {
+        "recorded_categories_standard": "70.8988880",
+        "same_read_hits_all_misses_are_cache_writes": "73.6736680",
+        "no_cache_reads_or_writes_standard": "415.72820",
+        "recorded_categories_fast_2x": "141.7977760"
+      }
+    },
+    {
+      "run_id": "measured-002",
+      "usage": {
+        "input_tokens": 39515650,
+        "cached_input_tokens": 38342912,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 430498,
+        "reasoning_output_tokens": 157424,
+        "total_tokens": 39946148
+      },
+      "responses": 290,
+      "reconciled_to_final_raw_thread": true,
+      "max_request_input": 246507,
+      "input_cache_percent": "97.03221888036765180377900908",
+      "components_usd": {
+        "ordinary_input": "11.72738",
+        "cache_read": "38.342912",
+        "cache_write": "0E-7",
+        "output": "21.52490"
+      },
+      "scenarios_usd": {
+        "recorded_categories_standard": "71.5951920",
+        "same_read_hits_all_misses_are_cache_writes": "74.5270370",
+        "no_cache_reads_or_writes_standard": "416.68140",
+        "recorded_categories_fast_2x": "143.1903840"
+      }
+    },
+    {
+      "run_id": "measured-003",
+      "usage": {
+        "input_tokens": 1932992,
+        "cached_input_tokens": 1788672,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 77810,
+        "reasoning_output_tokens": 9230,
+        "total_tokens": 2010802
+      },
+      "responses": 30,
+      "reconciled_to_final_raw_thread": true,
+      "max_request_input": 117833,
+      "input_cache_percent": "92.53385425288878588219713274",
+      "components_usd": {
+        "ordinary_input": "1.44320",
+        "cache_read": "1.788672",
+        "cache_write": "0E-7",
+        "output": "3.89050"
+      },
+      "scenarios_usd": {
+        "recorded_categories_standard": "7.1223720",
+        "same_read_hits_all_misses_are_cache_writes": "7.4831720",
+        "no_cache_reads_or_writes_standard": "23.22042",
+        "recorded_categories_fast_2x": "14.2447440"
+      }
+    },
+    {
+      "run_id": "measured-004",
+      "usage": {
+        "input_tokens": 38472509,
+        "cached_input_tokens": 36578048,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 384844,
+        "reasoning_output_tokens": 133249,
+        "total_tokens": 38857353
+      },
+      "responses": 297,
+      "reconciled_to_final_raw_thread": true,
+      "max_request_input": 245700,
+      "input_cache_percent": "95.07580594756635185919379472",
+      "components_usd": {
+        "ordinary_input": "18.94461",
+        "cache_read": "36.578048",
+        "cache_write": "0E-7",
+        "output": "19.24220"
+      },
+      "scenarios_usd": {
+        "recorded_categories_standard": "74.7648580",
+        "same_read_hits_all_misses_are_cache_writes": "79.5010105",
+        "no_cache_reads_or_writes_standard": "403.96729",
+        "recorded_categories_fast_2x": "149.5297160"
+      }
+    }
+  ],
+  "raw_evidence_sha256": {
+    "runs/pilot-002/runtime/sessions/2026/09/18/rollout-2026-09-18T16-38-24-01a0b63d-e3ba-7c40-a3ef-0525e2f77ba4.jsonl": "7696b89b56b7d065241e349259b4f96d38dec93620a240254e7cfd76520c8f42",
+    "runs/measured-001/runtime/sessions/2026/09/18/rollout-2026-09-18T18-55-24-01a0b6bb-509c-7082-b6ab-2e7290d3ab39.jsonl": "6ebd896a06557c7b9237a503ed2360e87e4c6a995cb690c749dee7548b4e0a2b",
+    "runs/measured-002/runtime/sessions/2026/09/18/rollout-2026-09-18T22-55-27-01a0b797-16d4-73f1-913e-4da39cbdb924.jsonl": "43769872904cd3423cac2926e7c64562b83c2fc7834956f12e136310a195dccb",
+    "runs/measured-003/runtime/sessions/2026/09/19/rollout-2026-09-19T02-55-31-01a0b872-dfc3-7031-9e3c-afaee843cdf8.jsonl": "9f2bb444296ba1776b75f4a3230c6b8551b48fc03169b2b245a1e7f985777bd2",
+    "runs/measured-004/runtime/sessions/2026/09/19/rollout-2026-09-19T10-35-17-01a0ba17-ce0e-77f2-80d1-f350fb67e7b9.jsonl": "4470168ddfcce17884df41284e0ca7177d969db6814290d2ee2af910e00dad66"
+  }
+}

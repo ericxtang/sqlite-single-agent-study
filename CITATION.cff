@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this replication package and the original Cursor posts when using these results."
+title: "SQLite Single-Agent Study: Four-Hour Astra Implementations and Historical Cursor Comparison"
+type: software
+authors:
+  - family-names: Tang
+    given-names: Eric
+year: 2026
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/ericxtang/sqlite-single-agent-study"

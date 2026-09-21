@@ -1,0 +1,51 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+comment-syntax
+
+--
+
+anything-except-newline
+
+newline
+
+end-of-input
+
+/*
+
+anything-except-*/
+
+*/
+
+See also:   lang_comment.html

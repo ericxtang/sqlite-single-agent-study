@@ -1,0 +1,78 @@
+{
+  "suite": "secondary",
+  "checkpoint_sha256": "29882e7c4d1d76b16328d8dd8fb08f8006ac213bfa64ede456170f6998c55109",
+  "checkpoint_elapsed_seconds": 2444.263998833,
+  "diagnostic_subset": false,
+  "files_scored": 0,
+  "image": "sha256:c379c6128e193682c40015eb8b126e2916b18c3985f0fb72cf1c642a1a3039f5",
+  "build_ok": false,
+  "evaluation_complete": true,
+  "secondary": {
+    "cases": [
+      {
+        "case": "typed_values",
+        "passed": false,
+        "reason": "Build unavailable"
+      },
+      {
+        "case": "transaction_rollback",
+        "passed": false,
+        "reason": "Build unavailable"
+      },
+      {
+        "case": "nested_savepoint",
+        "passed": false,
+        "reason": "Build unavailable"
+      },
+      {
+        "case": "constraints_and_statement_atomicity",
+        "passed": false,
+        "reason": "Build unavailable"
+      },
+      {
+        "case": "foreign_key_cascade",
+        "passed": false,
+        "reason": "Build unavailable"
+      },
+      {
+        "case": "recursive_cte",
+        "passed": false,
+        "reason": "Build unavailable"
+      },
+      {
+        "case": "window_function",
+        "passed": false,
+        "reason": "Build unavailable"
+      },
+      {
+        "case": "json_extract",
+        "passed": false,
+        "reason": "Build unavailable"
+      },
+      {
+        "case": "close_reopen",
+        "passed": false,
+        "reason": "Build unavailable"
+      },
+      {
+        "case": "process_restart",
+        "passed": false,
+        "reason": "Build unavailable"
+      },
+      {
+        "case": "sqlite_reads_generated_file",
+        "passed": false,
+        "reason": "Build unavailable"
+      },
+      {
+        "case": "generated_reads_sqlite_file",
+        "passed": false,
+        "reason": "Build unavailable"
+      }
+    ],
+    "passed": 0,
+    "total": 12
+  },
+  "build_exit_code": 101,
+  "evaluation_elapsed_seconds": 3.559464417
+}

@@ -1,0 +1,59 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+qualified-table-name
+
+schema-name
+
+.
+
+table-name
+
+AS
+
+alias
+
+INDEXED
+
+BY
+
+index-name
+
+NOT
+
+INDEXED
+
+Used by:   delete-stmt   delete-stmt-limited   update-stmt   update-stmt-limited
+
+See also:   lang_createtrigger.html   lang_delete.html   lang_indexedby.html   lang_update.html

@@ -1,0 +1,1458 @@
+{
+  "recorded_at": "2026-09-19T18:40:32.910482+00:00",
+  "measure": "Retained text in .rs/.py/.sh files, physical and nonblank lines; includes comments and tests. Excludes configuration/docs/build output. Not code churn or effective statements.",
+  "runs": [
+    {
+      "run_id": "measured-001",
+      "terminal": "final.tar.gz",
+      "archive_sha256": "cfaf7e41250c7d32ed9305724f91232207414f3c0e3065527ab7e720b9281619",
+      "languages": {
+        "Rust": {
+          "files": 29,
+          "physical_lines": 10833,
+          "nonblank_lines": 10794,
+          "bytes": 477327
+        },
+        "Python": {
+          "files": 5,
+          "physical_lines": 1514,
+          "nonblank_lines": 1513,
+          "bytes": 113122
+        },
+        "shell": {
+          "files": 1,
+          "physical_lines": 9,
+          "nonblank_lines": 9,
+          "bytes": 240
+        }
+      },
+      "files": [
+        {
+          "path": "src/ast.rs",
+          "language": "Rust",
+          "physical_lines": 79,
+          "nonblank_lines": 79,
+          "bytes": 5098
+        },
+        {
+          "path": "src/attach.rs",
+          "language": "Rust",
+          "physical_lines": 64,
+          "nonblank_lines": 63,
+          "bytes": 3079
+        },
+        {
+          "path": "src/compound.rs",
+          "language": "Rust",
+          "physical_lines": 82,
+          "nonblank_lines": 81,
+          "bytes": 5079
+        },
+        {
+          "path": "src/cte.rs",
+          "language": "Rust",
+          "physical_lines": 123,
+          "nonblank_lines": 122,
+          "bytes": 6714
+        },
+        {
+          "path": "src/datetime.rs",
+          "language": "Rust",
+          "physical_lines": 340,
+          "nonblank_lines": 340,
+          "bytes": 13548
+        },
+        {
+          "path": "src/engine.rs",
+          "language": "Rust",
+          "physical_lines": 2080,
+          "nonblank_lines": 2073,
+          "bytes": 97125
+        },
+        {
+          "path": "src/foreign.rs",
+          "language": "Rust",
+          "physical_lines": 105,
+          "nonblank_lines": 104,
+          "bytes": 5373
+        },
+        {
+          "path": "src/formatting.rs",
+          "language": "Rust",
+          "physical_lines": 174,
+          "nonblank_lines": 172,
+          "bytes": 7652
+        },
+        {
+          "path": "src/functions.rs",
+          "language": "Rust",
+          "physical_lines": 698,
+          "nonblank_lines": 698,
+          "bytes": 20002
+        },
+        {
+          "path": "src/journal.rs",
+          "language": "Rust",
+          "physical_lines": 96,
+          "nonblank_lines": 96,
+          "bytes": 5031
+        },
+        {
+          "path": "src/json.rs",
+          "language": "Rust",
+          "physical_lines": 516,
+          "nonblank_lines": 515,
+          "bytes": 17576
+        },
+        {
+          "path": "src/json_value.rs",
+          "language": "Rust",
+          "physical_lines": 370,
+          "nonblank_lines": 370,
+          "bytes": 11716
+        },
+        {
+          "path": "src/jsonb.rs",
+          "language": "Rust",
+          "physical_lines": 130,
+          "nonblank_lines": 130,
+          "bytes": 3109
+        },
+        {
+          "path": "src/lexer.rs",
+          "language": "Rust",
+          "physical_lines": 157,
+          "nonblank_lines": 157,
+          "bytes": 5241
+        },
+        {
+          "path": "src/main.rs",
+          "language": "Rust",
+          "physical_lines": 81,
+          "nonblank_lines": 81,
+          "bytes": 2214
+        },
+        {
+          "path": "src/maintenance.rs",
+          "language": "Rust",
+          "physical_lines": 103,
+          "nonblank_lines": 102,
+          "bytes": 8515
+        },
+        {
+          "path": "src/memo.rs",
+          "language": "Rust",
+          "physical_lines": 51,
+          "nonblank_lines": 51,
+          "bytes": 2741
+        },
+        {
+          "path": "src/mutate.rs",
+          "language": "Rust",
+          "physical_lines": 1377,
+          "nonblank_lines": 1376,
+          "bytes": 68121
+        },
+        {
+          "path": "src/parser.rs",
+          "language": "Rust",
+          "physical_lines": 1430,
+          "nonblank_lines": 1427,
+          "bytes": 51874
+        },
+        {
+          "path": "src/pragma.rs",
+          "language": "Rust",
+          "physical_lines": 486,
+          "nonblank_lines": 482,
+          "bytes": 32404
+        },
+        {
+          "path": "src/schema.rs",
+          "language": "Rust",
+          "physical_lines": 691,
+          "nonblank_lines": 684,
+          "bytes": 29203
+        },
+        {
+          "path": "src/sequence.rs",
+          "language": "Rust",
+          "physical_lines": 85,
+          "nonblank_lines": 85,
+          "bytes": 4982
+        },
+        {
+          "path": "src/snapshot.rs",
+          "language": "Rust",
+          "physical_lines": 114,
+          "nonblank_lines": 114,
+          "bytes": 7732
+        },
+        {
+          "path": "src/storage.rs",
+          "language": "Rust",
+          "physical_lines": 218,
+          "nonblank_lines": 216,
+          "bytes": 10103
+        },
+        {
+          "path": "src/trigger.rs",
+          "language": "Rust",
+          "physical_lines": 180,
+          "nonblank_lines": 180,
+          "bytes": 7476
+        },
+        {
+          "path": "src/upsert.rs",
+          "language": "Rust",
+          "physical_lines": 75,
+          "nonblank_lines": 73,
+          "bytes": 4107
+        },
+        {
+          "path": "src/validate.rs",
+          "language": "Rust",
+          "physical_lines": 177,
+          "nonblank_lines": 175,
+          "bytes": 9488
+        },
+        {
+          "path": "src/value.rs",
+          "language": "Rust",
+          "physical_lines": 370,
+          "nonblank_lines": 369,
+          "bytes": 11763
+        },
+        {
+          "path": "src/window.rs",
+          "language": "Rust",
+          "physical_lines": 381,
+          "nonblank_lines": 379,
+          "bytes": 20261
+        },
+        {
+          "path": "tests/journal_recovery.py",
+          "language": "Python",
+          "physical_lines": 92,
+          "nonblank_lines": 91,
+          "bytes": 5647
+        },
+        {
+          "path": "tests/persistence.py",
+          "language": "Python",
+          "physical_lines": 149,
+          "nonblank_lines": 149,
+          "bytes": 13246
+        },
+        {
+          "path": "tests/properties.py",
+          "language": "Python",
+          "physical_lines": 75,
+          "nonblank_lines": 75,
+          "bytes": 4510
+        },
+        {
+          "path": "tests/regression.py",
+          "language": "Python",
+          "physical_lines": 1152,
+          "nonblank_lines": 1152,
+          "bytes": 84956
+        },
+        {
+          "path": "tests/run.sh",
+          "language": "shell",
+          "physical_lines": 9,
+          "nonblank_lines": 9,
+          "bytes": 240
+        },
+        {
+          "path": "tests/smoke.py",
+          "language": "Python",
+          "physical_lines": 46,
+          "nonblank_lines": 46,
+          "bytes": 4763
+        }
+      ]
+    },
+    {
+      "run_id": "measured-002",
+      "terminal": "final.tar.gz",
+      "archive_sha256": "398fb9570eda5489c831a3ada77ab39637f961d844d3a53687112a827758e7b8",
+      "languages": {
+        "Rust": {
+          "files": 30,
+          "physical_lines": 2146,
+          "nonblank_lines": 2083,
+          "bytes": 353840
+        },
+        "Python": {
+          "files": 38,
+          "physical_lines": 1896,
+          "nonblank_lines": 1890,
+          "bytes": 141014
+        },
+        "shell": {
+          "files": 0,
+          "physical_lines": 0,
+          "nonblank_lines": 0,
+          "bytes": 0
+        }
+      },
+      "files": [
+        {
+          "path": "src/analyze.rs",
+          "language": "Rust",
+          "physical_lines": 236,
+          "nonblank_lines": 230,
+          "bytes": 12453
+        },
+        {
+          "path": "src/ast.rs",
+          "language": "Rust",
+          "physical_lines": 60,
+          "nonblank_lines": 57,
+          "bytes": 6509
+        },
+        {
+          "path": "src/cte.rs",
+          "language": "Rust",
+          "physical_lines": 147,
+          "nonblank_lines": 145,
+          "bytes": 6142
+        },
+        {
+          "path": "src/date.rs",
+          "language": "Rust",
+          "physical_lines": 19,
+          "nonblank_lines": 19,
+          "bytes": 8054
+        },
+        {
+          "path": "src/db.rs",
+          "language": "Rust",
+          "physical_lines": 169,
+          "nonblank_lines": 152,
+          "bytes": 78129
+        },
+        {
+          "path": "src/dml.rs",
+          "language": "Rust",
+          "physical_lines": 113,
+          "nonblank_lines": 112,
+          "bytes": 6327
+        },
+        {
+          "path": "src/format.rs",
+          "language": "Rust",
+          "physical_lines": 186,
+          "nonblank_lines": 184,
+          "bytes": 9500
+        },
+        {
+          "path": "src/func.rs",
+          "language": "Rust",
+          "physical_lines": 60,
+          "nonblank_lines": 59,
+          "bytes": 9909
+        },
+        {
+          "path": "src/introspect.rs",
+          "language": "Rust",
+          "physical_lines": 44,
+          "nonblank_lines": 43,
+          "bytes": 7224
+        },
+        {
+          "path": "src/journal.rs",
+          "language": "Rust",
+          "physical_lines": 16,
+          "nonblank_lines": 16,
+          "bytes": 4342
+        },
+        {
+          "path": "src/jsonfunc.rs",
+          "language": "Rust",
+          "physical_lines": 56,
+          "nonblank_lines": 53,
+          "bytes": 15748
+        },
+        {
+          "path": "src/lex.rs",
+          "language": "Rust",
+          "physical_lines": 42,
+          "nonblank_lines": 41,
+          "bytes": 3594
+        },
+        {
+          "path": "src/locking.rs",
+          "language": "Rust",
+          "physical_lines": 15,
+          "nonblank_lines": 15,
+          "bytes": 1892
+        },
+        {
+          "path": "src/main.rs",
+          "language": "Rust",
+          "physical_lines": 17,
+          "nonblank_lines": 17,
+          "bytes": 1634
+        },
+        {
+          "path": "src/pagelimit.rs",
+          "language": "Rust",
+          "physical_lines": 18,
+          "nonblank_lines": 18,
+          "bytes": 2753
+        },
+        {
+          "path": "src/parser.rs",
+          "language": "Rust",
+          "physical_lines": 93,
+          "nonblank_lines": 90,
+          "bytes": 27757
+        },
+        {
+          "path": "src/persistence.rs",
+          "language": "Rust",
+          "physical_lines": 45,
+          "nonblank_lines": 43,
+          "bytes": 5470
+        },
+        {
+          "path": "src/query.rs",
+          "language": "Rust",
+          "physical_lines": 254,
+          "nonblank_lines": 242,
+          "bytes": 55770
+        },
+        {
+          "path": "src/reindex.rs",
+          "language": "Rust",
+          "physical_lines": 16,
+          "nonblank_lines": 16,
+          "bytes": 2526
+        },
+        {
+          "path": "src/render.rs",
+          "language": "Rust",
+          "physical_lines": 34,
+          "nonblank_lines": 34,
+          "bytes": 11326
+        },
+        {
+          "path": "src/replace.rs",
+          "language": "Rust",
+          "physical_lines": 53,
+          "nonblank_lines": 53,
+          "bytes": 2768
+        },
+        {
+          "path": "src/rowvalue.rs",
+          "language": "Rust",
+          "physical_lines": 26,
+          "nonblank_lines": 26,
+          "bytes": 3416
+        },
+        {
+          "path": "src/schema.rs",
+          "language": "Rust",
+          "physical_lines": 13,
+          "nonblank_lines": 13,
+          "bytes": 6275
+        },
+        {
+          "path": "src/schema_edit.rs",
+          "language": "Rust",
+          "physical_lines": 130,
+          "nonblank_lines": 130,
+          "bytes": 20662
+        },
+        {
+          "path": "src/settings.rs",
+          "language": "Rust",
+          "physical_lines": 21,
+          "nonblank_lines": 21,
+          "bytes": 3363
+        },
+        {
+          "path": "src/storage.rs",
+          "language": "Rust",
+          "physical_lines": 177,
+          "nonblank_lines": 169,
+          "bytes": 28313
+        },
+        {
+          "path": "src/subquery.rs",
+          "language": "Rust",
+          "physical_lines": 18,
+          "nonblank_lines": 18,
+          "bytes": 1752
+        },
+        {
+          "path": "src/vacuum.rs",
+          "language": "Rust",
+          "physical_lines": 22,
+          "nonblank_lines": 22,
+          "bytes": 3522
+        },
+        {
+          "path": "src/value.rs",
+          "language": "Rust",
+          "physical_lines": 30,
+          "nonblank_lines": 29,
+          "bytes": 5444
+        },
+        {
+          "path": "src/windowdef.rs",
+          "language": "Rust",
+          "physical_lines": 16,
+          "nonblank_lines": 16,
+          "bytes": 1266
+        },
+        {
+          "path": "tests/alter.py",
+          "language": "Python",
+          "physical_lines": 75,
+          "nonblank_lines": 75,
+          "bytes": 5571
+        },
+        {
+          "path": "tests/analyze.py",
+          "language": "Python",
+          "physical_lines": 70,
+          "nonblank_lines": 70,
+          "bytes": 4388
+        },
+        {
+          "path": "tests/attach.py",
+          "language": "Python",
+          "physical_lines": 38,
+          "nonblank_lines": 38,
+          "bytes": 2727
+        },
+        {
+          "path": "tests/btree_layout.py",
+          "language": "Python",
+          "physical_lines": 73,
+          "nonblank_lines": 73,
+          "bytes": 4518
+        },
+        {
+          "path": "tests/bulk.py",
+          "language": "Python",
+          "physical_lines": 21,
+          "nonblank_lines": 21,
+          "bytes": 1858
+        },
+        {
+          "path": "tests/busy.py",
+          "language": "Python",
+          "physical_lines": 25,
+          "nonblank_lines": 25,
+          "bytes": 1600
+        },
+        {
+          "path": "tests/corruption.py",
+          "language": "Python",
+          "physical_lines": 48,
+          "nonblank_lines": 48,
+          "bytes": 3512
+        },
+        {
+          "path": "tests/cte_liveness.py",
+          "language": "Python",
+          "physical_lines": 67,
+          "nonblank_lines": 67,
+          "bytes": 5357
+        },
+        {
+          "path": "tests/ctes.py",
+          "language": "Python",
+          "physical_lines": 31,
+          "nonblank_lines": 31,
+          "bytes": 2880
+        },
+        {
+          "path": "tests/dml_limits.py",
+          "language": "Python",
+          "physical_lines": 72,
+          "nonblank_lines": 72,
+          "bytes": 5241
+        },
+        {
+          "path": "tests/edgecases.py",
+          "language": "Python",
+          "physical_lines": 53,
+          "nonblank_lines": 52,
+          "bytes": 4139
+        },
+        {
+          "path": "tests/encoding.py",
+          "language": "Python",
+          "physical_lines": 39,
+          "nonblank_lines": 39,
+          "bytes": 2835
+        },
+        {
+          "path": "tests/filemeta.py",
+          "language": "Python",
+          "physical_lines": 52,
+          "nonblank_lines": 52,
+          "bytes": 4129
+        },
+        {
+          "path": "tests/foreignkeys.py",
+          "language": "Python",
+          "physical_lines": 42,
+          "nonblank_lines": 42,
+          "bytes": 3724
+        },
+        {
+          "path": "tests/formatting.py",
+          "language": "Python",
+          "physical_lines": 57,
+          "nonblank_lines": 57,
+          "bytes": 3090
+        },
+        {
+          "path": "tests/index_integrity.py",
+          "language": "Python",
+          "physical_lines": 56,
+          "nonblank_lines": 56,
+          "bytes": 4330
+        },
+        {
+          "path": "tests/indexes.py",
+          "language": "Python",
+          "physical_lines": 31,
+          "nonblank_lines": 31,
+          "bytes": 2786
+        },
+        {
+          "path": "tests/introspection.py",
+          "language": "Python",
+          "physical_lines": 85,
+          "nonblank_lines": 85,
+          "bytes": 5518
+        },
+        {
+          "path": "tests/isolation.py",
+          "language": "Python",
+          "physical_lines": 37,
+          "nonblank_lines": 37,
+          "bytes": 2552
+        },
+        {
+          "path": "tests/lazy_limits.py",
+          "language": "Python",
+          "physical_lines": 32,
+          "nonblank_lines": 32,
+          "bytes": 2785
+        },
+        {
+          "path": "tests/metadata.py",
+          "language": "Python",
+          "physical_lines": 32,
+          "nonblank_lines": 32,
+          "bytes": 2829
+        },
+        {
+          "path": "tests/names.py",
+          "language": "Python",
+          "physical_lines": 57,
+          "nonblank_lines": 57,
+          "bytes": 4571
+        },
+        {
+          "path": "tests/numeric_literals.py",
+          "language": "Python",
+          "physical_lines": 26,
+          "nonblank_lines": 26,
+          "bytes": 2090
+        },
+        {
+          "path": "tests/optimize.py",
+          "language": "Python",
+          "physical_lines": 77,
+          "nonblank_lines": 77,
+          "bytes": 5060
+        },
+        {
+          "path": "tests/page_limits.py",
+          "language": "Python",
+          "physical_lines": 38,
+          "nonblank_lines": 38,
+          "bytes": 2903
+        },
+        {
+          "path": "tests/patterns.py",
+          "language": "Python",
+          "physical_lines": 26,
+          "nonblank_lines": 26,
+          "bytes": 2354
+        },
+        {
+          "path": "tests/pragmas.py",
+          "language": "Python",
+          "physical_lines": 40,
+          "nonblank_lines": 40,
+          "bytes": 3312
+        },
+        {
+          "path": "tests/recovery.py",
+          "language": "Python",
+          "physical_lines": 35,
+          "nonblank_lines": 35,
+          "bytes": 2303
+        },
+        {
+          "path": "tests/replace_actions.py",
+          "language": "Python",
+          "physical_lines": 79,
+          "nonblank_lines": 79,
+          "bytes": 6081
+        },
+        {
+          "path": "tests/robustness.py",
+          "language": "Python",
+          "physical_lines": 17,
+          "nonblank_lines": 17,
+          "bytes": 1508
+        },
+        {
+          "path": "tests/rowvalues.py",
+          "language": "Python",
+          "physical_lines": 40,
+          "nonblank_lines": 40,
+          "bytes": 3776
+        },
+        {
+          "path": "tests/scopes.py",
+          "language": "Python",
+          "physical_lines": 40,
+          "nonblank_lines": 40,
+          "bytes": 3458
+        },
+        {
+          "path": "tests/semantics.py",
+          "language": "Python",
+          "physical_lines": 127,
+          "nonblank_lines": 122,
+          "bytes": 9448
+        },
+        {
+          "path": "tests/storage.py",
+          "language": "Python",
+          "physical_lines": 104,
+          "nonblank_lines": 104,
+          "bytes": 4471
+        },
+        {
+          "path": "tests/subqueries.py",
+          "language": "Python",
+          "physical_lines": 39,
+          "nonblank_lines": 39,
+          "bytes": 3183
+        },
+        {
+          "path": "tests/triggers.py",
+          "language": "Python",
+          "physical_lines": 43,
+          "nonblank_lines": 43,
+          "bytes": 3324
+        },
+        {
+          "path": "tests/vacuum.py",
+          "language": "Python",
+          "physical_lines": 38,
+          "nonblank_lines": 38,
+          "bytes": 2981
+        },
+        {
+          "path": "tests/windows.py",
+          "language": "Python",
+          "physical_lines": 34,
+          "nonblank_lines": 34,
+          "bytes": 3822
+        }
+      ]
+    },
+    {
+      "run_id": "measured-003",
+      "terminal": "interrupted-recovered.tar.gz",
+      "archive_sha256": "29882e7c4d1d76b16328d8dd8fb08f8006ac213bfa64ede456170f6998c55109",
+      "languages": {
+        "Rust": {
+          "files": 17,
+          "physical_lines": 387,
+          "nonblank_lines": 383,
+          "bytes": 155878
+        },
+        "Python": {
+          "files": 5,
+          "physical_lines": 203,
+          "nonblank_lines": 203,
+          "bytes": 12583
+        },
+        "shell": {
+          "files": 0,
+          "physical_lines": 0,
+          "nonblank_lines": 0,
+          "bytes": 0
+        }
+      },
+      "files": [
+        {
+          "path": "src/ast.rs",
+          "language": "Rust",
+          "physical_lines": 39,
+          "nonblank_lines": 37,
+          "bytes": 3907
+        },
+        {
+          "path": "src/date.rs",
+          "language": "Rust",
+          "physical_lines": 6,
+          "nonblank_lines": 6,
+          "bytes": 4759
+        },
+        {
+          "path": "src/engine.rs",
+          "language": "Rust",
+          "physical_lines": 59,
+          "nonblank_lines": 58,
+          "bytes": 30060
+        },
+        {
+          "path": "src/foreign.rs",
+          "language": "Rust",
+          "physical_lines": 5,
+          "nonblank_lines": 5,
+          "bytes": 2696
+        },
+        {
+          "path": "src/funcs.rs",
+          "language": "Rust",
+          "physical_lines": 23,
+          "nonblank_lines": 23,
+          "bytes": 9620
+        },
+        {
+          "path": "src/json.rs",
+          "language": "Rust",
+          "physical_lines": 11,
+          "nonblank_lines": 11,
+          "bytes": 5129
+        },
+        {
+          "path": "src/lex.rs",
+          "language": "Rust",
+          "physical_lines": 8,
+          "nonblank_lines": 8,
+          "bytes": 2012
+        },
+        {
+          "path": "src/locking.rs",
+          "language": "Rust",
+          "physical_lines": 7,
+          "nonblank_lines": 7,
+          "bytes": 1724
+        },
+        {
+          "path": "src/main.rs",
+          "language": "Rust",
+          "physical_lines": 3,
+          "nonblank_lines": 3,
+          "bytes": 1483
+        },
+        {
+          "path": "src/parser.rs",
+          "language": "Rust",
+          "physical_lines": 50,
+          "nonblank_lines": 50,
+          "bytes": 22476
+        },
+        {
+          "path": "src/query.rs",
+          "language": "Rust",
+          "physical_lines": 65,
+          "nonblank_lines": 64,
+          "bytes": 26717
+        },
+        {
+          "path": "src/schema.rs",
+          "language": "Rust",
+          "physical_lines": 23,
+          "nonblank_lines": 23,
+          "bytes": 12489
+        },
+        {
+          "path": "src/storage.rs",
+          "language": "Rust",
+          "physical_lines": 42,
+          "nonblank_lines": 42,
+          "bytes": 17699
+        },
+        {
+          "path": "src/tablefunc.rs",
+          "language": "Rust",
+          "physical_lines": 6,
+          "nonblank_lines": 6,
+          "bytes": 2811
+        },
+        {
+          "path": "src/triggers.rs",
+          "language": "Rust",
+          "physical_lines": 4,
+          "nonblank_lines": 4,
+          "bytes": 1519
+        },
+        {
+          "path": "src/value.rs",
+          "language": "Rust",
+          "physical_lines": 26,
+          "nonblank_lines": 26,
+          "bytes": 4678
+        },
+        {
+          "path": "src/window.rs",
+          "language": "Rust",
+          "physical_lines": 10,
+          "nonblank_lines": 10,
+          "bytes": 6099
+        },
+        {
+          "path": "tests/concurrency.py",
+          "language": "Python",
+          "physical_lines": 25,
+          "nonblank_lines": 25,
+          "bytes": 1312
+        },
+        {
+          "path": "tests/features.py",
+          "language": "Python",
+          "physical_lines": 34,
+          "nonblank_lines": 34,
+          "bytes": 2357
+        },
+        {
+          "path": "tests/semantics.py",
+          "language": "Python",
+          "physical_lines": 37,
+          "nonblank_lines": 37,
+          "bytes": 2630
+        },
+        {
+          "path": "tests/smoke.py",
+          "language": "Python",
+          "physical_lines": 72,
+          "nonblank_lines": 72,
+          "bytes": 4250
+        },
+        {
+          "path": "tests/storage.py",
+          "language": "Python",
+          "physical_lines": 35,
+          "nonblank_lines": 35,
+          "bytes": 2034
+        }
+      ]
+    },
+    {
+      "run_id": "measured-004",
+      "terminal": "final.tar.gz",
+      "archive_sha256": "889ccc2db8edf34b5763e1ad9d00aea73ac94983cc968167f972814f7cc1f290",
+      "languages": {
+        "Rust": {
+          "files": 7,
+          "physical_lines": 12585,
+          "nonblank_lines": 12554,
+          "bytes": 548776
+        },
+        "Python": {
+          "files": 60,
+          "physical_lines": 2543,
+          "nonblank_lines": 2542,
+          "bytes": 146806
+        },
+        "shell": {
+          "files": 0,
+          "physical_lines": 0,
+          "nonblank_lines": 0,
+          "bytes": 0
+        }
+      },
+      "files": [
+        {
+          "path": "edit_index_metadata.py",
+          "language": "Python",
+          "physical_lines": 78,
+          "nonblank_lines": 78,
+          "bytes": 4565
+        },
+        {
+          "path": "edit_indexed.py",
+          "language": "Python",
+          "physical_lines": 177,
+          "nonblank_lines": 177,
+          "bytes": 11310
+        },
+        {
+          "path": "edit_query_limits.py",
+          "language": "Python",
+          "physical_lines": 80,
+          "nonblank_lines": 80,
+          "bytes": 5357
+        },
+        {
+          "path": "edit_subquery_cache.py",
+          "language": "Python",
+          "physical_lines": 124,
+          "nonblank_lines": 124,
+          "bytes": 6658
+        },
+        {
+          "path": "src/engine.rs",
+          "language": "Rust",
+          "physical_lines": 7846,
+          "nonblank_lines": 7823,
+          "bytes": 360904
+        },
+        {
+          "path": "src/funcs.rs",
+          "language": "Rust",
+          "physical_lines": 1836,
+          "nonblank_lines": 1833,
+          "bytes": 74778
+        },
+        {
+          "path": "src/json.rs",
+          "language": "Rust",
+          "physical_lines": 194,
+          "nonblank_lines": 194,
+          "bytes": 7495
+        },
+        {
+          "path": "src/main.rs",
+          "language": "Rust",
+          "physical_lines": 57,
+          "nonblank_lines": 57,
+          "bytes": 2604
+        },
+        {
+          "path": "src/storage.rs",
+          "language": "Rust",
+          "physical_lines": 533,
+          "nonblank_lines": 530,
+          "bytes": 22773
+        },
+        {
+          "path": "src/syntax.rs",
+          "language": "Rust",
+          "physical_lines": 1840,
+          "nonblank_lines": 1840,
+          "bytes": 70567
+        },
+        {
+          "path": "src/value.rs",
+          "language": "Rust",
+          "physical_lines": 279,
+          "nonblank_lines": 277,
+          "bytes": 9655
+        },
+        {
+          "path": "tests/aggregate_window_edges.py",
+          "language": "Python",
+          "physical_lines": 45,
+          "nonblank_lines": 45,
+          "bytes": 2505
+        },
+        {
+          "path": "tests/alter_constraints.py",
+          "language": "Python",
+          "physical_lines": 93,
+          "nonblank_lines": 93,
+          "bytes": 4043
+        },
+        {
+          "path": "tests/alter_query.py",
+          "language": "Python",
+          "physical_lines": 19,
+          "nonblank_lines": 19,
+          "bytes": 1185
+        },
+        {
+          "path": "tests/assignments.py",
+          "language": "Python",
+          "physical_lines": 44,
+          "nonblank_lines": 44,
+          "bytes": 2383
+        },
+        {
+          "path": "tests/attach.py",
+          "language": "Python",
+          "physical_lines": 29,
+          "nonblank_lines": 29,
+          "bytes": 1890
+        },
+        {
+          "path": "tests/cascade_order.py",
+          "language": "Python",
+          "physical_lines": 47,
+          "nonblank_lines": 47,
+          "bytes": 2487
+        },
+        {
+          "path": "tests/cascade_triggers.py",
+          "language": "Python",
+          "physical_lines": 17,
+          "nonblank_lines": 17,
+          "bytes": 1269
+        },
+        {
+          "path": "tests/change_counts.py",
+          "language": "Python",
+          "physical_lines": 20,
+          "nonblank_lines": 20,
+          "bytes": 976
+        },
+        {
+          "path": "tests/concurrency.py",
+          "language": "Python",
+          "physical_lines": 17,
+          "nonblank_lines": 17,
+          "bytes": 1575
+        },
+        {
+          "path": "tests/constraint_timing.py",
+          "language": "Python",
+          "physical_lines": 48,
+          "nonblank_lines": 48,
+          "bytes": 2648
+        },
+        {
+          "path": "tests/cross_schema_atomic.py",
+          "language": "Python",
+          "physical_lines": 47,
+          "nonblank_lines": 47,
+          "bytes": 2315
+        },
+        {
+          "path": "tests/date_time.py",
+          "language": "Python",
+          "physical_lines": 44,
+          "nonblank_lines": 44,
+          "bytes": 3122
+        },
+        {
+          "path": "tests/deep_persistence.py",
+          "language": "Python",
+          "physical_lines": 26,
+          "nonblank_lines": 26,
+          "bytes": 1206
+        },
+        {
+          "path": "tests/derived_schemas.py",
+          "language": "Python",
+          "physical_lines": 24,
+          "nonblank_lines": 24,
+          "bytes": 1399
+        },
+        {
+          "path": "tests/dml_extra.py",
+          "language": "Python",
+          "physical_lines": 21,
+          "nonblank_lines": 21,
+          "bytes": 1374
+        },
+        {
+          "path": "tests/edges.py",
+          "language": "Python",
+          "physical_lines": 19,
+          "nonblank_lines": 19,
+          "bytes": 1273
+        },
+        {
+          "path": "tests/empty_evaluation.py",
+          "language": "Python",
+          "physical_lines": 18,
+          "nonblank_lines": 18,
+          "bytes": 915
+        },
+        {
+          "path": "tests/foreign_json.py",
+          "language": "Python",
+          "physical_lines": 19,
+          "nonblank_lines": 19,
+          "bytes": 1581
+        },
+        {
+          "path": "tests/foreign_schema.py",
+          "language": "Python",
+          "physical_lines": 61,
+          "nonblank_lines": 61,
+          "bytes": 2807
+        },
+        {
+          "path": "tests/foreign_tracking.py",
+          "language": "Python",
+          "physical_lines": 93,
+          "nonblank_lines": 93,
+          "bytes": 2989
+        },
+        {
+          "path": "tests/format_cast.py",
+          "language": "Python",
+          "physical_lines": 11,
+          "nonblank_lines": 11,
+          "bytes": 1029
+        },
+        {
+          "path": "tests/functions_extra.py",
+          "language": "Python",
+          "physical_lines": 18,
+          "nonblank_lines": 18,
+          "bytes": 1699
+        },
+        {
+          "path": "tests/index_settings.py",
+          "language": "Python",
+          "physical_lines": 11,
+          "nonblank_lines": 11,
+          "bytes": 889
+        },
+        {
+          "path": "tests/indexed_by.py",
+          "language": "Python",
+          "physical_lines": 63,
+          "nonblank_lines": 63,
+          "bytes": 3396
+        },
+        {
+          "path": "tests/joins.py",
+          "language": "Python",
+          "physical_lines": 31,
+          "nonblank_lines": 31,
+          "bytes": 1718
+        },
+        {
+          "path": "tests/json5.py",
+          "language": "Python",
+          "physical_lines": 13,
+          "nonblank_lines": 13,
+          "bytes": 946
+        },
+        {
+          "path": "tests/json_order.py",
+          "language": "Python",
+          "physical_lines": 23,
+          "nonblank_lines": 23,
+          "bytes": 1835
+        },
+        {
+          "path": "tests/key_constraints.py",
+          "language": "Python",
+          "physical_lines": 51,
+          "nonblank_lines": 51,
+          "bytes": 2958
+        },
+        {
+          "path": "tests/lazy_compound.py",
+          "language": "Python",
+          "physical_lines": 16,
+          "nonblank_lines": 16,
+          "bytes": 1136
+        },
+        {
+          "path": "tests/limit_evaluation.py",
+          "language": "Python",
+          "physical_lines": 38,
+          "nonblank_lines": 38,
+          "bytes": 2180
+        },
+        {
+          "path": "tests/maintenance.py",
+          "language": "Python",
+          "physical_lines": 77,
+          "nonblank_lines": 77,
+          "bytes": 3710
+        },
+        {
+          "path": "tests/model_stress.py",
+          "language": "Python",
+          "physical_lines": 28,
+          "nonblank_lines": 28,
+          "bytes": 1224
+        },
+        {
+          "path": "tests/ordering.py",
+          "language": "Python",
+          "physical_lines": 22,
+          "nonblank_lines": 22,
+          "bytes": 1474
+        },
+        {
+          "path": "tests/parameters.py",
+          "language": "Python",
+          "physical_lines": 43,
+          "nonblank_lines": 43,
+          "bytes": 2336
+        },
+        {
+          "path": "tests/percentile.py",
+          "language": "Python",
+          "physical_lines": 27,
+          "nonblank_lines": 27,
+          "bytes": 2090
+        },
+        {
+          "path": "tests/recursive.py",
+          "language": "Python",
+          "physical_lines": 36,
+          "nonblank_lines": 36,
+          "bytes": 2744
+        },
+        {
+          "path": "tests/rename_binding.py",
+          "language": "Python",
+          "physical_lines": 67,
+          "nonblank_lines": 67,
+          "bytes": 3627
+        },
+        {
+          "path": "tests/row_binding.py",
+          "language": "Python",
+          "physical_lines": 31,
+          "nonblank_lines": 31,
+          "bytes": 1445
+        },
+        {
+          "path": "tests/rowids.py",
+          "language": "Python",
+          "physical_lines": 30,
+          "nonblank_lines": 30,
+          "bytes": 1477
+        },
+        {
+          "path": "tests/rows_collation.py",
+          "language": "Python",
+          "physical_lines": 13,
+          "nonblank_lines": 13,
+          "bytes": 1015
+        },
+        {
+          "path": "tests/run_all.py",
+          "language": "Python",
+          "physical_lines": 11,
+          "nonblank_lines": 11,
+          "bytes": 574
+        },
+        {
+          "path": "tests/schema.py",
+          "language": "Python",
+          "physical_lines": 23,
+          "nonblank_lines": 23,
+          "bytes": 1768
+        },
+        {
+          "path": "tests/schema_expressions.py",
+          "language": "Python",
+          "physical_lines": 57,
+          "nonblank_lines": 57,
+          "bytes": 2889
+        },
+        {
+          "path": "tests/semantics.py",
+          "language": "Python",
+          "physical_lines": 61,
+          "nonblank_lines": 61,
+          "bytes": 4229
+        },
+        {
+          "path": "tests/sequence.py",
+          "language": "Python",
+          "physical_lines": 14,
+          "nonblank_lines": 14,
+          "bytes": 1089
+        },
+        {
+          "path": "tests/storage_edges.py",
+          "language": "Python",
+          "physical_lines": 56,
+          "nonblank_lines": 56,
+          "bytes": 3229
+        },
+        {
+          "path": "tests/subquery_cache.py",
+          "language": "Python",
+          "physical_lines": 64,
+          "nonblank_lines": 64,
+          "bytes": 3475
+        },
+        {
+          "path": "tests/temp_namespaces.py",
+          "language": "Python",
+          "physical_lines": 48,
+          "nonblank_lines": 48,
+          "bytes": 2695
+        },
+        {
+          "path": "tests/trigger_policy.py",
+          "language": "Python",
+          "physical_lines": 53,
+          "nonblank_lines": 53,
+          "bytes": 2784
+        },
+        {
+          "path": "tests/triggers.py",
+          "language": "Python",
+          "physical_lines": 23,
+          "nonblank_lines": 23,
+          "bytes": 1445
+        },
+        {
+          "path": "tests/upsert.py",
+          "language": "Python",
+          "physical_lines": 87,
+          "nonblank_lines": 86,
+          "bytes": 5235
+        },
+        {
+          "path": "tests/vacuum.py",
+          "language": "Python",
+          "physical_lines": 66,
+          "nonblank_lines": 66,
+          "bytes": 2751
+        },
+        {
+          "path": "tests/view_dml.py",
+          "language": "Python",
+          "physical_lines": 62,
+          "nonblank_lines": 62,
+          "bytes": 3599
+        },
+        {
+          "path": "tests/views_temp.py",
+          "language": "Python",
+          "physical_lines": 20,
+          "nonblank_lines": 20,
+          "bytes": 1381
+        },
+        {
+          "path": "tests/windows.py",
+          "language": "Python",
+          "physical_lines": 11,
+          "nonblank_lines": 11,
+          "bytes": 1024
+        },
+        {
+          "path": "tests/without_rowid_indexes.py",
+          "language": "Python",
+          "physical_lines": 28,
+          "nonblank_lines": 28,
+          "bytes": 1879
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+SQLite C Interface
+
+Mutex Handle
+
+typedef struct sqlite3_mutex sqlite3_mutex;
+
+The mutex module within SQLite defines sqlite3_mutex to be an
+abstract type for a mutex object.  The SQLite core never looks
+at the internal representation of an sqlite3_mutex.  It only
+deals with pointers to the sqlite3_mutex object.
+
+Mutexes are created using sqlite3_mutex_alloc().
+
+See also lists of
+  Objects,
+  Constants, and
+  Functions.

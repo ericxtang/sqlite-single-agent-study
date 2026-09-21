@@ -1,0 +1,47 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+SQLite C Interface
+
+Reset Automatic Extension Loading
+
+void sqlite3_reset_auto_extension(void);
+
+This interface disables all automatic extensions previously
+registered using sqlite3_auto_extension().
+
+See also lists of
+  Objects,
+  Constants, and
+  Functions.

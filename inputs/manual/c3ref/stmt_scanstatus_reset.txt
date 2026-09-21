@@ -1,0 +1,49 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+SQLite C Interface
+
+Zero Scan-Status Counters
+
+void sqlite3_stmt_scanstatus_reset(sqlite3_stmt*);
+
+Zero all sqlite3_stmt_scanstatus() related event counters.
+
+This API is only available if the library is built with pre-processor
+symbol SQLITE_ENABLE_STMT_SCANSTATUS defined.
+
+See also lists of
+  Objects,
+  Constants, and
+  Functions.

@@ -1,0 +1,203 @@
+{
+  "kind": "hypothetical_API_valuation_of_recorded_usage_not_subscription_invoice",
+  "rate_card": {
+    "model": "gpt-6-astra",
+    "verified_date_utc": "2026-09-21",
+    "pricing_source": "https://developers.openai.com/api/docs/pricing",
+    "context_rule_source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+    "retrieval_method": "Official OpenAI documentation search and fetched pricing/model pages",
+    "currency": "USD",
+    "tier": "Standard",
+    "per_million_tokens": {
+      "uncached_input": 10,
+      "cached_input": 1,
+      "cache_write": 12.5,
+      "output": 50
+    },
+    "long_context_threshold_input_tokens": 272000,
+    "long_context_rule": "Above 272000 input tokens: 2x input/cache rates and 1.5x output on the whole request.",
+    "status": "Rate card observed on this date; not an actual subscription invoice or a guarantee of prices on the implementation dates."
+  },
+  "runs": [
+    {
+      "run_id": "pilot-001",
+      "actual_billing_mode": "codex_subscription",
+      "actual_dollar_invoice": null,
+      "recorded_usage": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 0
+      },
+      "max_response_input_tokens": 0,
+      "long_context_requests": 0,
+      "input_cache_fraction": null,
+      "standard_api_usd_components": {
+        "uncached_input": 0.0,
+        "cached_input": 0.0,
+        "cache_write": 0.0,
+        "output": 0.0
+      },
+      "standard_api_usd": 0.0,
+      "uncached_input_tokens": 0,
+      "limitations": [
+        "Observed September 21 rate card, not proof of historical invoice rates.",
+        "Assumes the same token counts and cache hits on a Standard API request; no regional uplift.",
+        "Zero cache-write fields in subscription telemetry do not establish zero billable cache writes on API.",
+        "Cutoff requests may be missing; internal compaction/billing coverage is not independently established. Excludes setup, supervision and grading compute."
+      ]
+    },
+    {
+      "run_id": "pilot-002",
+      "actual_billing_mode": "codex_subscription",
+      "actual_dollar_invoice": null,
+      "recorded_usage": {
+        "input_tokens": 1162391,
+        "cached_input_tokens": 1060608,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 54768,
+        "reasoning_output_tokens": 3702,
+        "total_tokens": 1217159
+      },
+      "max_response_input_tokens": 88506,
+      "long_context_requests": 0,
+      "input_cache_fraction": 0.9124365209297044,
+      "standard_api_usd_components": {
+        "uncached_input": 1.01783,
+        "cached_input": 1.060608,
+        "cache_write": 0.0,
+        "output": 2.7384
+      },
+      "standard_api_usd": 4.816838000000001,
+      "uncached_input_tokens": 101783,
+      "limitations": [
+        "Observed September 21 rate card, not proof of historical invoice rates.",
+        "Assumes the same token counts and cache hits on a Standard API request; no regional uplift.",
+        "Zero cache-write fields in subscription telemetry do not establish zero billable cache writes on API.",
+        "Cutoff requests may be missing; internal compaction/billing coverage is not independently established. Excludes setup, supervision and grading compute."
+      ]
+    },
+    {
+      "run_id": "measured-001",
+      "actual_billing_mode": "codex_subscription",
+      "actual_dollar_invoice": null,
+      "recorded_usage": {
+        "input_tokens": 39424280,
+        "cached_input_tokens": 38314368,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 429708,
+        "reasoning_output_tokens": 160694,
+        "total_tokens": 39853988
+      },
+      "max_response_input_tokens": 245454,
+      "long_context_requests": 0,
+      "input_cache_fraction": 0.9718469937814971,
+      "standard_api_usd_components": {
+        "uncached_input": 11.09912,
+        "cached_input": 38.314368,
+        "cache_write": 0.0,
+        "output": 21.4854
+      },
+      "standard_api_usd": 70.898888,
+      "uncached_input_tokens": 1109912,
+      "limitations": [
+        "Observed September 21 rate card, not proof of historical invoice rates.",
+        "Assumes the same token counts and cache hits on a Standard API request; no regional uplift.",
+        "Zero cache-write fields in subscription telemetry do not establish zero billable cache writes on API.",
+        "Cutoff requests may be missing; internal compaction/billing coverage is not independently established. Excludes setup, supervision and grading compute."
+      ]
+    },
+    {
+      "run_id": "measured-002",
+      "actual_billing_mode": "codex_subscription",
+      "actual_dollar_invoice": null,
+      "recorded_usage": {
+        "input_tokens": 39515650,
+        "cached_input_tokens": 38342912,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 430498,
+        "reasoning_output_tokens": 157424,
+        "total_tokens": 39946148
+      },
+      "max_response_input_tokens": 246507,
+      "long_context_requests": 0,
+      "input_cache_fraction": 0.9703221888036765,
+      "standard_api_usd_components": {
+        "uncached_input": 11.72738,
+        "cached_input": 38.342912,
+        "cache_write": 0.0,
+        "output": 21.5249
+      },
+      "standard_api_usd": 71.595192,
+      "uncached_input_tokens": 1172738,
+      "limitations": [
+        "Observed September 21 rate card, not proof of historical invoice rates.",
+        "Assumes the same token counts and cache hits on a Standard API request; no regional uplift.",
+        "Zero cache-write fields in subscription telemetry do not establish zero billable cache writes on API.",
+        "Cutoff requests may be missing; internal compaction/billing coverage is not independently established. Excludes setup, supervision and grading compute."
+      ]
+    },
+    {
+      "run_id": "measured-003",
+      "actual_billing_mode": "codex_subscription",
+      "actual_dollar_invoice": null,
+      "recorded_usage": {
+        "input_tokens": 1932992,
+        "cached_input_tokens": 1788672,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 77810,
+        "reasoning_output_tokens": 9230,
+        "total_tokens": 2010802
+      },
+      "max_response_input_tokens": 117833,
+      "long_context_requests": 0,
+      "input_cache_fraction": 0.9253385425288878,
+      "standard_api_usd_components": {
+        "uncached_input": 1.4432,
+        "cached_input": 1.788672,
+        "cache_write": 0.0,
+        "output": 3.8905
+      },
+      "standard_api_usd": 7.122372,
+      "uncached_input_tokens": 144320,
+      "limitations": [
+        "Observed September 21 rate card, not proof of historical invoice rates.",
+        "Assumes the same token counts and cache hits on a Standard API request; no regional uplift.",
+        "Zero cache-write fields in subscription telemetry do not establish zero billable cache writes on API.",
+        "Cutoff requests may be missing; internal compaction/billing coverage is not independently established. Excludes setup, supervision and grading compute."
+      ]
+    },
+    {
+      "run_id": "measured-004",
+      "actual_billing_mode": "codex_subscription",
+      "actual_dollar_invoice": null,
+      "recorded_usage": {
+        "input_tokens": 38472509,
+        "cached_input_tokens": 36578048,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 384844,
+        "reasoning_output_tokens": 133249,
+        "total_tokens": 38857353
+      },
+      "max_response_input_tokens": 245700,
+      "long_context_requests": 0,
+      "input_cache_fraction": 0.9507580594756635,
+      "standard_api_usd_components": {
+        "uncached_input": 18.94461,
+        "cached_input": 36.578048,
+        "cache_write": 0.0,
+        "output": 19.2422
+      },
+      "standard_api_usd": 74.764858,
+      "uncached_input_tokens": 1894461,
+      "limitations": [
+        "Observed September 21 rate card, not proof of historical invoice rates.",
+        "Assumes the same token counts and cache hits on a Standard API request; no regional uplift.",
+        "Zero cache-write fields in subscription telemetry do not establish zero billable cache writes on API.",
+        "Cutoff requests may be missing; internal compaction/billing coverage is not independently established. Excludes setup, supervision and grading compute."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "recorded_at": "2026-09-19T18:39:46.790356+00:00",
+  "source": "raw token_usage_record events; deduplicated by response_id and validated against final thread_token_usage",
+  "runs": [
+    {
+      "run_id": "pilot-001",
+      "category": "discarded_pilot",
+      "state": "preparation_failed",
+      "started_at": null,
+      "actual_elapsed_seconds": null,
+      "usage_records": 0,
+      "unique_responses": 0,
+      "deduplicated_response_usage_sum": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 0
+      },
+      "last_thread_token_usage": null,
+      "sum_matches_thread_cumulative": false,
+      "cutoff_request_completeness": "not guaranteed"
+    },
+    {
+      "run_id": "pilot-002",
+      "category": "discarded_pilot",
+      "state": "completed",
+      "started_at": "2026-09-18T20:38:24.308258+00:00",
+      "actual_elapsed_seconds": 1800.0894443329998,
+      "usage_records": 23,
+      "unique_responses": 23,
+      "deduplicated_response_usage_sum": {
+        "input_tokens": 1162391,
+        "cached_input_tokens": 1060608,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 54768,
+        "reasoning_output_tokens": 3702,
+        "total_tokens": 1217159
+      },
+      "last_thread_token_usage": {
+        "input_tokens": 1162391,
+        "cached_input_tokens": 1060608,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 54768,
+        "reasoning_output_tokens": 3702,
+        "total_tokens": 1217159
+      },
+      "sum_matches_thread_cumulative": true,
+      "cutoff_request_completeness": "not guaranteed"
+    },
+    {
+      "run_id": "measured-001",
+      "category": "measured_implementation",
+      "state": "completed",
+      "started_at": "2026-09-18T22:55:23.913430+00:00",
+      "actual_elapsed_seconds": 14400.078494415999,
+      "usage_records": 301,
+      "unique_responses": 301,
+      "deduplicated_response_usage_sum": {
+        "input_tokens": 39424280,
+        "cached_input_tokens": 38314368,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 429708,
+        "reasoning_output_tokens": 160694,
+        "total_tokens": 39853988
+      },
+      "last_thread_token_usage": {
+        "input_tokens": 39424280,
+        "cached_input_tokens": 38314368,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 429708,
+        "reasoning_output_tokens": 160694,
+        "total_tokens": 39853988
+      },
+      "sum_matches_thread_cumulative": true,
+      "cutoff_request_completeness": "not guaranteed"
+    },
+    {
+      "run_id": "measured-002",
+      "category": "measured_implementation",
+      "state": "completed",
+      "started_at": "2026-09-19T02:55:27.253100+00:00",
+      "actual_elapsed_seconds": 14400.070016958,
+      "usage_records": 290,
+      "unique_responses": 290,
+      "deduplicated_response_usage_sum": {
+        "input_tokens": 39515650,
+        "cached_input_tokens": 38342912,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 430498,
+        "reasoning_output_tokens": 157424,
+        "total_tokens": 39946148
+      },
+      "last_thread_token_usage": {
+        "input_tokens": 39515650,
+        "cached_input_tokens": 38342912,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 430498,
+        "reasoning_output_tokens": 157424,
+        "total_tokens": 39946148
+      },
+      "sum_matches_thread_cumulative": true,
+      "cutoff_request_completeness": "not guaranteed"
+    },
+    {
+      "run_id": "measured-003",
+      "category": "measured_implementation",
+      "state": "interrupted",
+      "started_at": "2026-09-19T06:55:31.099156+00:00",
+      "actual_elapsed_seconds": 2444.263998833,
+      "usage_records": 30,
+      "unique_responses": 30,
+      "deduplicated_response_usage_sum": {
+        "input_tokens": 1932992,
+        "cached_input_tokens": 1788672,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 77810,
+        "reasoning_output_tokens": 9230,
+        "total_tokens": 2010802
+      },
+      "last_thread_token_usage": {
+        "input_tokens": 1932992,
+        "cached_input_tokens": 1788672,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 77810,
+        "reasoning_output_tokens": 9230,
+        "total_tokens": 2010802
+      },
+      "sum_matches_thread_cumulative": true,
+      "cutoff_request_completeness": "not guaranteed"
+    },
+    {
+      "run_id": "measured-004",
+      "category": "measured_implementation",
+      "state": "completed",
+      "started_at": "2026-09-19T14:35:17.134233+00:00",
+      "actual_elapsed_seconds": 14400.057091875,
+      "usage_records": 297,
+      "unique_responses": 297,
+      "deduplicated_response_usage_sum": {
+        "input_tokens": 38472509,
+        "cached_input_tokens": 36578048,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 384844,
+        "reasoning_output_tokens": 133249,
+        "total_tokens": 38857353
+      },
+      "last_thread_token_usage": {
+        "input_tokens": 38472509,
+        "cached_input_tokens": 36578048,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 384844,
+        "reasoning_output_tokens": 133249,
+        "total_tokens": 38857353
+      },
+      "sum_matches_thread_cumulative": true,
+      "cutoff_request_completeness": "not guaranteed"
+    }
+  ],
+  "limitations": [
+    "A request still active at cutoff may be missing.",
+    "Cached input is a subset of input; reasoning is a subset of output.",
+    "Frozen status.py uses token_count totals: these understate the reconciled per-response totals in completed runs and reset by turn on measured-004 continuation. Use the per-response sums validated against final thread_token_usage for reporting.",
+    "Setup/supervision usage is excluded; its aggregate is unavailable in these run logs.",
+    "Subscription token usage is not a dollar invoice."
+  ]
+}

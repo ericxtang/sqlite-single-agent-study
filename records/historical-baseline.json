@@ -1,0 +1,31 @@
+{
+  "source": "https://prod.cursor.com/blog/agent-swarm-model-economics",
+  "title": "Agent swarms and the new model economics",
+  "published": "2026-07-20",
+  "retrieved_at": "2026-09-18T22:54:12.017585+00:00",
+  "manual_pages": 835,
+  "language": "Rust",
+  "metric": "fraction of held-out sqllogictest queries correct",
+  "new_swarm_four_hour_range_percent": [
+    73,
+    85
+  ],
+  "old_swarm_four_hour_range_percent": [
+    11,
+    77
+  ],
+  "grok_4_5_new_swarm_four_hour_percent_approx": 80,
+  "all_new_configurations_eventually_reached_percent": 100,
+  "reported_model_mix_cost_range_usd": [
+    1339,
+    10565
+  ],
+  "cost_range_note": "Published experiment totals; do not assume these are exactly four-hour costs. Completion curves and cost scope require separate comparison.",
+  "new_configurations": [
+    "GPT-5.5 planner and worker",
+    "Grok 4.5 planner and worker",
+    "Opus 4.8 planner, Composer 2.5 worker",
+    "Fable 5 planner, Composer 2.5 worker"
+  ],
+  "limitation": "No matched Astra swarm; manual, prompt, corpus selection, adapter, hardware and accounting are not established identical. Solo Opus/Fable runs were graded informally in the post."
+}

@@ -1,0 +1,75 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+create-index-stmt
+
+CREATE
+
+UNIQUE
+
+INDEX
+
+IF
+
+NOT
+
+EXISTS
+
+schema-name
+
+.
+
+index-name
+
+ON
+
+table-name
+
+(
+
+indexed-column
+
+)
+
+,
+
+WHERE
+
+expr
+
+Used by:   sql-stmt
+
+References:   expr   indexed-column
+
+See also:   lang_createindex.html   partialindex.html

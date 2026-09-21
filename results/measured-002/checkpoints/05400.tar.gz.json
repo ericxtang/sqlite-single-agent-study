@@ -1,0 +1,323 @@
+{
+  "container": "astra-sqlite-measured-002",
+  "elapsed_seconds": 5400.006018292001,
+  "started_at": "2026-09-19T04:25:27.241323+00:00",
+  "capture_seconds": 1.4649723749998884,
+  "sha256": "1d937a7b8a9dc4896df5d1d00f12089e68ab00c4b04985856901208efd04e4f4",
+  "archive": "05400.tar.gz",
+  "excluded_top_level": [
+    "target"
+  ],
+  "files": [
+    {
+      "path": ".",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "Cargo.lock",
+      "bytes": 2669,
+      "type": "0"
+    },
+    {
+      "path": "Cargo.toml",
+      "bytes": 160,
+      "type": "0"
+    },
+    {
+      "path": "IO_CONTRACT.md",
+      "bytes": 2071,
+      "type": "0"
+    },
+    {
+      "path": "NOTES.md",
+      "bytes": 7216,
+      "type": "0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2380,
+      "type": "0"
+    },
+    {
+      "path": "src",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "src/ast.rs",
+      "bytes": 6023,
+      "type": "0"
+    },
+    {
+      "path": "src/date.rs",
+      "bytes": 8054,
+      "type": "0"
+    },
+    {
+      "path": "src/db.rs",
+      "bytes": 66409,
+      "type": "0"
+    },
+    {
+      "path": "src/func.rs",
+      "bytes": 10930,
+      "type": "0"
+    },
+    {
+      "path": "src/journal.rs",
+      "bytes": 4342,
+      "type": "0"
+    },
+    {
+      "path": "src/jsonfunc.rs",
+      "bytes": 15478,
+      "type": "0"
+    },
+    {
+      "path": "src/lex.rs",
+      "bytes": 2184,
+      "type": "0"
+    },
+    {
+      "path": "src/locking.rs",
+      "bytes": 1479,
+      "type": "0"
+    },
+    {
+      "path": "src/main.rs",
+      "bytes": 1433,
+      "type": "0"
+    },
+    {
+      "path": "src/parser.rs",
+      "bytes": 26070,
+      "type": "0"
+    },
+    {
+      "path": "src/query.rs",
+      "bytes": 50758,
+      "type": "0"
+    },
+    {
+      "path": "src/render.rs",
+      "bytes": 3518,
+      "type": "0"
+    },
+    {
+      "path": "src/schema.rs",
+      "bytes": 4885,
+      "type": "0"
+    },
+    {
+      "path": "src/storage.rs",
+      "bytes": 17144,
+      "type": "0"
+    },
+    {
+      "path": "src/value.rs",
+      "bytes": 5593,
+      "type": "0"
+    },
+    {
+      "path": "tests",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "tests/attach.py",
+      "bytes": 2720,
+      "type": "0"
+    },
+    {
+      "path": "tests/attached.db",
+      "bytes": 32768,
+      "type": "0"
+    },
+    {
+      "path": "tests/attached.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/attached.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/ctes.py",
+      "bytes": 2880,
+      "type": "0"
+    },
+    {
+      "path": "tests/edgecases.py",
+      "bytes": 4139,
+      "type": "0"
+    },
+    {
+      "path": "tests/foreignkeys.py",
+      "bytes": 2747,
+      "type": "0"
+    },
+    {
+      "path": "tests/isolation.db",
+      "bytes": 8192,
+      "type": "0"
+    },
+    {
+      "path": "tests/isolation.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/isolation.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/isolation.py",
+      "bytes": 2538,
+      "type": "0"
+    },
+    {
+      "path": "tests/names.py",
+      "bytes": 3630,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-4096.db",
+      "bytes": 372736,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-4096.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-4096.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-512.db",
+      "bytes": 703488,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-512.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-512.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-65536.db",
+      "bytes": 589824,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-65536.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/pages-65536.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/persistence.db",
+      "bytes": 8192,
+      "type": "0"
+    },
+    {
+      "path": "tests/persistence.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/persistence.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/recover-a.db",
+      "bytes": 8192,
+      "type": "0"
+    },
+    {
+      "path": "tests/recover-a.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/recover-a.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/recover-b.db",
+      "bytes": 12288,
+      "type": "0"
+    },
+    {
+      "path": "tests/recover-b.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/recover-b.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/recovery.py",
+      "bytes": 2303,
+      "type": "0"
+    },
+    {
+      "path": "tests/robustness.py",
+      "bytes": 1508,
+      "type": "0"
+    },
+    {
+      "path": "tests/semantics.py",
+      "bytes": 9448,
+      "type": "0"
+    },
+    {
+      "path": "tests/storage.py",
+      "bytes": 4471,
+      "type": "0"
+    },
+    {
+      "path": "tests/triggers.db",
+      "bytes": 24576,
+      "type": "0"
+    },
+    {
+      "path": "tests/triggers.db.agent-read-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/triggers.db.agent-write-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests/triggers.py",
+      "bytes": 3324,
+      "type": "0"
+    },
+    {
+      "path": "tests/windows.py",
+      "bytes": 2610,
+      "type": "0"
+    }
+  ]
+}

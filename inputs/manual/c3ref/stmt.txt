@@ -1,0 +1,190 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+SQLite C Interface
+
+Prepared Statement Object
+
+typedef struct sqlite3_stmt sqlite3_stmt;
+
+An instance of this object represents a single SQL statement that
+has been compiled into binary form and is ready to be evaluated.
+
+Think of each SQL statement as a separate computer program.  The
+original SQL text is source code.  A prepared statement object
+is the compiled object code.  All SQL must be converted into a
+prepared statement before it can be run.
+
+The life-cycle of a prepared statement object usually goes like this:
+
+ Create the prepared statement object using sqlite3_prepare_v2().
+
+ Bind values to parameters using the sqlite3_bind_*()
+interfaces.
+
+ Run the SQL by calling sqlite3_step() one or more times.
+
+ Reset the prepared statement using sqlite3_reset() then go back
+to step 2.  Do this zero or more times.
+
+ Destroy the object using sqlite3_finalize().
+
+6 Constructors using this object:
+
+sqlite3_prepare
+
+sqlite3_prepare16
+
+sqlite3_prepare16_v2
+
+sqlite3_prepare16_v3
+
+sqlite3_prepare_v2
+
+sqlite3_prepare_v3
+
+1 Destructor using this object: sqlite3_finalize()
+
+53 Methods using this object:
+
+sqlite3_bind_blob
+
+sqlite3_bind_blob64
+
+sqlite3_bind_double
+
+sqlite3_bind_int
+
+sqlite3_bind_int64
+
+sqlite3_bind_null
+
+sqlite3_bind_parameter_count
+
+sqlite3_bind_parameter_index
+
+sqlite3_bind_parameter_name
+
+sqlite3_bind_pointer
+
+sqlite3_bind_text
+
+sqlite3_bind_text16
+
+sqlite3_bind_text64
+
+sqlite3_bind_value
+
+sqlite3_bind_zeroblob
+
+sqlite3_bind_zeroblob64
+
+sqlite3_clear_bindings
+
+sqlite3_column_blob
+
+sqlite3_column_bytes
+
+sqlite3_column_bytes16
+
+sqlite3_column_count
+
+sqlite3_column_database_name
+
+sqlite3_column_database_name16
+
+sqlite3_column_decltype
+
+sqlite3_column_decltype16
+
+sqlite3_column_double
+
+sqlite3_column_int
+
+sqlite3_column_int64
+
+sqlite3_column_name
+
+sqlite3_column_name16
+
+sqlite3_column_origin_name
+
+sqlite3_column_origin_name16
+
+sqlite3_column_table_name
+
+sqlite3_column_table_name16
+
+sqlite3_column_text
+
+sqlite3_column_text16
+
+sqlite3_column_type
+
+sqlite3_column_value
+
+sqlite3_data_count
+
+sqlite3_db_handle
+
+sqlite3_expanded_sql
+
+sqlite3_normalized_sql
+
+sqlite3_reset
+
+sqlite3_sql
+
+sqlite3_step
+
+sqlite3_stmt_busy
+
+sqlite3_stmt_explain
+
+sqlite3_stmt_isexplain
+
+sqlite3_stmt_readonly
+
+sqlite3_stmt_scanstatus
+
+sqlite3_stmt_scanstatus_reset
+
+sqlite3_stmt_scanstatus_v2
+
+sqlite3_stmt_status
+
+See also lists of
+  Objects,
+  Constants, and
+  Functions.

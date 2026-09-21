@@ -1,0 +1,56 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+SQLite C Interface
+
+Conflict resolution modes
+
+#define SQLITE_ROLLBACK 1
+/* #define SQLITE_IGNORE 2 // Also used by sqlite3_authorizer() callback */
+#define SQLITE_FAIL     3
+/* #define SQLITE_ABORT 4  // Also an error code */
+#define SQLITE_REPLACE  5
+
+These constants are returned by sqlite3_vtab_on_conflict() to
+inform a virtual table implementation of the ON CONFLICT mode
+for the SQL statement being evaluated.
+
+Note that the SQLITE_IGNORE constant is also used as a potential
+return value from the sqlite3_set_authorizer() callback and that
+SQLITE_ABORT is also a result code.
+
+See also lists of
+  Objects,
+  Constants, and
+  Functions.

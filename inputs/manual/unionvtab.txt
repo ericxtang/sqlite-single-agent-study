@@ -1,0 +1,125 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+The UNION Virtual Table
+
+The UNION virtual table (hereafter: "union-vtab")
+is a virtual table that makes multiple independent
+rowid tables tables look like a single large table.
+
+The tables that participate in a union-vtab can be in the same 
+database file, or they can be in separate databases files that
+are ATTACH-ed to the same database connection.
+
+The union-vtab is not built into SQLite.
+Union-vtab is a loadable extension.
+The source code for union-vtab is contained in a single file located at
+ext/misc/unionvtab.c
+in the SQLite source tree.
+
+A new union-vtab instance is created as follows:
+
+CREATE VIRTUAL TABLE temp.tabname USING unionvtab(query);
+
+Every union-vtab must be in the TEMP namespace.  Hence, the "temp."
+prior to tabname is required.  Only the union-vtab itself is required
+to be in the TEMP namespace - the individual tables that are being unioned
+can be any ATTACH-ed database.
+
+The query in the CREATE VIRTUAL TABLE statement for a union-vtab 
+must be a well-formed SQL query that returns four columns and an 
+arbitrary number of rows.  Each row in the result of the query
+represents a single table that is to participate in the union.
+
+The first column is the schema name for the database that contains
+the tables.  Examples:  "main", "zone512".
+
+The second column is the name of the table.
+
+The third column  is the minimum value for any rowid in the table.
+
+The fourth column is the maximum value of any rowid in the table.
+
+The query for the CREATE VIRTUAL TABLE statement of a union-vtab
+can be either a SELECT statement or a VALUES clause.
+
+The query is run once when the CREATE VIRTUAL TABLE statement is
+first encountered and the results of that one run are used for all subsequent
+access to the union-vtab.  If the results of query change, then
+the union-vtab should be DROP-ed and recreated in order
+to cause the query to be run again.
+
+There must be no overlap in the bands of rowids for the various tables
+in a union-vtab.
+
+All tables that participate in a union-vtab must have identical
+CREATE TABLE definitions, except that the names of the tables can be different.
+
+All tables that participate in a union-vtab must be rowid tables.
+
+The column names and definitions for tabname will be the same as
+the underlying tables.  An application can access tabname just like
+it was one of the real underlying tables.
+
+No table in a union-vtab may contain entries that are outside of the
+rowid bounds established by the query in the CREATE VIRTUAL TABLE
+statement.
+
+The union-vtab shall optimize access to the underlying real tables
+when the constraints on the query are among forms shown below.
+Other kinds of constraints may be optimized in the future, but only
+these constraints are optimized in the initial implementation.
+
+ rowid=$id
+
+ rowid IN query-or-list
+
+ rowid BETWEEN $lwr AND $upr
+
+Other kinds of constraints may be used and will work, but other
+constraints will be checked individually for each row and will not
+be optimized (at least not initially). 
+All constraint checking is completely automatic regardless of whether
+or not optimization occurs.  The optimization referred to in this bullet point
+is a performance consideration only.  The same result is obtained
+regardless of whether or not the query is optimized.
+
+The union-vtab is read-only.  Support for writing may be added at a later
+time, but writing is not a part of the initial implementation.
+
+Nota bene:
+The sqlite3_blob_open() interface does not work for a union-vtab.
+BLOB content must be read from the union-vtab using ordinary SQL statements.
+
+This page was last updated on 2022-01-08 05:02:57Z

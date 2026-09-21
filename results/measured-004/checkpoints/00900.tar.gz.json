@@ -1,0 +1,53 @@
+{
+  "container": "astra-sqlite-measured-004",
+  "elapsed_seconds": 900.2229657500001,
+  "started_at": "2026-09-19T14:50:17.384479+00:00",
+  "capture_seconds": 0.10998962499991194,
+  "sha256": "dbcdd7e57eb98195ed70147c45ad89b24bc569afc5196bc87985c880f5303415",
+  "archive": "00900.tar.gz",
+  "excluded_top_level": [
+    "target"
+  ],
+  "files": [
+    {
+      "path": ".",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "Cargo.toml",
+      "bytes": 160,
+      "type": "0"
+    },
+    {
+      "path": "IO_CONTRACT.md",
+      "bytes": 2071,
+      "type": "0"
+    },
+    {
+      "path": "src",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "src/engine.rs",
+      "bytes": 48845,
+      "type": "0"
+    },
+    {
+      "path": "src/syntax.rs",
+      "bytes": 22420,
+      "type": "0"
+    },
+    {
+      "path": "src/value.rs",
+      "bytes": 4399,
+      "type": "0"
+    },
+    {
+      "path": "tests",
+      "bytes": 0,
+      "type": "5"
+    }
+  ]
+}

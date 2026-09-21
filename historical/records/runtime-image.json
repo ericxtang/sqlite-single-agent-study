@@ -1,0 +1,7 @@
+{
+  "id": "sha256:c379c6128e193682c40015eb8b126e2916b18c3985f0fb72cf1c642a1a3039f5",
+  "architecture": "arm64",
+  "os": "linux",
+  "tag_used_for_build": "astra-sqlite-tools:pilot-v1",
+  "dockerfile_sha256": "9cfc2d1433df30aca57e2dc6a4c6987b26d10ccdc545f8add0beecec7225c0dd"
+}

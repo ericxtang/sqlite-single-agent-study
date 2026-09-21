@@ -1,0 +1,73 @@
+{
+  "heading": "Executive summary: Astra and Cursor",
+  "title": "SQLite: Astra and Cursor",
+  "subtitle": "Historical comparison | 21 September 2026",
+  "lead": "**Astra reached 96.46% median query accuracy in four hours across three completed runs.** Cursor reported 73\u201385% for its new swarms at four hours. These are historical results from different models and setups; exact evaluator equivalence is unverified.",
+  "chart_caption": "Ranges describe runs or model configurations, not confidence intervals. Cursor old includes a run stopped before two hours. Token accounting boundaries differ.",
+  "headers": [
+    "Dimension",
+    "Astra study",
+    "Cursor posts"
+  ],
+  "rows": [
+    [
+      "Agent formation",
+      "**1 root agent; 0 subagents.** The same agent plans, codes, tests and reviews.",
+      "**Recursive planner/worker delegation.** Specialized contexts, shared decisions and integration agents."
+    ],
+    [
+      "Measurement",
+      "**5,728,833 eligible sqllogictest queries**, 622 files; three four-hour endpoints.",
+      "**Held-out sqllogictest** query pass rate. Exact corpus, filters, adapter and limits are not disclosed."
+    ],
+    [
+      "Budget",
+      "**$70.90\u2013$74.76** recorded-token API valuation. No-cache scenario: **$403.97\u2013$416.68**. Actual subscription allocation unknown.",
+      "**$1,339\u2013$10,565** published controlled-configuration totals. Their accounting period and exclusions are not established as matching ours."
+    ],
+    [
+      "Remaining gaps",
+      "**7/12, 8/12, 10/12** original secondary outcomes; blob-case caveat affects some failures. High query scores do not prove full SQLite compatibility.",
+      "New configurations **later reached 100%**. That later completion is separate from the four-hour scores above."
+    ]
+  ],
+  "notes": [
+    "**Cost assumptions:** September 21 Standard API rates, using 95\u201397% observed input-cache hits. These are token valuations, not measured API bills; setup, supervision and grading compute are excluded.",
+    "**Interpretation:** Different models, documentation, harnesses and accounting prevent causal conclusions about agent formation or equal-quality cost savings. Interrupted run 003 (40m44s; terminal build failure) is excluded from the three-run summary."
+  ],
+  "sources": "Sources: [Cursor: self-driving codebases](https://cursor.com/blog/self-driving-codebases) \u00b7 [Cursor: model economics](https://cursor.com/blog/agent-swarm-model-economics) \u00b7 [audited study data](reports/data/comparison-data.json) \u00b7 [cost audit](reports/data/cost-audit.json). Detailed methods and caveats are in the [full report](reports/comparison.md).",
+  "chart_data": {
+    "astra_four_hour_median_percent": 96.4636078587035,
+    "astra_four_hour_range_percent": [
+      96.42752721191209,
+      96.73800929438858
+    ],
+    "cursor_new_four_hour_range_percent": [
+      73,
+      85
+    ],
+    "cursor_old_four_hour_range_percent": [
+      11,
+      77
+    ],
+    "astra_total_tokens": [
+      39853988,
+      39946148,
+      38857353
+    ],
+    "cursor_controlled_total_tokens_rounded": [
+      2600000000.0,
+      3200000000.0,
+      6700000000.0,
+      14700000000.0
+    ]
+  },
+  "source_sha256": {
+    "records/historical-baseline.json": "344205f26530d5ca07d0de8e7013c5b7500fce6d45e42db8a6ba9dd2e40eaec1",
+    "reports/data/cursor-chart-review.json": "3f24b1474aa39179e8e43d902faebb4ae138661488d645127e9d800c30f2102d",
+    "reports/data/cost-audit.json": "57edce5ed7b79e3149a62c4578f03aa338a7b97690765136d8b21788dc8470fc",
+    "records/usage-accounting.json": "8377ade7408ab4445ac1c4c256029e131cfc81c4195e8534c223ad3cf71cfbe6",
+    "reports/data/trace-review.json": "a821a391e7ab6b27eb951056265926a61a43bf0d40fbe1815d1a7b0c975e62c6"
+  },
+  "chart": "reports/plots/executive-comparison.png"
+}

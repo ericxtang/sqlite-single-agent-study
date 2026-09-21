@@ -1,0 +1,531 @@
+{
+  "reviewed_at": "2026-09-19T23:00:21.326985+00:00",
+  "status": "terminal_evaluations_complete_progress_grading_pending",
+  "completed_four_hour_n": 3,
+  "completed_four_hour_primary": {
+    "median": 0.964636078587035,
+    "min": 0.9642752721191209,
+    "max": 0.9673800929438858
+  },
+  "validation": "All terminal summary hashes match retained archives and sealed plan; successful primary file totals reconcile to fixed denominator; every secondary case count reconciles. No artifact repair or rerun.",
+  "entries": [
+    {
+      "run_id": "measured-001",
+      "classification": "four_hour_endpoint",
+      "usage": {
+        "run_id": "measured-001",
+        "category": "measured_implementation",
+        "state": "completed",
+        "started_at": "2026-09-18T22:55:23.913430+00:00",
+        "actual_elapsed_seconds": 14400.078494415999,
+        "usage_records": 301,
+        "unique_responses": 301,
+        "deduplicated_response_usage_sum": {
+          "input_tokens": 39424280,
+          "cached_input_tokens": 38314368,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 429708,
+          "reasoning_output_tokens": 160694,
+          "total_tokens": 39853988
+        },
+        "last_thread_token_usage": {
+          "input_tokens": 39424280,
+          "cached_input_tokens": 38314368,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 429708,
+          "reasoning_output_tokens": 160694,
+          "total_tokens": 39853988
+        },
+        "sum_matches_thread_cumulative": true,
+        "cutoff_request_completeness": "not guaranteed"
+      },
+      "primary": {
+        "suite": "primary",
+        "checkpoint_sha256": "cfaf7e41250c7d32ed9305724f91232207414f3c0e3065527ab7e720b9281619",
+        "checkpoint_elapsed_seconds": 14400.078494415999,
+        "diagnostic_subset": false,
+        "files_scored": 622,
+        "image": "sha256:c379c6128e193682c40015eb8b126e2916b18c3985f0fb72cf1c642a1a3039f5",
+        "build_ok": true,
+        "evaluation_complete": true,
+        "queries": 5728833,
+        "queries_passed": 5524172,
+        "statements": 210713,
+        "statements_passed": 180026,
+        "queries_failed": 204661,
+        "score": 0.9642752721191209,
+        "evaluation_elapsed_seconds": 4982.992264582999
+      },
+      "primary_source": "runs/measured-001/evaluation/final-primary/summary.json",
+      "secondary": {
+        "suite": "secondary",
+        "checkpoint_sha256": "cfaf7e41250c7d32ed9305724f91232207414f3c0e3065527ab7e720b9281619",
+        "checkpoint_elapsed_seconds": 14400.078494415999,
+        "diagnostic_subset": false,
+        "files_scored": 0,
+        "image": "sha256:c379c6128e193682c40015eb8b126e2916b18c3985f0fb72cf1c642a1a3039f5",
+        "build_ok": true,
+        "evaluation_complete": true,
+        "secondary": {
+          "cases": [
+            {
+              "case": "typed_values",
+              "passed": false,
+              "reason": "Typed result mismatch"
+            },
+            {
+              "case": "transaction_rollback",
+              "passed": true
+            },
+            {
+              "case": "nested_savepoint",
+              "passed": true
+            },
+            {
+              "case": "constraints_and_statement_atomicity",
+              "passed": true
+            },
+            {
+              "case": "foreign_key_cascade",
+              "passed": true
+            },
+            {
+              "case": "recursive_cte",
+              "passed": true
+            },
+            {
+              "case": "window_function",
+              "passed": true
+            },
+            {
+              "case": "json_extract",
+              "passed": true
+            },
+            {
+              "case": "close_reopen",
+              "passed": false,
+              "reason": "Typed result mismatch"
+            },
+            {
+              "case": "process_restart",
+              "passed": false,
+              "reason": "Typed result mismatch"
+            },
+            {
+              "case": "sqlite_reads_generated_file",
+              "passed": false,
+              "reason": "Reference SQLite file readback or quick_check failed"
+            },
+            {
+              "case": "generated_reads_sqlite_file",
+              "passed": false,
+              "reason": "Open failed"
+            }
+          ],
+          "passed": 7,
+          "total": 12,
+          "not_assessed": [
+            "power_loss_recovery",
+            "concurrency",
+            "performance",
+            "comprehensive_documentation_coverage"
+          ]
+        },
+        "evaluation_elapsed_seconds": 14.628682874999999
+      },
+      "secondary_source": "runs/measured-001/evaluation/final-secondary/summary.json",
+      "primary_tainted_files": 13
+    },
+    {
+      "run_id": "measured-002",
+      "classification": "four_hour_endpoint",
+      "usage": {
+        "run_id": "measured-002",
+        "category": "measured_implementation",
+        "state": "completed",
+        "started_at": "2026-09-19T02:55:27.253100+00:00",
+        "actual_elapsed_seconds": 14400.070016958,
+        "usage_records": 290,
+        "unique_responses": 290,
+        "deduplicated_response_usage_sum": {
+          "input_tokens": 39515650,
+          "cached_input_tokens": 38342912,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 430498,
+          "reasoning_output_tokens": 157424,
+          "total_tokens": 39946148
+        },
+        "last_thread_token_usage": {
+          "input_tokens": 39515650,
+          "cached_input_tokens": 38342912,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 430498,
+          "reasoning_output_tokens": 157424,
+          "total_tokens": 39946148
+        },
+        "sum_matches_thread_cumulative": true,
+        "cutoff_request_completeness": "not guaranteed"
+      },
+      "primary": {
+        "suite": "primary",
+        "checkpoint_sha256": "398fb9570eda5489c831a3ada77ab39637f961d844d3a53687112a827758e7b8",
+        "checkpoint_elapsed_seconds": 14400.070016958,
+        "diagnostic_subset": false,
+        "files_scored": 622,
+        "image": "sha256:c379c6128e193682c40015eb8b126e2916b18c3985f0fb72cf1c642a1a3039f5",
+        "build_ok": true,
+        "evaluation_complete": true,
+        "queries": 5728833,
+        "queries_passed": 5541959,
+        "statements": 210713,
+        "statements_passed": 189095,
+        "queries_failed": 186874,
+        "score": 0.9673800929438858,
+        "evaluation_elapsed_seconds": 5654.461280666999
+      },
+      "primary_source": "runs/measured-002/evaluation/final-primary/summary.json",
+      "secondary": {
+        "suite": "secondary",
+        "checkpoint_sha256": "398fb9570eda5489c831a3ada77ab39637f961d844d3a53687112a827758e7b8",
+        "checkpoint_elapsed_seconds": 14400.070016958,
+        "diagnostic_subset": false,
+        "files_scored": 0,
+        "image": "sha256:c379c6128e193682c40015eb8b126e2916b18c3985f0fb72cf1c642a1a3039f5",
+        "build_ok": true,
+        "evaluation_complete": true,
+        "secondary": {
+          "cases": [
+            {
+              "case": "typed_values",
+              "passed": false,
+              "reason": "Typed result mismatch"
+            },
+            {
+              "case": "transaction_rollback",
+              "passed": true
+            },
+            {
+              "case": "nested_savepoint",
+              "passed": true
+            },
+            {
+              "case": "constraints_and_statement_atomicity",
+              "passed": true
+            },
+            {
+              "case": "foreign_key_cascade",
+              "passed": true
+            },
+            {
+              "case": "recursive_cte",
+              "passed": true
+            },
+            {
+              "case": "window_function",
+              "passed": true
+            },
+            {
+              "case": "json_extract",
+              "passed": true
+            },
+            {
+              "case": "close_reopen",
+              "passed": false,
+              "reason": "Typed result mismatch"
+            },
+            {
+              "case": "process_restart",
+              "passed": false,
+              "reason": "Typed result mismatch"
+            },
+            {
+              "case": "sqlite_reads_generated_file",
+              "passed": true
+            },
+            {
+              "case": "generated_reads_sqlite_file",
+              "passed": false,
+              "reason": "Typed result mismatch"
+            }
+          ],
+          "passed": 8,
+          "total": 12,
+          "not_assessed": [
+            "power_loss_recovery",
+            "concurrency",
+            "performance",
+            "comprehensive_documentation_coverage"
+          ]
+        },
+        "evaluation_elapsed_seconds": 14.731347208
+      },
+      "secondary_source": "runs/measured-002/evaluation/final-secondary/summary.json",
+      "primary_tainted_files": 10
+    },
+    {
+      "run_id": "measured-004",
+      "classification": "four_hour_endpoint",
+      "usage": {
+        "run_id": "measured-004",
+        "category": "measured_implementation",
+        "state": "completed",
+        "started_at": "2026-09-19T14:35:17.134233+00:00",
+        "actual_elapsed_seconds": 14400.057091875,
+        "usage_records": 297,
+        "unique_responses": 297,
+        "deduplicated_response_usage_sum": {
+          "input_tokens": 38472509,
+          "cached_input_tokens": 36578048,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 384844,
+          "reasoning_output_tokens": 133249,
+          "total_tokens": 38857353
+        },
+        "last_thread_token_usage": {
+          "input_tokens": 38472509,
+          "cached_input_tokens": 36578048,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 384844,
+          "reasoning_output_tokens": 133249,
+          "total_tokens": 38857353
+        },
+        "sum_matches_thread_cumulative": true,
+        "cutoff_request_completeness": "not guaranteed"
+      },
+      "primary": {
+        "suite": "primary",
+        "checkpoint_sha256": "889ccc2db8edf34b5763e1ad9d00aea73ac94983cc968167f972814f7cc1f290",
+        "checkpoint_elapsed_seconds": 14400.057091875,
+        "diagnostic_subset": false,
+        "files_scored": 622,
+        "image": "sha256:c379c6128e193682c40015eb8b126e2916b18c3985f0fb72cf1c642a1a3039f5",
+        "build_ok": true,
+        "evaluation_complete": true,
+        "queries": 5728833,
+        "queries_passed": 5526239,
+        "statements": 210713,
+        "statements_passed": 191031,
+        "queries_failed": 202594,
+        "score": 0.964636078587035,
+        "evaluation_elapsed_seconds": 4419.39027275
+      },
+      "primary_source": "runs/measured-004/evaluation/final-primary/summary.json",
+      "secondary": {
+        "suite": "secondary",
+        "checkpoint_sha256": "889ccc2db8edf34b5763e1ad9d00aea73ac94983cc968167f972814f7cc1f290",
+        "checkpoint_elapsed_seconds": 14400.057091875,
+        "diagnostic_subset": false,
+        "files_scored": 0,
+        "image": "sha256:c379c6128e193682c40015eb8b126e2916b18c3985f0fb72cf1c642a1a3039f5",
+        "build_ok": true,
+        "evaluation_complete": true,
+        "secondary": {
+          "cases": [
+            {
+              "case": "typed_values",
+              "passed": true
+            },
+            {
+              "case": "transaction_rollback",
+              "passed": true
+            },
+            {
+              "case": "nested_savepoint",
+              "passed": true
+            },
+            {
+              "case": "constraints_and_statement_atomicity",
+              "passed": true
+            },
+            {
+              "case": "foreign_key_cascade",
+              "passed": true
+            },
+            {
+              "case": "recursive_cte",
+              "passed": true
+            },
+            {
+              "case": "window_function",
+              "passed": true
+            },
+            {
+              "case": "json_extract",
+              "passed": true
+            },
+            {
+              "case": "close_reopen",
+              "passed": true
+            },
+            {
+              "case": "process_restart",
+              "passed": true
+            },
+            {
+              "case": "sqlite_reads_generated_file",
+              "passed": false,
+              "reason": "Reference SQLite file readback or quick_check failed"
+            },
+            {
+              "case": "generated_reads_sqlite_file",
+              "passed": false,
+              "reason": "Open failed"
+            }
+          ],
+          "passed": 10,
+          "total": 12,
+          "not_assessed": [
+            "power_loss_recovery",
+            "concurrency",
+            "performance",
+            "comprehensive_documentation_coverage"
+          ]
+        },
+        "evaluation_elapsed_seconds": 15.385239042
+      },
+      "secondary_source": "runs/measured-004/evaluation/final-secondary/summary.json",
+      "primary_tainted_files": 13
+    },
+    {
+      "run_id": "measured-003",
+      "classification": "interrupted_terminal_diagnostic",
+      "usage": {
+        "run_id": "measured-003",
+        "category": "measured_implementation",
+        "state": "interrupted",
+        "started_at": "2026-09-19T06:55:31.099156+00:00",
+        "actual_elapsed_seconds": 2444.263998833,
+        "usage_records": 30,
+        "unique_responses": 30,
+        "deduplicated_response_usage_sum": {
+          "input_tokens": 1932992,
+          "cached_input_tokens": 1788672,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 77810,
+          "reasoning_output_tokens": 9230,
+          "total_tokens": 2010802
+        },
+        "last_thread_token_usage": {
+          "input_tokens": 1932992,
+          "cached_input_tokens": 1788672,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 77810,
+          "reasoning_output_tokens": 9230,
+          "total_tokens": 2010802
+        },
+        "sum_matches_thread_cumulative": true,
+        "cutoff_request_completeness": "not guaranteed"
+      },
+      "primary": {
+        "suite": "primary",
+        "checkpoint_sha256": "29882e7c4d1d76b16328d8dd8fb08f8006ac213bfa64ede456170f6998c55109",
+        "checkpoint_elapsed_seconds": 2444.263998833,
+        "diagnostic_subset": false,
+        "files_scored": 0,
+        "image": "sha256:c379c6128e193682c40015eb8b126e2916b18c3985f0fb72cf1c642a1a3039f5",
+        "build_ok": false,
+        "evaluation_complete": true,
+        "build_exit_code": 101,
+        "queries": 5728833,
+        "queries_passed": 0,
+        "statements": 210713,
+        "statements_passed": 0,
+        "queries_failed": 5728833,
+        "score": 0.0,
+        "evaluation_elapsed_seconds": 4.098280667
+      },
+      "primary_source": "runs/measured-003/evaluation/interrupted-recovered-primary/summary.json",
+      "secondary": {
+        "suite": "secondary",
+        "checkpoint_sha256": "29882e7c4d1d76b16328d8dd8fb08f8006ac213bfa64ede456170f6998c55109",
+        "checkpoint_elapsed_seconds": 2444.263998833,
+        "diagnostic_subset": false,
+        "files_scored": 0,
+        "image": "sha256:c379c6128e193682c40015eb8b126e2916b18c3985f0fb72cf1c642a1a3039f5",
+        "build_ok": false,
+        "evaluation_complete": true,
+        "secondary": {
+          "cases": [
+            {
+              "case": "typed_values",
+              "passed": false,
+              "reason": "Build unavailable"
+            },
+            {
+              "case": "transaction_rollback",
+              "passed": false,
+              "reason": "Build unavailable"
+            },
+            {
+              "case": "nested_savepoint",
+              "passed": false,
+              "reason": "Build unavailable"
+            },
+            {
+              "case": "constraints_and_statement_atomicity",
+              "passed": false,
+              "reason": "Build unavailable"
+            },
+            {
+              "case": "foreign_key_cascade",
+              "passed": false,
+              "reason": "Build unavailable"
+            },
+            {
+              "case": "recursive_cte",
+              "passed": false,
+              "reason": "Build unavailable"
+            },
+            {
+              "case": "window_function",
+              "passed": false,
+              "reason": "Build unavailable"
+            },
+            {
+              "case": "json_extract",
+              "passed": false,
+              "reason": "Build unavailable"
+            },
+            {
+              "case": "close_reopen",
+              "passed": false,
+              "reason": "Build unavailable"
+            },
+            {
+              "case": "process_restart",
+              "passed": false,
+              "reason": "Build unavailable"
+            },
+            {
+              "case": "sqlite_reads_generated_file",
+              "passed": false,
+              "reason": "Build unavailable"
+            },
+            {
+              "case": "generated_reads_sqlite_file",
+              "passed": false,
+              "reason": "Build unavailable"
+            }
+          ],
+          "passed": 0,
+          "total": 12
+        },
+        "build_exit_code": 101,
+        "evaluation_elapsed_seconds": 3.559464417
+      },
+      "secondary_source": "runs/measured-003/evaluation/interrupted-recovered-secondary/summary.json",
+      "primary_tainted_files": null
+    }
+  ],
+  "primary_endpoint_evaluation_minutes": [
+    83.04987107638333,
+    94.24102134444999,
+    73.65650454583333
+  ],
+  "limitations": [
+    "Progress curves and threshold intervals are pending.",
+    "Interrupted measured-003 is excluded from four-hour summary statistics; build unavailable is a protocol zero, not a measured runnable-engine pass rate.",
+    "The 12 secondary probes are small case samples, not comprehensive SQLite conformance.",
+    "Subscription usage is not a dollar invoice; input cache and reasoning fields are subsets."
+  ]
+}

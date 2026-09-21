@@ -1,0 +1,51 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+SQLite C Interface
+
+Online Backup Object
+
+typedef struct sqlite3_backup sqlite3_backup;
+
+The sqlite3_backup object records state information about an ongoing
+online backup operation.  The sqlite3_backup object is created by
+a call to sqlite3_backup_init() and is destroyed by a call to
+sqlite3_backup_finish().
+
+See Also: Using the SQLite Online Backup API
+
+See also lists of
+  Objects,
+  Constants, and
+  Functions.

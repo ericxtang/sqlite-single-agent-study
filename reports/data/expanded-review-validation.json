@@ -1,0 +1,33 @@
+{
+  "validated_at": "2026-09-21T16:06:51.041656+00:00",
+  "passed": true,
+  "report_sha256": "8415ab3d6a177be624bf45b45fc9a21e703940e356b708e72a68f9ed463606d7",
+  "original_measurements_unchanged": true,
+  "old_and_new_comparison_data_equal_except_generation_and_validation_timestamps": true,
+  "original_raw_evidence_hashes_verified": 268,
+  "trace_raw_evidence_hashes_verified": 34,
+  "terminal_source_copies_byte_identical": 20,
+  "local_links_checked": 100,
+  "line_links_checked": 44,
+  "anchor_links_checked": 3,
+  "four_single_root_sessions_no_agent_tool_calls": true,
+  "secondary_case_caveat_cells": 7,
+  "secondary_results_unchanged": true,
+  "api_values_independently_checked_with_decimal": {
+    "pilot-001": "0.0",
+    "pilot-002": "4.816838",
+    "measured-001": "70.898888",
+    "measured-002": "71.595192",
+    "measured-003": "7.122372",
+    "measured-004": "74.764858"
+  },
+  "analysis_did_not_execute_implementations_or_evaluators": true,
+  "source_basis": [
+    "https://cursor.com/blog/self-driving-codebases",
+    "https://cursor.com/blog/agent-swarm-model-economics",
+    "https://www.sqlite.org/sqllogictest/doc/trunk/about.wiki",
+    "https://developers.openai.com/api/docs/pricing",
+    "https://developers.openai.com/api/docs/models/gpt-6-astra"
+  ],
+  "visual_review": "Secondary matrix inspected after adding seven caveat marks and a three-line caption; no clipped labels. Primary PNGs are byte-identical to the initially reviewed plots."
+}

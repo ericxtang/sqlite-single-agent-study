@@ -1,0 +1,180 @@
+{
+  "container": "astra-sqlite-measured-003",
+  "elapsed_seconds": 2444.263998833,
+  "started_at": "2026-09-19T14:27:27.226181+00:00",
+  "capture_seconds": 2.106837667,
+  "sha256": "29882e7c4d1d76b16328d8dd8fb08f8006ac213bfa64ede456170f6998c55109",
+  "archive": "interrupted-recovered.tar.gz",
+  "excluded_top_level": [
+    "target"
+  ],
+  "files": [
+    {
+      "path": ".",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "Cargo.lock",
+      "bytes": 2669,
+      "type": "0"
+    },
+    {
+      "path": "Cargo.toml",
+      "bytes": 160,
+      "type": "0"
+    },
+    {
+      "path": "IO_CONTRACT.md",
+      "bytes": 2071,
+      "type": "0"
+    },
+    {
+      "path": "NOTES.md",
+      "bytes": 1578,
+      "type": "0"
+    },
+    {
+      "path": "concurrency-test.db.agent-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "src",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "src/ast.rs",
+      "bytes": 3907,
+      "type": "0"
+    },
+    {
+      "path": "src/date.rs",
+      "bytes": 4759,
+      "type": "0"
+    },
+    {
+      "path": "src/engine.rs",
+      "bytes": 30060,
+      "type": "0"
+    },
+    {
+      "path": "src/foreign.rs",
+      "bytes": 2696,
+      "type": "0"
+    },
+    {
+      "path": "src/funcs.rs",
+      "bytes": 9620,
+      "type": "0"
+    },
+    {
+      "path": "src/json.rs",
+      "bytes": 5129,
+      "type": "0"
+    },
+    {
+      "path": "src/lex.rs",
+      "bytes": 2012,
+      "type": "0"
+    },
+    {
+      "path": "src/locking.rs",
+      "bytes": 1724,
+      "type": "0"
+    },
+    {
+      "path": "src/main.rs",
+      "bytes": 1483,
+      "type": "0"
+    },
+    {
+      "path": "src/parser.rs",
+      "bytes": 22476,
+      "type": "0"
+    },
+    {
+      "path": "src/query.rs",
+      "bytes": 26717,
+      "type": "0"
+    },
+    {
+      "path": "src/schema.rs",
+      "bytes": 12489,
+      "type": "0"
+    },
+    {
+      "path": "src/storage.rs",
+      "bytes": 17699,
+      "type": "0"
+    },
+    {
+      "path": "src/tablefunc.rs",
+      "bytes": 2811,
+      "type": "0"
+    },
+    {
+      "path": "src/triggers.rs",
+      "bytes": 1519,
+      "type": "0"
+    },
+    {
+      "path": "src/value.rs",
+      "bytes": 4678,
+      "type": "0"
+    },
+    {
+      "path": "src/window.rs",
+      "bytes": 6099,
+      "type": "0"
+    },
+    {
+      "path": "storage-test.db.agent-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "test-persist.db.agent-lock",
+      "bytes": 0,
+      "type": "0"
+    },
+    {
+      "path": "tests",
+      "bytes": 0,
+      "type": "5"
+    },
+    {
+      "path": "tests/concurrency.py",
+      "bytes": 1312,
+      "type": "0"
+    },
+    {
+      "path": "tests/features.py",
+      "bytes": 2357,
+      "type": "0"
+    },
+    {
+      "path": "tests/semantics.py",
+      "bytes": 2630,
+      "type": "0"
+    },
+    {
+      "path": "tests/smoke.py",
+      "bytes": 4250,
+      "type": "0"
+    },
+    {
+      "path": "tests/storage.py",
+      "bytes": 2034,
+      "type": "0"
+    }
+  ],
+  "timing_note": "Elapsed time is the final logged error event, an upper bound on pause time, not the recovery wall time.",
+  "interruption_elapsed_bounds_seconds": [
+    2444.2184194580004,
+    2444.263998833
+  ],
+  "recovered_from_paused_worker": true,
+  "valid_four_hour_endpoint": false
+}

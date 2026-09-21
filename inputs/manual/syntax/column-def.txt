@@ -1,0 +1,47 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+column-def
+
+column-name
+
+type-name
+
+column-constraint
+
+Used by:   alter-table-stmt   create-table-stmt
+
+References:   column-constraint   type-name
+
+See also:   lang_altertable.html   lang_createtable.html

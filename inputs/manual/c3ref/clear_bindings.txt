@@ -1,0 +1,48 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+SQLite C Interface
+
+Reset All Bindings On A Prepared Statement
+
+int sqlite3_clear_bindings(sqlite3_stmt*);
+
+Contrary to the intuition of many, sqlite3_reset() does not reset
+the bindings on a prepared statement.
+Use this routine to reset all host parameters to NULL.
+
+See also lists of
+  Objects,
+  Constants, and
+  Functions.

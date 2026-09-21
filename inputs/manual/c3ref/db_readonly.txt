@@ -1,0 +1,48 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+SQLite C Interface
+
+Determine if a database is read-only
+
+int sqlite3_db_readonly(sqlite3 *db, const char *zDbName);
+
+The sqlite3_db_readonly(D,N) interface returns 1 if the database N
+of connection D is read-only, 0 if it is read/write, or -1 if N is not
+the name of a database on connection D.
+
+See also lists of
+  Objects,
+  Constants, and
+  Functions.

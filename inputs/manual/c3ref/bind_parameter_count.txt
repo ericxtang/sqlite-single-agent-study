@@ -1,0 +1,59 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+SQLite C Interface
+
+Number Of SQL Parameters
+
+int sqlite3_bind_parameter_count(sqlite3_stmt*);
+
+This routine can be used to find the number of SQL parameters
+in a prepared statement.  SQL parameters are tokens of the
+form "?", "?NNN", ":AAA", "$AAA", or "@AAA" that serve as
+placeholders for values that are bound
+to the parameters at a later time.
+
+This routine actually returns the index of the largest (rightmost)
+parameter. For all forms except ?NNN, this will correspond to the
+number of unique parameters.  If parameters of the ?NNN form are used,
+there may be gaps in the list.
+
+See also: sqlite3_bind(),
+sqlite3_bind_parameter_name(), and
+sqlite3_bind_parameter_index().
+
+See also lists of
+  Objects,
+  Constants, and
+  Functions.

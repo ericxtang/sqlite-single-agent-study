@@ -1,0 +1,1 @@
+Continue implementing the original task from your current code and notes. Review remaining documented behavior, choose the next useful improvement, and keep working independently using the same constraints.

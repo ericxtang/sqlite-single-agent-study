@@ -1,0 +1,81 @@
+Small. Fast. Reliable.
+Choose any three.
+
+Home
+
+Menu
+
+About
+
+Documentation
+
+Download
+
+License
+
+Support
+
+Purchase
+
+Search
+
+About
+
+Documentation
+
+Download
+
+Support
+
+Purchase
+
+Search Documentation
+Search Changelog
+
+delete-stmt-limited
+
+WITH
+
+RECURSIVE
+
+common-table-expression
+
+,
+
+DELETE
+
+FROM
+
+qualified-table-name
+
+WHERE
+
+expr
+
+returning-clause
+
+ORDER
+
+BY
+
+ordering-term
+
+,
+
+LIMIT
+
+expr
+
+OFFSET
+
+expr
+
+,
+
+expr
+
+Used by:   sql-stmt
+
+References:   common-table-expression   expr   ordering-term   qualified-table-name   returning-clause
+
+See also:   lang_delete.html

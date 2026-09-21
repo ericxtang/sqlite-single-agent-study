@@ -1,0 +1,35 @@
+{
+  "created_at": "2026-09-21T16:47:05.569228+00:00",
+  "passed": true,
+  "pdf": "output/pdf/sqlite-single-agent-study-report.pdf",
+  "pdf_sha256": "10271407d6892c270788a870d4534aecdeae54e3637f061e36a8acc03ee171b0",
+  "source": "reports/comparison.md",
+  "source_sha256": "d8663b3cf85e093f3a252a534f26898322938012890f01d0ebd19e0116ebb660",
+  "pages": 23,
+  "blocks": {
+    "executive_pages": 1,
+    "executive_tables": 1,
+    "executive_figures": 1,
+    "title": 1,
+    "h2": 14,
+    "paragraphs": 71,
+    "figures": 3,
+    "tables": 18,
+    "diagrams": 1,
+    "h3": 1
+  },
+  "missing_text_tokens": {},
+  "link_annotations": 143,
+  "all_pages_rendered_and_visually_reviewed": true,
+  "text_within_page_margins": true,
+  "content_changes": "Added one-page executive comparison with two chart panels and facts table. Detailed report body and measurements preserved.",
+  "executive_export": {
+    "path": "output/pdf/sqlite-executive-comparison.pdf",
+    "sha256": "1b3ebe7b6e7173655560f6fb68eae1b379c03f35646b13fd83dab8d55e70089d",
+    "pages": 1,
+    "missing_text_tokens": {},
+    "out_of_margin_text": [],
+    "link_annotations": 5
+  },
+  "validation": "reports/data/executive-summary-validation.json"
+}
