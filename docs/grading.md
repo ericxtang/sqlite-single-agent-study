@@ -11,10 +11,13 @@ python3 -m unittest discover -s evaluator_v2 -p 'test_*.py'
 
 # Select your locally recorded immutable runtime image ID.
 IMAGE_ID=$(python3 -c 'import json; print(json.load(open("records/runtime-image.json"))["id"])')
-python3 evaluator_v2/grade.py --preset endpoints --image "$IMAGE_ID" --output grading/v2-endpoints
+python3 replication/awake_guard.py --record grading/v2-endpoints-guard.json -- \
+  python3 evaluator_v2/grade.py --preset endpoints --image "$IMAGE_ID" --output grading/v2-endpoints
 # All 59 logical jobs, sequentially:
 # python3 evaluator_v2/grade.py --preset all --image "$IMAGE_ID" --output grading/v2-all
 ```
+
+The outer guard stops the controller if host suspension or a clock correction causes wall/monotonic elapsed time to diverge by more than two seconds. Both its record and the queue state must finish successfully before accepting results. A guard failure invalidates the attempt even if a child summary says complete. Keep the host awake with the lid open; this guard detects interruption and does not prevent it. Do not resume or overwrite an interrupted queue.
 
 The study correction uses the original image digest recorded in the erratum. A fresh `setup` build can produce a different digest; report that difference. The controller acquires the same lock as fresh implementation runs, verifies the publication/corpus, seals its inputs, and dispatches one job at a time. New output paths are mandatory. `plan.json` and `plan.sha256` identify the inputs; `state.json` contains live controller/evaluator PIDs, completed jobs and current output directory. Each job updates `summary.json` and `files.jsonl`. An infrastructure error stops the queue with no accepted score.
 
